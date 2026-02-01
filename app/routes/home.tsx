@@ -1,5 +1,6 @@
+import { Button } from "~/components/ui/button";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Upload } from "lucide-react";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +10,10 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <main className="flex flex-col gap-2 w-fit pl-[45%]">
+    <h1 className="text-xl font-bold text-foreground-dark">Title</h1>
+    <Button variant={"ghost"}>Submit</Button>
+    <Button>Submit<Upload /></Button>
+    <Button>Submit<Upload /></Button>
+  </main>;
 }
