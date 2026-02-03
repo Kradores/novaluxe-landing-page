@@ -1,4 +1,5 @@
 import type { HTMLAttributes } from "react"
+import { useEffect, useState } from "react"
 import type { MarqueeProps as FastMarqueeProps } from "react-fast-marquee"
 import FastMarquee from "react-fast-marquee"
 import { cn } from "~/lib/utils"
@@ -16,9 +17,20 @@ export const MarqueeContent = ({
   autoFill = true,
   pauseOnHover = true,
   ...props
-}: MarqueeContentProps) => (
-  <FastMarquee autoFill={autoFill} loop={loop} pauseOnHover={pauseOnHover} {...(props as any)} />
-)
+}: MarqueeContentProps) => {
+  // Render a static fallback on the server and during the initial client render
+  // to avoid hydration mismatches. After mount, render the client-only marquee.
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) {
+    return <div {...(props as any)} />
+  }
+
+  return (
+    <FastMarquee autoFill={autoFill} loop={loop} pauseOnHover={pauseOnHover} {...(props as any)} />
+  )
+}
 
 export type MarqueeFadeProps = HTMLAttributes<HTMLDivElement> & {
   side: "left" | "right"

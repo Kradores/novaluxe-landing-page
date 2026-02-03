@@ -64,6 +64,10 @@ body {
   --text-3xl: 2rem;
   --text-2xl: 1.75rem;
   --text-xl: 1.5rem;
+  --breakpoint-3xl: 100rem;
+  --breakpoint-4xl: 120rem;
+  --breakpoint-5xl: 140rem;
+  --breakpoint-6xl: 160rem;
   --background-image-blue-dark-glow: linear-gradient(
     to bottom right,
     var(--foreground-dark),
@@ -95,7 +99,7 @@ body {
   --muted: hsl(212 38% 69%);
   --muted-foreground: hsl(207 16% 67%);
   --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent-foreground: hsl(18 73% 23%);
   --destructive: oklch(0.577 0.245 27.325);
   --border: hsl(21 67% 47%);
   --input: hsl(51 5% 96%);
