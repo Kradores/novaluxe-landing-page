@@ -1,7 +1,7 @@
 import { Button } from "~/components/ui/button";
-import worker1 from "../../../static/images/worker-1.jpg";
-import worker2 from "../../../static/images/worker-2.jpg";
-import worker3 from "../../../static/images/worker-3.jpg";
+import worker1 from "/images/worker-1.jpg";
+import worker2 from "/images/worker-2.jpg";
+import worker3 from "/images/worker-3.jpg";
 import { Link } from "react-router";
 import ImageFrame from "~/components/common/image-frame";
 import PageTitle from "~/components/common/page-title";
@@ -56,4 +56,4 @@ const HeroSection = ({ className }: { className?: string }) => {
   );
 };
 
-export { HeroSection };
+export default HeroSection;
