@@ -9,7 +9,7 @@ import { cn } from "~/lib/utils";
 
 const HeroSection = ({ className }: { className?: string }) => {
   return (
-    <section className={cn("overflow-hidden gap-7 pt-6 lg:pt-22 pb-90 md:pb-90 lg:pb-80 px-3 sm:px-6 xl:px-0 w-full max-w-full md:max-w-6xl flex flex-col", className)}>
+    <section className={cn("overflow-hidden gap-7 pt-40 md:pt-33 lg:pt-43 xl:pt-50 pb-90 md:pb-90 lg:pb-80 px-3 sm:px-6 xl:px-0 w-full max-w-full md:max-w-6xl flex flex-col", className)}>
       <PageTitle className="text-shadow-md">WE DO THE HARD WORK</PageTitle>
       <div className="grid justify-stretch gap-4 md:grid-cols-2 lg:grid-cols-3 text-shadow-md">
         <div className="flex pt-10 h-fit">

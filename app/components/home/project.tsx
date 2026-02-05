@@ -10,7 +10,7 @@ interface ProjectProps {
   description: string;
   className?: string;
   isOpen?: boolean;
-  onHover?: () => void;
+  setActive?: () => void;
   variants: Variants;
 }
 
@@ -19,7 +19,7 @@ const Project = ({
   description,
   className,
   isOpen = false,
-  onHover,
+  setActive,
   variants,
 }: ProjectProps) => {
   return (
@@ -27,7 +27,8 @@ const Project = ({
       variants={variants}
       animate={isOpen ? "open" : "closed"}
       initial={false}
-      onHoverStart={onHover}
+      onHoverStart={setActive}
+      onTap={setActive}
       className={cn(
         "relative rounded-lg overflow-hidden cursor-pointer bg-cover bg-no-repeat",
         className

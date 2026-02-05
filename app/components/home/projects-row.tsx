@@ -21,7 +21,7 @@ const ProjectsRow = ({
       {children.map((child, index) =>
         cloneElement(child, {
           isOpen: activeIndex === index,
-          onHover: () => setActiveIndex(index),
+          setActive: () => setActiveIndex(index),
         })
       )}
     </div>

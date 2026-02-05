@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full">
       <div className="flex flex-col bg-foreground bg-[url(/images/hero-bg.jpg)] bg-cover bg-center bg-no-repeat">
-        <Navbar className="w-full" />
         <HeroSection className="mx-auto" />
       </div>
       <TrustedBySection />

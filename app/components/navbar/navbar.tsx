@@ -8,7 +8,7 @@ import { cn } from "~/lib/utils";
 
 export function Navbar({ className }: { className?: string }) {
   return (
-    <header className={cn("w-full h-fit", className)}>
+    <header className={cn("w-full h-fit absolute top-0", className)}>
       <div className="mx-auto max-w-300 px-4 sm:px-6">
         <div className="flex items-center justify-between py-6">
           <NavLink to={navLinks.home} className="shrink-0" aria-label="Home">
