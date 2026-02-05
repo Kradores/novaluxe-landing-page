@@ -15,7 +15,7 @@ export function useBreakpoint() {
 
   useEffect(() => {
     const update = () => {
-      const width = window.innerWidth;
+      const width = window.outerWidth;
 
       const keys = Object.keys(breakpoints) as (keyof typeof breakpoints)[];
       for (const key of keys) {
