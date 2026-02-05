@@ -1,14 +1,14 @@
 import { Marquee, MarqueeContent, MarqueeItem } from "components/ui/marquee";
 
 const brands: { name: string; src: string }[] = [
-  { name: "Brand 1", src: "./svg/brand-1.svg" },
-  { name: "Brand 2", src: "./svg/brand-2.svg" },
-  { name: "Brand 3", src: "./svg/brand-3.svg" },
-  { name: "Brand 4", src: "./svg/brand-4.svg" },
-  { name: "Brand 5", src: "./svg/brand-5.svg" },
+  { name: "Brand 1", src: "/svg/brand-1.svg" },
+  { name: "Brand 2", src: "/svg/brand-2.svg" },
+  { name: "Brand 3", src: "/svg/brand-3.svg" },
+  { name: "Brand 4", src: "/svg/brand-4.svg" },
+  { name: "Brand 5", src: "/svg/brand-5.svg" },
 ];
 
-export const TrustedBySection = () => {
+const TrustedBySection = () => {
   return (
     <section className="bg-secondary py-12 -mt-45 md:-mt-50 3xl:-mt-40 4xl:-mt-30 5xl:-mt-13 6xl:mt-0">
       <h2 className="text-center text-secondary-foreground text-sm md:text-lg xl:text-xl font-medium tracking-wider mb-8 lg:mb-12">
@@ -31,3 +31,5 @@ export const TrustedBySection = () => {
     </section>
   );
 };
+
+export default TrustedBySection;
