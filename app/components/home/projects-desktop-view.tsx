@@ -1,0 +1,62 @@
+import { useBreakpoint } from "hooks/use-breakpoint";
+import { getDesktopProjects, projectVariants } from "./projects-section.data";
+import ProjectsRow from "./projects-row";
+import Project from "./project";
+import { useMemo } from "react";
+
+const DesktopView = () => {
+  const { breakpoint } = useBreakpoint();
+
+  const variants = useMemo(() => {
+    if (breakpoint === "xl" || breakpoint === "2xl" || breakpoint === "3xl") {
+      return {
+        ...projectVariants,
+        open: { ...projectVariants.open, width: 512 },
+        closed: { ...projectVariants.closed, width: 180 },
+      };
+    }
+
+    if (breakpoint === "lg") {
+      return {
+        ...projectVariants,
+        open: { ...projectVariants.open, width: 400 },
+        closed: { ...projectVariants.closed, width: 125 },
+      };
+    }
+
+    if (breakpoint === "md" || breakpoint === "sm") {
+      return {
+        ...projectVariants,
+        open: { ...projectVariants.open, width: 284 },
+        closed: { ...projectVariants.closed, width: 120 },
+      };
+    }
+
+    return projectVariants;
+  }, [breakpoint]);
+
+  return (
+    <section className="flex flex-col gap-9.5 px-3 sm:px-6 xl:px-0 md:max-w-6xl mx-auto py-27.5 lg:py-41">
+      <div className="flex flex-row gap-5">
+        <div className="space-y-4 self-center max-w-86 lg:max-w-105">
+          <h2 className="font-medium text-5xl lg:text-6xl uppercase text-foreground-dark">Our Projects</h2>
+          <p className="text-foreground">
+            We have worked on a wide range of projects, from small startups to large enterprises.
+          </p>
+        </div>
+        <ProjectsRow defaultOpen={1} className="h-44 lg:h-80">
+          {getDesktopProjects().row1.map(data => (
+            <Project variants={variants} key={data.id} {...data} />
+          ))}
+        </ProjectsRow>
+      </div>
+      <ProjectsRow defaultOpen={1} className="h-44 lg:h-80">
+        {getDesktopProjects().row2.map(data => (
+          <Project variants={variants} key={data.id} {...data} />
+        ))}
+      </ProjectsRow>
+    </section>
+  );
+}
+
+export default DesktopView;
