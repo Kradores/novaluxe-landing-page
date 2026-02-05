@@ -1,0 +1,84 @@
+import { Consultation, Proposal, Tech, Execution } from "~/components/icons";
+import { Button } from "~/components/ui/button";
+import { Link } from "react-router";
+
+const steps = [
+    {
+        icon: Consultation,
+        title: "Consultation & Project Assessment",
+        description:
+            "We have the initial consultation, visit the site, and assess feasibility to define project requirements.",
+    },
+    {
+        icon: Proposal,
+        title: "Proposal & Planning",
+        description: "We prepare, adjust, and plan a customized budget for each project.",
+    },
+    {
+        icon: Tech,
+        title: "Technical Preparation",
+        description: "We calculate, coordinate teams, and train specialists for each installation.",
+    },
+    {
+        icon: Execution,
+        title: "Project Execution",
+        description: "We execute the complete installation with quality, safety, and efficiency.",
+    },
+];
+
+interface StepCardProps {
+    icon: React.ElementType;
+    title: string;
+    description: string;
+}
+
+const StepCard = ({ icon: Icon, title, description }: StepCardProps) => {
+    return (
+        <div className="flex flex-col items-center text-center gap-4">
+            {/* Icon container */}
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-secondary-foreground/10 border border-secondary-foreground/20 flex items-center justify-center">
+                <Icon width={40} height={40} className="md:w-12 md:h-12" />
+            </div>
+
+            {/* Title */}
+            <h3 className="text-sm md:text-base font-bold uppercase tracking-wider text-secondary-foreground">{title}</h3>
+
+            {/* Description */}
+            <p className="text-xs md:text-sm text-secondary-foreground/70 max-w-70">{description}</p>
+        </div>
+    );
+};
+
+export const StepsSection = () => {
+    return (
+        <section className="w-full bg-secondary py-16 md:py-24">
+            <div className="mx-auto max-w-300 px-4 sm:px-6 flex flex-col items-center gap-10 md:gap-16">
+                {/* Badge */}
+                <div className="px-6 py-2 border border-primary rounded-full">
+                    <span className="text-sm md:text-base font-medium uppercase tracking-wider text-primary">Ready to go in 4</span>
+                </div>
+
+                {/* Title */}
+                <h2 className="text-center text-3xl md:text-5xl lg:text-6xl font-medium uppercase tracking-wider text-secondary-foreground">
+                    Our Working Steps
+                </h2>
+
+                {/* Steps Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8 lg:gap-6 w-full">
+                    {steps.map((step, index) => (
+                        <StepCard key={index} icon={step.icon} title={step.title} description={step.description} />
+                    ))}
+                </div>
+
+                <div className="group-btn bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full hover:shadow-lg hover:scale-102 transition-all duration-500 ease-in-out">
+                    <Button
+                        asChild
+                        className="group-btn-hover:scale-102 group-btn-hover:bg-orange-glow"
+                    >
+                        <Link to="/contact">Get a Quote</Link>
+                    </Button>
+                </div>
+            </div>
+        </section>
+    );
+};
