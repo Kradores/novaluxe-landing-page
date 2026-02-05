@@ -12,6 +12,7 @@ import "./app.css";
 import { Spinner } from "./components/ui/spinner";
 import { domAnimation, LazyMotion } from "motion/react";
 import { Navbar } from "./components/navbar/navbar";
+import { Footer } from "./components/layout/footer";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -39,7 +40,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <LazyMotion features={domAnimation}>
           <Navbar />
           {children}
-          </LazyMotion>
+          <Footer />
+        </LazyMotion>
         <ScrollRestoration />
         <Scripts />
       </body>
