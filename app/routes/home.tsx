@@ -1,8 +1,12 @@
 import type { Route } from "./+types/home";
 import HeroSection from "~/components/home/hero-section";
-import { Navbar } from "~/components/navbar/navbar";
 import TrustedBySection from "~/components/home/trusted-by";
 import ProjectsSection from "~/components/home/projects-section";
+import { OurWorkSection } from "~/components/home/our-work-section";
+import { ServicesSection } from "~/components/home/services-section";
+import { WhoWeAreSection } from "~/components/home/who-we-are-section";
+import { StepsSection } from "~/components/home/steps-section";
+import { WhatsNextSection } from "~/components/home/whats-next-section";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -18,7 +22,12 @@ export default function Home() {
         <HeroSection className="mx-auto" />
       </div>
       <TrustedBySection />
+      <WhoWeAreSection />
+      <OurWorkSection />
+      <ServicesSection />
+      <StepsSection />
       <ProjectsSection />
+      <WhatsNextSection />
     </main>
   );
 }
