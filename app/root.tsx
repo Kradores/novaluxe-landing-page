@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import { Spinner } from "./components/ui/spinner";
+import { domAnimation, LazyMotion } from "motion/react";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -34,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <LazyMotion features={domAnimation}>{children}</LazyMotion>
         <ScrollRestoration />
         <Scripts />
       </body>
