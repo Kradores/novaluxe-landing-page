@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Logo } from "~/components/icons";
 import { Button } from "~/components/ui/button";
 import PageTitle from "~/components/common/page-title";
+import { LazyVideo } from "~/components/common/lazy-video";
 
 export const WhoWeAreSection = () => {
   return (
@@ -40,15 +41,15 @@ export const WhoWeAreSection = () => {
                 className="w-full h-auto"
               />
               <div className="absolute top-[46.6%] left-[49.5%] -translate-x-1/2 -translate-y-1/2 w-[35%] aspect-square rounded-full overflow-hidden">
-                <video
+                <LazyVideo
+                  src={"/videos/who-we-are.mp4"}
+                  type="video/mp4"
+                  className="w-full h-full object-cover"
                   autoPlay
                   muted
                   loop
                   playsInline
-                  className="w-full h-full z-50 object-cover bg-foreground"
-                >
-                  <source src="/public/videos/who-we-are.mp4" type="video/mp4" />
-                </video>
+                />
               </div>
             </div>
           </div>

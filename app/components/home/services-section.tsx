@@ -42,13 +42,13 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
 
 const services = [
   {
-    image: "/public/images/service-1.jpg",
+    image: "/images/service-1.webp",
     title: "Photovoltaic Systems Building",
     description:
       "We design and install efficient solar systems that reduce energy costs, improve sustainability, and ensure long term performance.",
   },
   {
-    image: "/public/images/service-2.png",
+    image: "/images/service-2.webp",
     title: "House Renovations & Electric Work",
     description:
       "We handle renovations and electrical work safely and professionally, delivering functional spaces that meet modern standards.",

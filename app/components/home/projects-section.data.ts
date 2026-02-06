@@ -27,37 +27,37 @@ const projects = [
         id: "project-1",
         title: "Project 1",
         description: "Palma del Rio | Spain | 3 months",
-        className: "bg-[url('/images/project-1.jpg')]",
+        className: "bg-[url('/images/project-1.webp')]",
     },
     {
         id: "project-2",
         title: "Project 2",
         description: "Palma del Rio | Spain | 3 months",
-        className: "bg-[url('/images/project-2.jpg')]",
+        className: "bg-[url('/images/project-2.webp')]",
     },
     {
         id: "project-3",
         title: "Project 3",
         description: "Palma del Rio | Spain | 3 months",
-        className: "bg-[url('/images/project-3.jpg')]",
+        className: "bg-[url('/images/project-3.webp')]",
     },
     {
         id: "project-4",
         title: "Project 4",
         description: "Palma del Rio | Spain | 3 months",
-        className: "bg-[url('/images/project-4.jpg')]",
+        className: "bg-[url('/images/project-4.webp')]",
     },
     {
         id: "project-5",
         title: "Project 5",
         description: "Palma del Rio | Spain | 3 months",
-        className: "bg-[url('/images/project-5.jpg')]",
+        className: "bg-[url('/images/project-5.webp')]",
     },
     {
         id: "project-6",
         title: "Project 6",
         description: "Palma del Rio | Spain | 3 months",
-        className: "bg-[url('/images/project-6.jpg')]",
+        className: "bg-[url('/images/project-6.webp')]",
     }
 ]
 
