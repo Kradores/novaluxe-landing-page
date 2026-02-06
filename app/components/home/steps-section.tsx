@@ -52,7 +52,7 @@ const StepCard = ({ icon: Icon, title, description }: StepCardProps) => {
 export const StepsSection = () => {
     return (
         <section className="w-full bg-secondary py-16 md:py-24">
-            <div className="mx-auto max-w-300 px-4 sm:px-6 flex flex-col items-center gap-10 md:gap-16">
+            <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col items-center gap-10 md:gap-16">
                 {/* Badge */}
                 <div className="px-6 py-2 border border-primary rounded-full">
                     <span className="text-sm md:text-base font-medium uppercase tracking-wider text-primary">Ready to go in 4</span>

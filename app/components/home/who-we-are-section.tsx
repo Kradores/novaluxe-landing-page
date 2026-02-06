@@ -4,11 +4,12 @@ import { Logo } from "~/components/icons";
 import { Button } from "~/components/ui/button";
 import PageTitle from "~/components/common/page-title";
 import { LazyVideo } from "~/components/common/lazy-video";
+import { navLinks } from "~/lib/site";
 
 export const WhoWeAreSection = () => {
   return (
     <section className="bg-background py-16 md:py-24 lg:py-32">
-      <div className="container mx-auto px-6 lg:px-12">
+      <div className="container mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="flex flex-col items-start text-left order-1">
             <PageTitle className="text-left text-secondary mb-6 lg:mb-8">
@@ -21,10 +22,10 @@ export const WhoWeAreSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild variant="default">
-                <Link to="/contact">Get a Quote</Link>
+                <Link to={navLinks.contact}>Get a Quote</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link to="/about" className="flex items-center gap-2">
+                <Link to={navLinks.about} className="flex items-center gap-2">
                   Read More
                   <ArrowRight className="size-4" />
                 </Link>
@@ -37,7 +38,7 @@ export const WhoWeAreSection = () => {
               <Logo 
                 width={600} 
                 height={600} 
-                fill="var(--muted)" 
+                fill="var(--muted)"
                 className="w-full h-auto"
               />
               <div className="absolute top-[46.6%] left-[49.5%] -translate-x-1/2 -translate-y-1/2 w-[35%] aspect-square rounded-full overflow-hidden">

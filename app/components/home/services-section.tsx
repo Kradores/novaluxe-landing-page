@@ -58,7 +58,7 @@ const services = [
 export const ServicesSection = () => {
   return (
     <section className="w-full bg-background py-16 md:py-24">
-      <div className="mx-auto max-w-300 px-4 sm:px-6 flex flex-col gap-8 md:gap-12">
+      <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col gap-8 md:gap-12">
         <PageTitle className="text-secondary">Our Reliable Services</PageTitle>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">

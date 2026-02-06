@@ -49,7 +49,7 @@ export const WhatsNextSection = () => {
 
   return (
     <section className="w-full bg-background pt-16 md:pt-24 lg:pt-32">
-      <div className="mx-auto max-w-300 px-4 sm:px-6">
+      <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           <div className="flex flex-col gap-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium uppercase tracking-wider text-secondary">

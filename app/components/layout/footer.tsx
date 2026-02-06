@@ -19,18 +19,13 @@ const socialLinks = [
 export const Footer = () => {
   return (
     <footer className="w-full bg-secondary pt-20 md:pt-22.5 lg:pt-35 pb-8 md:pb-10 lg:pb-12">
-      <div className="mx-auto max-w-300 px-4 sm:px-6">
-        {/* Top Section - Logo, Tagline, Social */}
+      <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="flex flex-col gap-6 mb-8">
-          {/* Logo */}
-          <FooterLogo width={180} height={38} className="w-35 md:w-40 lg:w-45 h-auto" />
-
-          {/* Tagline */}
+          <FooterLogo className="w-35 md:w-40 lg:w-45 h-auto" />
           <p className="text-secondary-foreground/70 text-sm md:text-base italic max-w-md">
             Your trusted partner in Electrical & Construction Solutions
           </p>
 
-          {/* Social Icons */}
           <div className="flex items-center gap-3">
             {socialLinks.map((social) => (
               <a
@@ -47,12 +42,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Separator */}
         <div className="border-t border-secondary-foreground/20 my-6" />
 
-        {/* Bottom Section - Nav Links & Copyright */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-          {/* Navigation Links */}
           <nav>
             <ul className="flex flex-wrap items-center gap-6 lg:gap-8">
               {navItems.map((item) => (
@@ -69,7 +61,6 @@ export const Footer = () => {
             </ul>
           </nav>
 
-          {/* Copyright */}
           <p className="text-sm text-secondary-foreground/60">
             © 2025 Novaluxe Dynamics S.L. All rights Reserved
           </p>
