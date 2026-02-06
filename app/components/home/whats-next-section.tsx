@@ -76,8 +76,8 @@ export const WhatsNextSection = () => {
 
           <div className="relative -mb-10 md:-mb-12.5 lg:-mb-25">
             <div className="relative bg-orange-glow rounded-3xl p-6 md:p-8 lg:p-10 overflow-hidden">
-              <div className="absolute bottom-0 right-0 opacity-60 pointer-events-none">
-                <LogoCorner width={268} height={286} />
+              <div className="absolute bottom-0 right-0 translate-[45%] pointer-events-none">
+                <LogoCorner width={456} height={505} />
               </div>
 
               <h3 className="text-xl md:text-2xl font-bold uppercase tracking-wider text-primary-foreground mb-6 md:mb-8">

@@ -1,3 +1,5 @@
+import { Facebook, Instagram, Linkedin, Whatsapp } from "~/components/icons";
+
 export const navLinks = {
   home: "/",
   services: "/services",
@@ -15,3 +17,10 @@ export const navItems = [
 ];
 
 export const CONTACT_PHONE = "+34 8977 876667";
+
+export const socialLinks = [
+  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61556946033798", label: "Facebook" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/nicolai-cojocari-ab8663373/", label: "LinkedIn" },
+  { icon: Whatsapp, href: "#", label: "WhatsApp" },
+];

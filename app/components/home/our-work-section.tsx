@@ -76,14 +76,10 @@ export const OurWorkSection = () => {
   }, [api]);
 
   return (
-    <section className="bg-secondary py-16 md:py-24 lg:py-32 overflow-hidden">
-      <div className="relative mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
-        {/* Blurred circle decorations */}
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full bg-primary/20 blur-3xl -translate-x-1/4" />
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full bg-primary/20 blur-3xl translate-x-1/4" />
-
-        <div className="container mx-auto px-6 lg:px-12 relative z-10">
-          <div className="text-center mb-12 md:mb-16">
+    <section className="bg-secondary py-16 pb-30 md:py-24 lg:py-32 overflow-hidden">
+      <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
+        <div className="mx-auto relative z-10">
+          <div className="text-center mb-4 md:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
               <span className="text-secondary-foreground">Our Work, Their</span>
               <br />
@@ -91,24 +87,9 @@ export const OurWorkSection = () => {
             </h2>
           </div>
 
-          <div className="relative flex items-center justify-center">
-            <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/4 lg:translate-x-0 z-0">
-              <Quotes
-                width={150}
-                height={120}
-                className="lg:w-50 lg:h-40 opacity-80"
-              />
-            </div>
-
-            <div className="md:hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full z-0">
-              <Quotes
-                width={100}
-                height={80}
-                className="opacity-80"
-              />
-            </div>
-
-            <div className="w-full max-w-3xl mx-auto px-4 md:px-16 lg:px-24">
+          <div className="flex flex-col md:flex-row items-center justify-center">
+            <LeftQuote className="w-30 h-23 md:w-40 md:h-31 lg:w-50 lg:h-40" />
+            <div className="w-full max-w-full md:max-w-100 lg:max-w-xl xl:max-w-2xl mx-auto z-3">
               <Carousel
                 setApi={setApi}
                 opts={{
@@ -136,27 +117,10 @@ export const OurWorkSection = () => {
                 </CarouselContent>
               </Carousel>
             </div>
-
-            <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 lg:translate-x-0 z-0">
-              <Quotes
-                width={150}
-                height={120}
-                flipped
-                className="lg:w-50 lg:h-40 opacity-80"
-              />
-            </div>
-
-            <div className="md:hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full z-0">
-              <Quotes
-                width={100}
-                height={80}
-                flipped
-                className="opacity-80"
-              />
-            </div>
+            <RightQuote className="w-30 h-23 md:w-40 md:h-31 lg:w-50 lg:h-40" />
           </div>
 
-          <div className="flex items-center justify-center gap-4 mt-16 md:mt-12">
+          <div className="hidden md:flex items-center justify-center gap-4 mt-4">
             <Button
               variant="outline"
               size="icon"
@@ -199,3 +163,29 @@ export const OurWorkSection = () => {
     </section>
   );
 };
+
+
+const LeftQuote = ({ className }: { className?: string }) => {
+  return (
+    <div className={cn("relative overflow-hidden", className)}>
+      <Quotes
+        className="w-full h-full opacity-80"
+      />
+      <img src="/images/ellipse-lg.png" loading="lazy" className="absolute max-w-none size-100 md:size-150 left-1/2 top-1/2 -translate-x-[10%] lg:-translate-x-[15%] -translate-y-[50%] object-cover" />
+      <img src="/images/ellipse-sm.png" loading="lazy" className="absolute max-w-none size-50 md:size-75 left-1/2 top-1/2 -translate-x-[1%] lg:translate-x-[3%] -translate-y-[30%] object-cover" />
+    </div>
+  )
+};
+
+const RightQuote = ({ className }: { className?: string }) => {
+  return (
+    <div className={cn("relative overflow-hidden", className)}>
+        <Quotes
+          flipped
+          className="w-full h-full opacity-80"
+        />
+      <img src="/images/ellipse-lg.png" loading="lazy" className="absolute max-w-none size-100 md:size-150 left-1/2 top-1/2 -translate-x-[90%] lg:-translate-x-[85%] -translate-y-[50%] object-cover" />
+      <img src="/images/ellipse-sm.png" loading="lazy" className="absolute max-w-none size-50 md:size-75 left-1/2 top-1/2 -translate-x-[95%] lg:-translate-x-full -translate-y-[30%] object-cover" />
+    </div>
+  );
+}

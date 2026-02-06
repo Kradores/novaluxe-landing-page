@@ -1,20 +1,6 @@
 import { NavLink } from "~/components/nav-link";
-import { Facebook, Instagram, Linkedin, Whatsapp, FooterLogo } from "~/components/icons";
-
-const navItems = [
-  { to: "/", label: "Home" },
-  { to: "/services", label: "Services" },
-  { to: "/projects", label: "Projects" },
-  { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
-];
-
-const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61556946033798", label: "Facebook" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/nicolai-cojocari-ab8663373/", label: "LinkedIn" },
-  { icon: Whatsapp, href: "#", label: "WhatsApp" },
-];
+import { FooterLogo } from "~/components/icons";
+import { navItems, socialLinks } from "~/lib/site";
 
 export const Footer = () => {
   return (
@@ -33,10 +19,10 @@ export const Footer = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 rounded-full border border-primary flex items-center justify-center text-primary transition-colors hover:bg-primary/10"
+                className="flex items-center justify-center text-primary transition-colors hover:text-primary/10"
                 aria-label={social.label}
               >
-                <social.icon className="w-8 h-8" />
+                <social.icon className="w-8 h-8 hover:opacity-75" />
               </a>
             ))}
           </div>
