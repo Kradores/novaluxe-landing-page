@@ -1,6 +1,9 @@
 import PageTitle from "~/components/common/page-title";
 import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
+import { cn } from "~/lib/utils";
+import { m, useAnimate, usePresence } from "motion/react";
+import { useEffect, useState } from "react";
 
 interface ServiceCardProps {
   image: string;
@@ -9,15 +12,41 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [scope, animate] = useAnimate()
+
+  useEffect(() => {
+    if (isHovered) {
+      const enterAnimation = () => {
+        animate(scope.current, { backgroundColor: "var(--secondary)" }, { duration: 0.5 })
+        animate("div#btn-overlay", { opacity: 1 }, { duration: 0.5 });
+      }
+      enterAnimation()
+
+    } else {
+      const exitAnimation = () => {
+        animate(scope.current, { backgroundColor: "var(--card)" }, { duration: 0.5 })
+        animate("div#btn-overlay", { opacity: 0 }, { duration: 0.5 });
+      }
+
+      exitAnimation()
+    }
+  }, [isHovered]);
+
   return (
-    <div className="group flex flex-col gap-4 md:gap-6 bg-card rounded-3xl p-4 md:p-6 transition-all duration-500 hover:bg-secondary">
+    <div ref={scope} className={cn("group flex flex-col gap-4 md:gap-6 bg-card rounded-3xl p-4 md:p-6")}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onTouchStart={() => setIsHovered(true)}
+      onTouchMove={() => setIsHovered(false)}
+    >
       <div className="relative overflow-hidden rounded-2xl">
         <img
           src={image}
           alt={title}
           className="w-full h-62.5 sm:h-75 md:h-87.5 object-cover transition-all duration-500"
         />
-        <div className="absolute inset-0 bg-secondary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+        <div id="btn-overlay" className={"absolute inset-0 bg-secondary/50 flex flex-col justify-center items-center p-4 md:p-6 opacity-0"}>
           <div className="group-btn bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full hover:shadow-lg hover:scale-102 transition-all duration-500 ease-in-out">
             <Button
               asChild
@@ -29,11 +58,11 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
         </div>
       </div>
 
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-medium uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-500">
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-medium uppercase tracking-wider text-foreground-dark group-hover:text-primary transition-colors duration-500">
         {title}
       </h3>
 
-      <p className="text-sm md:text-base text-muted-foreground group-hover:text-secondary-foreground transition-colors duration-500">
+      <p className="text-sm md:text-base text-foreground group-hover:text-secondary-foreground transition-colors duration-500">
         {description}
       </p>
     </div>

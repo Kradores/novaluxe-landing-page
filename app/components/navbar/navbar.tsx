@@ -18,10 +18,10 @@ export function Navbar({ className }: { className?: string }) {
           <DesktopNav />
 
           <div className="flex items-center gap-4">
+            <LanguageSwitcher />
             <span className="hidden lg:block text-sm font-medium text-primary-foreground hover:text-primary-hover">
               {CONTACT_PHONE}
             </span>
-            <LanguageSwitcher />
             <MobileNav />
           </div>
         </div>

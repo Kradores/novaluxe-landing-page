@@ -16,7 +16,7 @@ export const WhoWeAreSection = () => {
               Who We Are
             </PageTitle>
             
-            <p className="text-foreground text-base md:text-lg leading-relaxed mb-8 max-w-xl">
+            <p className="text-foreground text-base md:text-lg leading-relaxed mb-8 max-w-full lg:max-w-xl">
               We are a B2B technical partner specializing in electrical installations and photovoltaic systems. Founded in 2024, we support companies across Europe with safe, efficient, and high-quality solar solutions. Backed by a team with over 15 years of industry experience, we deliver reliable, results-driven projects that support the transition to clean, sustainable energy through advanced technology and professional execution.
             </p>
             
@@ -34,7 +34,7 @@ export const WhoWeAreSection = () => {
           </div>
 
           <div className="flex justify-center lg:justify-end order-2">
-            <div className="relative w-full max-w-75 md:max-w-100 lg:max-w-125 xl:max-w-150">
+            <div className="relative w-full max-w-full lg:max-w-125 xl:max-w-150">
               <Logo 
                 width={600} 
                 height={600} 
