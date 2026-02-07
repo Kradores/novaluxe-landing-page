@@ -1,4 +1,4 @@
-import { NavLink } from "~/components/nav-link";
+import { NavLink } from "~/components/common/nav-link";
 import { navItems } from "~/lib/site";
 
 export function DesktopNav() {

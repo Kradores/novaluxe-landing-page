@@ -1,4 +1,4 @@
-import { NavLink } from "~/components/nav-link";
+import { NavLink } from "~/components/common/nav-link";
 import { FooterLogo } from "~/components/icons";
 import { navItems, socialLinks } from "~/lib/site";
 

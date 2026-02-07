@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import { NavLink } from "~/components/nav-link";
+import { NavLink } from "~/components/common/nav-link";
 import { Button } from "~/components/ui/button";
 import {
   Sheet,

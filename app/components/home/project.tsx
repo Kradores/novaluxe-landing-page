@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { NavLink } from "../nav-link";
+import { NavLink } from "../common/nav-link";
 import { navLinks } from "~/lib/site";
 import { overlayVariants } from "./projects-section.data";
 import { m, type Variants } from "motion/react";

@@ -1,5 +1,5 @@
 import { cn } from "~/lib/utils";
-import { NavLink } from "../nav-link";
+import { NavLink } from "../common/nav-link";
 import { navLinks } from "~/lib/site";
 import { ArrowUpRight } from "lucide-react";
 

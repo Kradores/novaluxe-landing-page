@@ -11,7 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import { Spinner } from "./components/ui/spinner";
 import { domAnimation, LazyMotion } from "motion/react";
-import { Navbar } from "./components/navbar/navbar";
+import { Navbar } from "./components/layout/navbar/navbar";
 import { Footer } from "./components/layout/footer";
 
 export const links: Route.LinksFunction = () => [

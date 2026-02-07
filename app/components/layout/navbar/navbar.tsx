@@ -2,7 +2,7 @@ import { Logo } from "~/components/icons";
 import { DesktopNav } from "./desktop-navbar";
 import { MobileNav } from "./mobile-navbar";
 import { LanguageSwitcher } from "./language-switcher";
-import { NavLink } from "~/components/nav-link";
+import { NavLink } from "~/components/common/nav-link";
 import { CONTACT_PHONE, navLinks } from "~/lib/site";
 import { cn } from "~/lib/utils";
 
