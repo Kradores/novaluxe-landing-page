@@ -10,8 +10,8 @@ import { WhatsNextSection } from "~/components/home/whats-next-section";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Novaluxe Dynamics SRL | We do the hard work" },
+    { name: "description", content: "Some cool and inspiring description about our company and services, use your imagination!" },
   ];
 }
 
