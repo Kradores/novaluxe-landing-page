@@ -11,15 +11,15 @@ export function Navbar({ className }: { className?: string }) {
     <header className={cn("w-full h-fit absolute top-0", className)}>
       <div className="mx-auto max-w-300 px-4 sm:px-6">
         <div className="flex items-center justify-between py-6">
-          <NavLink to={navLinks.home} className="shrink-0" aria-label="Home">
-            <Logo className="h-16 w-16 fill-background mr-20" />
+          <NavLink to={navLinks.home} className="shrink-0 lg:mr-43" aria-label="Home">
+            <Logo className="h-16 w-16 fill-background" />
           </NavLink>
 
           <DesktopNav />
 
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <span className="hidden lg:block font-medium text-primary-foreground hover:text-primary-hover">
+            <span className="hidden lg:block font-medium text-nowrap text-primary-foreground hover:text-primary-hover">
               {CONTACT_PHONE}
             </span>
             <MobileNav />
