@@ -38,7 +38,6 @@ export const Footer = () => {
                   <NavLink
                     to={item.to}
                     className="text-sm font-medium text-secondary-foreground transition-colors hover:text-primary-hover"
-                    activeClassName="text-primary-hover"
                   >
                     {item.label}
                   </NavLink>

@@ -10,7 +10,6 @@ export function DesktopNav() {
             <NavLink
               to={item.to}
               className="font-medium text-secondary-foreground transition-colors hover:text-primary-hover"
-              activeClassName="text-primary-hover"
             >
               {item.label}
             </NavLink>
