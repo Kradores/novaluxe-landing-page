@@ -10,8 +10,8 @@ const brands: { name: string; src: string }[] = [
 
 const TrustedBySection = () => {
   return (
-    <section className="bg-secondary py-12 -mt-45 md:-mt-50 3xl:-mt-40 4xl:-mt-30 5xl:-mt-13 6xl:mt-0">
-      <h2 className="text-center text-secondary-foreground text-sm md:text-lg xl:text-xl font-medium tracking-wider mb-8 lg:mb-12">
+    <section className="bg-secondary py-12 6xl:mt-0">
+      <h2 className="text-center text-foreground-light text-sm lg:text-xl font-medium tracking-wider mb-8 lg:mb-12">
         Trusted by industry leaders
       </h2>
 

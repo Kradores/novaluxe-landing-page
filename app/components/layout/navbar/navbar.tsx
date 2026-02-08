@@ -19,7 +19,7 @@ export function Navbar({ className }: { className?: string }) {
 
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <span className="hidden lg:block text-sm font-medium text-primary-foreground hover:text-primary-hover">
+            <span className="hidden lg:block font-medium text-primary-foreground hover:text-primary-hover">
               {CONTACT_PHONE}
             </span>
             <MobileNav />

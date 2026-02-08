@@ -18,7 +18,7 @@ export function LanguageSwitcher() {
       <DropdownMenuTrigger asChild className="text-secondary-foreground transition-colors hover:text-primary-hover rounded-full">
         <Button
           variant="ghost"
-          className="flex items-center gap-1 px-2 text-sm font-medium"
+          className="flex items-center gap-1 px-2 text-base font-medium"
           aria-label="Select language"
         >
           {language}
@@ -30,7 +30,7 @@ export function LanguageSwitcher() {
           <DropdownMenuItem
             key={lang}
             onClick={() => setLanguage(lang)}
-            className="transition-colors hover:text-primary-hover"
+            className="transition-colors text-base hover:text-primary-hover"
           >
             {lang}
           </DropdownMenuItem>

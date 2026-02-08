@@ -29,6 +29,7 @@ body {
   --color-foreground: var(--foreground);
   --color-background-dark: var(--background-dark);
   --color-foreground-dark: var(--foreground-dark);
+  --color-foreground-light: var(--foreground-light);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
@@ -87,6 +88,7 @@ body {
   --foreground: hsl(211 54% 26%);
   --background-dark: hsl(214 79% 7%);
   --foreground-dark: hsla(214, 81%, 10%, 1);
+  --foreground-light: hsla(212, 38%, 69%, 1);
   --card: hsl(0 0% 100%);
   --card-foreground: hsl(211 54% 26%);
   --popover: oklch(1 0 0);

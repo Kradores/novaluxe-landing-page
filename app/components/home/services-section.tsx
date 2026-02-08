@@ -2,7 +2,7 @@ import PageTitle from "~/components/common/page-title";
 import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
 import { cn } from "~/lib/utils";
-import { m, useAnimate, usePresence } from "motion/react";
+import { useAnimate } from "motion/react";
 import { useEffect, useState } from "react";
 
 interface ServiceCardProps {
@@ -18,15 +18,19 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
   useEffect(() => {
     if (isHovered) {
       const enterAnimation = () => {
-        animate(scope.current, { backgroundColor: "var(--secondary)" }, { duration: 0.5 })
+        animate(scope.current, { backgroundColor: "var(--secondary)" }, { duration: 0.5 });
         animate("div#btn-overlay", { opacity: 1 }, { duration: 0.5 });
+        animate("h3", { color: "var(--primary)" }, { duration: 0.5 });
+        animate("p", { color: "var(--secondary-foreground)" }, { duration: 0.5 });
       }
       enterAnimation()
 
     } else {
       const exitAnimation = () => {
-        animate(scope.current, { backgroundColor: "var(--card)" }, { duration: 0.5 })
+        animate(scope.current, { backgroundColor: "var(--card)" }, { duration: 0.5 });
         animate("div#btn-overlay", { opacity: 0 }, { duration: 0.5 });
+        animate("h3", { color: "var(--foreground-dark)" }, { duration: 0.5 });
+        animate("p", { color: "var(--foreground)" }, { duration: 0.5 });
       }
 
       exitAnimation()
@@ -47,10 +51,11 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
           className="w-full h-62.5 sm:h-75 md:h-87.5 object-cover transition-all duration-500"
         />
         <div id="btn-overlay" className={"absolute inset-0 bg-secondary/50 flex flex-col justify-center items-center p-4 md:p-6 opacity-0"}>
-          <div className="group-btn bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full hover:shadow-lg hover:scale-102 transition-all duration-500 ease-in-out">
+          <img src="/images/ellipse-btn.png" loading="lazy" className="absolute max-w-122 w-full h-auto left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover" />
+          <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full hover:shadow-lg">
             <Button
               asChild
-              className="group-btn-hover:scale-102 group-btn-hover:bg-orange-glow"
+              className="group-hover:bg-orange-glow"
             >
               <Link to="/contact">Get a Quote</Link>
             </Button>
@@ -58,11 +63,11 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
         </div>
       </div>
 
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-medium uppercase tracking-wider text-foreground-dark group-hover:text-primary transition-colors duration-500">
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-medium uppercase tracking-wider text-foreground-dark">
         {title}
       </h3>
 
-      <p className="text-sm md:text-base text-foreground group-hover:text-secondary-foreground transition-colors duration-500">
+      <p className="text-sm md:text-base text-foreground">
         {description}
       </p>
     </div>

@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="flex flex-col gap-6 mb-8">
           <FooterLogo className="w-35 md:w-40 lg:w-45 h-auto" />
-          <p className="text-secondary-foreground/70 text-sm md:text-base italic max-w-md">
+          <p className="text-secondary-foreground/70 text-sm md:text-base max-w-md">
             Your trusted partner in Electrical & Construction Solutions
           </p>
 
@@ -47,7 +47,7 @@ export const Footer = () => {
             </ul>
           </nav>
 
-          <p className="text-sm text-secondary-foreground/60">
+          <p className="text-sm md:text-base text-secondary-foreground/70">
             © 2025 Novaluxe Dynamics S.L. All rights Reserved
           </p>
         </div>

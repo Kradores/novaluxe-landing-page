@@ -78,16 +78,16 @@ export const OurWorkSection = () => {
   return (
     <section className="bg-secondary py-16 pb-30 md:py-24 lg:py-32 overflow-hidden">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
-        <div className="mx-auto relative z-10">
-          <div className="text-center mb-4 md:mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
+        <div className="mx-auto z-10">
+          <div className="text-center mb-4 md:mb-7 lg:mb-12">
+            <h2 className="text-2xl md:text-5xl lg:text-6xl font-medium uppercase tracking-wide">
               <span className="text-secondary-foreground">Our Work, Their</span>
               <br />
-              <span className="text-primary">Success</span>
+              <span className="text-foreground-light">Success</span>
             </h2>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-center">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-y-3 gap-x-2">
             <LeftQuote className="w-30 h-23 md:w-40 md:h-31 lg:w-50 lg:h-40" />
             <div className="w-full max-w-full md:max-w-100 lg:max-w-xl xl:max-w-2xl mx-auto z-3">
               <Carousel
@@ -101,15 +101,12 @@ export const OurWorkSection = () => {
                 <CarouselContent>
                   {testimonials.map((testimonial, index) => (
                     <CarouselItem key={index}>
-                      <div className="text-center py-8 md:py-12">
+                      <div>
                         <p className="text-secondary-foreground text-base md:text-lg lg:text-xl leading-relaxed mb-4">
-                          "{testimonial.quote}"
+                          "{testimonial.quote} {testimonial.highlight}"
                         </p>
-                        <p className="text-secondary-foreground font-bold text-lg md:text-xl mb-6">
-                          "{testimonial.highlight}"
-                        </p>
-                        <p className="text-secondary-foreground/70 italic text-sm md:text-base">
-                          — {testimonial.author}, {testimonial.title}, {testimonial.company} ({testimonial.location})
+                        <p className="text-foreground-light text-lg">
+                          {testimonial.author}, {testimonial.title}, {testimonial.company} ({testimonial.location})
                         </p>
                       </div>
                     </CarouselItem>
@@ -125,7 +122,7 @@ export const OurWorkSection = () => {
               variant="outline"
               size="icon"
               onClick={scrollPrev}
-              className="h-10 w-10 rounded-full border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10 hover:border-secondary-foreground/50"
+              className="h-10 w-10 rounded-full border-foreground text-foreground hover:border-foreground-light hover:text-foreground-light"
             >
               <ArrowLeft className="h-4 w-4" />
               <span className="sr-only">Previous testimonial</span>
@@ -139,8 +136,8 @@ export const OurWorkSection = () => {
                   className={cn(
                     "w-3 h-3 rounded-full transition-colors",
                     current === i
-                      ? "bg-secondary-foreground"
-                      : "border border-secondary-foreground/50 hover:border-secondary-foreground"
+                      ? "bg-foreground-light"
+                      : "bg-foreground hover:bg-foreground-light"
                   )}
                 >
                   <span className="sr-only">Go to slide {i + 1}</span>
@@ -152,7 +149,7 @@ export const OurWorkSection = () => {
               variant="outline"
               size="icon"
               onClick={scrollNext}
-              className="h-10 w-10 rounded-full border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10 hover:border-secondary-foreground/50"
+              className="h-10 w-10 rounded-full border-foreground text-foreground hover:border-foreground-light hover:text-foreground-light"
             >
               <ArrowRight className="h-4 w-4" />
               <span className="sr-only">Next testimonial</span>

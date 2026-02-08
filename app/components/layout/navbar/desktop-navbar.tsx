@@ -9,7 +9,7 @@ export function DesktopNav() {
           <li key={item.to}>
             <NavLink
               to={item.to}
-              className="text-sm font-medium text-secondary-foreground transition-colors hover:text-primary-hover"
+              className="font-medium text-secondary-foreground transition-colors hover:text-primary-hover"
               activeClassName="text-primary-hover"
             >
               {item.label}

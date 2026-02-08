@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
-import { Logo } from "~/components/icons";
+import { LogoGray } from "~/components/icons";
 import { Button } from "~/components/ui/button";
 import PageTitle from "~/components/common/page-title";
 import { LazyVideo } from "~/components/common/lazy-video";
@@ -20,7 +20,7 @@ export const WhoWeAreSection = () => {
               We are a B2B technical partner specializing in electrical installations and photovoltaic systems. Founded in 2024, we support companies across Europe with safe, efficient, and high-quality solar solutions. Backed by a team with over 15 years of industry experience, we deliver reliable, results-driven projects that support the transition to clean, sustainable energy through advanced technology and professional execution.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-row gap-4">
               <Button asChild variant="default">
                 <Link to={navLinks.contact}>Get a Quote</Link>
               </Button>
@@ -35,13 +35,10 @@ export const WhoWeAreSection = () => {
 
           <div className="flex justify-center lg:justify-end order-2">
             <div className="relative w-full max-w-full lg:max-w-125 xl:max-w-150">
-              <Logo 
-                width={600} 
-                height={600} 
-                fill="var(--muted)"
+              <LogoGray 
                 className="w-full h-auto"
               />
-              <div className="absolute top-[46.6%] left-[49.5%] -translate-x-1/2 -translate-y-1/2 w-[35%] aspect-square rounded-full overflow-hidden">
+              <div className="absolute top-[49%] left-[49.75%] -translate-x-1/2 -translate-y-1/2 w-[42%] aspect-square rounded-full overflow-hidden">
                 <LazyVideo
                   src={"/videos/who-we-are.mp4"}
                   type="video/mp4"

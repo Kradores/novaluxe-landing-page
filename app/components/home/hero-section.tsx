@@ -9,7 +9,7 @@ import { cn } from "~/lib/utils";
 
 const HeroSection = ({ className }: { className?: string }) => {
   return (
-    <section className={cn("overflow-hidden gap-7 pt-40 md:pt-33 lg:pt-43 xl:pt-50 pb-90 md:pb-90 lg:pb-80 px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col", className)}>
+    <section className={cn("overflow-hidden gap-7 pt-40 md:pt-33 lg:pt-43 xl:pt-50 pb-14 md:pb-57 lg:pb-20 px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col", className)}>
       <PageTitle className="text-shadow-md">WE DO THE HARD WORK</PageTitle>
       <div className="grid justify-stretch gap-4 md:grid-cols-2 lg:grid-cols-3 text-shadow-md">
         <div className="flex pt-10 h-fit">
@@ -21,10 +21,10 @@ const HeroSection = ({ className }: { className?: string }) => {
 
         <div className="flex flex-col items-center gap-5 md:col-start-1 lg:col-start-2 md:row-start-2 lg:row-start-1">
           <p className="text-center text-lg font-medium text-secondary-foreground md:text-xl">Want a custom solution?</p>
-          <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full hover:shadow-lg hover:scale-102 transition-all duration-500 ease-in-out">
+          <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full hover:shadow-lg">
             <Button
               asChild
-              className="group-hover:scale-102 group-hover:bg-orange-glow"
+              className="group-hover:bg-orange-glow"
             >
               <Link to="/contact">Get a Quote</Link>
             </Button>
