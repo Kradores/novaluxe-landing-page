@@ -10,7 +10,7 @@ const ServicesPageHeader = () => {
       </PageTitle>
       <div className="space-y-5 mx-auto">
         <p className="leading-relaxed text-secondary-foreground font-medium text-center">Want a custom solution?</p>
-        <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full hover:shadow-lg">
+        <div className="group w-fit bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full hover:shadow-lg">
           <Button
             asChild
             className="group-hover:bg-orange-glow"
