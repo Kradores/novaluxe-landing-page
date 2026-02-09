@@ -7,15 +7,18 @@ import {
 } from "~/components/ui/dropdown-menu";
 import { Button } from "~/components/ui/button";
 import { useState } from "react";
+import { useLocation } from "react-router";
+import { cn, isProjectPage } from "~/lib/utils";
 
 const languages = ["EN", "ES", "RO"];
 
 export function LanguageSwitcher() {
   const [language, setLanguage] = useState("EN");
+  const location = useLocation();
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild className="text-secondary-foreground transition-colors hover:text-primary-hover rounded-full">
+      <DropdownMenuTrigger asChild className={cn("text-secondary-foreground transition-colors hover:text-primary-hover rounded-full", isProjectPage(location.pathname) && "text-foreground")}>
         <Button
           variant="ghost"
           className="flex items-center gap-1 px-2 text-base font-medium"

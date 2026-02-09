@@ -1,5 +1,5 @@
 import { NavLink } from "~/components/common/nav-link";
-import { FooterLogo } from "~/components/icons";
+import { LogoFooter } from "~/components/icons";
 import { navItems, socialLinks } from "~/lib/site";
 
 export const Footer = () => {
@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="w-full bg-secondary pt-20 md:pt-22.5 lg:pt-35 pb-8 md:pb-10 lg:pb-12">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="flex flex-col gap-6 mb-8">
-          <FooterLogo className="w-35 md:w-40 lg:w-45 h-auto" />
+          <LogoFooter className="w-35 md:w-40 lg:w-45 h-auto" />
           <p className="text-secondary-foreground/70 text-sm md:text-base max-w-md">
             Your trusted partner in Electrical & Construction Solutions
           </p>

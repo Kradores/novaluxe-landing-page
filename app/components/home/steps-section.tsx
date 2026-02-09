@@ -47,7 +47,7 @@ const StepCard = ({ icon: Icon, title, description }: StepCardProps) => {
     );
 };
 
-export const StepsSection = () => {
+const StepsSection = () => {
     return (
         <section className="w-full bg-secondary py-16 md:py-24">
             <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col items-center gap-10 md:gap-16">
@@ -77,3 +77,5 @@ export const StepsSection = () => {
         </section>
     );
 };
+
+export default StepsSection;

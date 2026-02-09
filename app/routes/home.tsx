@@ -5,7 +5,7 @@ import ProjectsSection from "~/components/home/projects-section";
 import { OurWorkSection } from "~/components/home/our-work-section";
 import { ServicesSection } from "~/components/home/services-section";
 import { WhoWeAreSection } from "~/components/home/who-we-are-section";
-import { StepsSection } from "~/components/home/steps-section";
+import StepsSection from "~/components/home/steps-section";
 import { WhatsNextSection } from "~/components/home/whats-next-section";
 
 export function meta({ }: Route.MetaArgs) {
