@@ -38,7 +38,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
   }, [isHovered]);
 
   return (
-    <div ref={scope} className={cn("group flex flex-col gap-4 md:gap-6 bg-card rounded-3xl p-4 md:p-6")}
+    <div ref={scope} className={cn("group flex flex-col gap-4 md:gap-6 bg-card rounded-3xl p-4 md:p-6 shadow-sm/20")}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={() => setIsHovered(true)}

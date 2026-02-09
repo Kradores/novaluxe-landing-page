@@ -11,7 +11,7 @@ interface ServiceItemProps {
   reversed?: boolean;
 }
 
-const ServiceItem = ({
+const ServiceCard = ({
   title,
   description,
   features,
@@ -36,29 +36,27 @@ const ServiceItem = ({
         </div>
       </div>
 
-      <div className="w-full order-1 lg:order-0 p-3 md:p-6 lg:p-8 md:min-w-118">
-        <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-primary uppercase tracking-wide leading-tight">
+      <div className="w-full order-1 lg:order-0 p-3 md:p-6 lg:p-8 md:min-w-118 space-y-8">
+        <h2 className="text-3xl font-medium text-secondary uppercase tracking-wide leading-tight">
           {title}
         </h2>
-        <p className="mt-4 text-muted-foreground">{description}</p>
+        <p className="text-foreground">{description}</p>
 
-        <ul className="mt-6 space-y-3">
+        <ul className="space-y-3.5">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start gap-3">
-              <CheckCircle2 className="size-5 text-primary shrink-0 mt-0.5" />
-              <span className="text-primary font-medium">{feature}</span>
+              <CheckCircle2 className="size-5 text-background fill-primary shrink-0 mt-0.5" />
+              <span className="text-foreground font-medium">{feature}</span>
             </li>
           ))}
         </ul>
 
-        <div className="group bg-background/0 backdrop-blur-md border border-background/0 p-2 rounded-full hover:shadow-lg">
-          <Button
-            asChild
-            className="group-hover:bg-orange-glow"
-          >
-            <Link to="/contact">Get a Quote</Link>
-          </Button>
-        </div>
+        <Button
+          asChild
+          className="group-hover:bg-orange-glow"
+        >
+          <Link to="/contact">Get a Quote</Link>
+        </Button>
       </div>
     </div>
   );
@@ -99,11 +97,11 @@ const services = [
 
 const DetailedServicesSection = () => {
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-20 md:py-25 lg:py-30">
       <div className="mx-auto max-w-300 px-4 sm:px-6">
         <div className="space-y-20 lg:space-y-32">
           {services.map((service) => (
-            <ServiceItem
+            <ServiceCard
               key={service.title}
               {...service}
               reversed={service.reversed}

@@ -164,9 +164,9 @@ export const OurWorkSection = () => {
 
 const LeftQuote = ({ className }: { className?: string }) => {
   return (
-    <div className={cn("relative overflow-hidden", className)}>
+    <div className={cn("relative", className)}>
       <Quotes
-        className="w-full h-full opacity-80"
+        className="w-full h-full"
       />
       <img src="/images/ellipse-lg.png" loading="lazy" className="absolute max-w-none size-100 md:size-150 left-1/2 top-1/2 -translate-x-[10%] lg:-translate-x-[15%] -translate-y-[50%] object-cover" />
       <img src="/images/ellipse-sm.png" loading="lazy" className="absolute max-w-none size-50 md:size-75 left-1/2 top-1/2 -translate-x-[1%] lg:translate-x-[3%] -translate-y-[30%] object-cover" />
@@ -176,10 +176,10 @@ const LeftQuote = ({ className }: { className?: string }) => {
 
 const RightQuote = ({ className }: { className?: string }) => {
   return (
-    <div className={cn("relative overflow-hidden", className)}>
+    <div className={cn("relative", className)}>
         <Quotes
           flipped
-          className="w-full h-full opacity-80"
+          className="w-full h-full"
         />
       <img src="/images/ellipse-lg.png" loading="lazy" className="absolute max-w-none size-100 md:size-150 left-1/2 top-1/2 -translate-x-[90%] lg:-translate-x-[85%] -translate-y-[50%] object-cover" />
       <img src="/images/ellipse-sm.png" loading="lazy" className="absolute max-w-none size-50 md:size-75 left-1/2 top-1/2 -translate-x-[95%] lg:-translate-x-full -translate-y-[30%] object-cover" />
