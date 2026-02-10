@@ -3,8 +3,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: Alexandria;
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Alexandria-Bold.ttf") format("ttf");
+}
+
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+  --font-sans: "Alexandria", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -61,6 +69,10 @@ body {
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-footer: var(--background-dark);
+  --text-8xl: 5.375rem;
+  --text-7xl: 3.875rem;
+  --text-6xl: 3.5rem;
+  --text-5xl: 3rem;
   --text-4xl: 2.5rem;
   --text-3xl: 2rem;
   --text-2xl: 1.75rem;

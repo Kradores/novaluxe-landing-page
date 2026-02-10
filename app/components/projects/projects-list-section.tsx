@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
 import { projects } from "./projects.data";
+import SectionTitle from "../common/section-title";
 
 interface DateDisplayProps {
   date: Date;
@@ -15,16 +16,22 @@ const DateDisplay = ({
   const month = format(date, "MMM").toUpperCase();
   const year = format(date, "yyyy");
   return <div className="flex-row gap-2 flex items-center justify-center">
-    <span className="font-bold text-primary leading-none text-4xl md:text-[56px]">
-      {day}
-    </span>
+    <SectionTitle asChild size={"h2"} variant={"primary"}>
+      <span>
+        {day}
+      </span>
+    </SectionTitle>
     <div className="flex flex-col self-end">
-      <span className="text-[18px] font-medium text-foreground-dark uppercase tracking-wide leading-tight">
-        {month}
-      </span>
-      <span className="text-[18px] font-medium text-foreground-dark uppercase tracking-wide leading-tight">
-        {year}
-      </span>
+      <SectionTitle asChild size={"h8"} variant={"dark"} className="leading-tight">
+        <span>
+          {month}
+        </span>
+      </SectionTitle>
+      <SectionTitle asChild size={"h8"} variant={"dark"} className="leading-tight">
+        <span>
+          {year}
+        </span>
+      </SectionTitle>
     </div>
   </div>;
 };
@@ -48,9 +55,11 @@ const ProjectCard = ({
     </div>
 
     <div className="flex-1 space-y-4">
-      <h2 className="text-lg md:text-2xl font-medium text-foreground-dark uppercase tracking-wide">
-        {title}
-      </h2>
+      <SectionTitle asChild size={"h6"} variant={"dark"} className="text-left">
+        <h2>
+          {title}
+        </h2>
+      </SectionTitle>
       <p className="text-sm md:text-base text-foreground leading-relaxed max-w-2xl">
         {description}
       </p>

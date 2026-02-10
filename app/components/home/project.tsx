@@ -4,6 +4,7 @@ import { navLinks } from "~/lib/site";
 import { overlayVariants } from "./projects-section.data";
 import { m, type Variants } from "motion/react";
 import { cn } from "~/lib/utils";
+import SectionTitle from "../common/section-title";
 
 interface ProjectProps {
   title: string;
@@ -47,7 +48,9 @@ const Project = ({
         </NavLink>
 
         <div className="flex flex-col gap-2.5 text-shadow-lg">
-          <h3 className="text-sm lg:text-base font-medium text-background uppercase text-nowrap">{title}</h3>
+          <SectionTitle asChild size={"h9"} className="text-left text-nowrap">
+            <h3>{title}</h3>
+          </SectionTitle>
           <p className="text-sm lg:text-base font-medium text-background text-nowrap">{description}</p>
         </div>
       </m.div>

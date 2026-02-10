@@ -1,9 +1,9 @@
-import PageTitle from "~/components/common/page-title";
 import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
 import { cn } from "~/lib/utils";
 import { useAnimate } from "motion/react";
 import { useEffect, useState } from "react";
+import SectionTitle from "../common/section-title";
 
 interface ServiceCardProps {
   image: string;
@@ -38,7 +38,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
   }, [isHovered]);
 
   return (
-    <div ref={scope} className={cn("group flex flex-col gap-4 md:gap-6 bg-card rounded-3xl p-4 md:p-6 shadow-sm/20")}
+    <div ref={scope} className={cn("group flex flex-col gap-4 md:gap-6 bg-card rounded-3xl p-4 md:p-6 shadow-sm/4")}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={() => setIsHovered(true)}
@@ -63,9 +63,9 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
         </div>
       </div>
 
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-medium uppercase tracking-wider text-foreground-dark">
-        {title}
-      </h3>
+      <SectionTitle asChild size={"h5"} variant={"dark"} className="text-left">
+        <h3>{title}</h3>
+      </SectionTitle>
 
       <p className="text-sm md:text-base text-foreground">
         {description}
@@ -93,7 +93,7 @@ export const ServicesSection = () => {
   return (
     <section className="w-full bg-background py-16 md:py-24">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col gap-8 md:gap-12">
-        <PageTitle className="text-secondary">Our Reliable Services</PageTitle>
+        <SectionTitle asChild size={"h2"} variant={"dark"}><h2>Our Reliable Services</h2></SectionTitle>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
           {services.map((service, index) => (

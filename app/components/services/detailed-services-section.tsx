@@ -1,6 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router";
 import { Button } from "~/components/ui/button";
+import SectionTitle from "../common/section-title";
 
 interface ServiceItemProps {
   title: string;
@@ -21,7 +22,7 @@ const ServiceCard = ({
 }: ServiceItemProps) => {
   return (
     <div
-      className={`bg-card rounded-2xl flex flex-col shadow-sm/20 ${reversed ? "md:flex-row-reverse" : "md:flex-row"
+      className={`bg-card rounded-2xl flex flex-col shadow-sm/4 ${reversed ? "md:flex-row-reverse" : "md:flex-row"
         } gap-1 md:gap-2 lg:gap-8 items-stretch`}
     >
       <div className="order-2 lg:order-0">
@@ -37,9 +38,11 @@ const ServiceCard = ({
       </div>
 
       <div className="w-full order-1 lg:order-0 p-3 md:p-6 lg:p-8 md:min-w-118 space-y-8">
-        <h2 className="text-3xl font-medium text-secondary uppercase tracking-wide leading-tight">
-          {title}
-        </h2>
+        <SectionTitle asChild size={"h5"} variant={"dark"} className="text-left">
+          <h2>
+            {title}
+          </h2>
+        </SectionTitle>
         <p className="text-foreground">{description}</p>
 
         <ul className="space-y-3.5">

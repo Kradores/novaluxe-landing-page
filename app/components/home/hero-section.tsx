@@ -4,13 +4,13 @@ import worker2 from "/images/worker-2.webp";
 import worker3 from "/images/worker-3.webp";
 import { Link } from "react-router";
 import ImageFrame from "~/components/common/image-frame";
-import PageTitle from "~/components/common/page-title";
 import { cn } from "~/lib/utils";
+import SectionTitle from "~/components/common/section-title";
 
 const HeroSection = ({ className }: { className?: string }) => {
   return (
     <section className={cn("overflow-hidden gap-7 pt-40 md:pt-33 lg:pt-43 xl:pt-50 pb-14 md:pb-57 lg:pb-20 px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col", className)}>
-      <PageTitle className="text-shadow-md">WE DO THE HARD WORK</PageTitle>
+      <SectionTitle size={"h1"} className="text-shadow-md">WE DO THE HARD WORK</SectionTitle>
       <div className="grid justify-stretch gap-4 md:grid-cols-2 lg:grid-cols-3 text-shadow-md">
         <div className="flex pt-10 h-fit">
           <p className="leading-relaxed text-secondary-foreground font-medium text-center md:text-left">
@@ -39,15 +39,15 @@ const HeroSection = ({ className }: { className?: string }) => {
           </div>
 
           <div className="flex flex-col gap-1">
-            <span className="text-2xl font-medium text-secondary-foreground">+45</span>
+            <SectionTitle size={"h6"} className="text-left text-shadow-md text-2xl"><span>+45</span></SectionTitle>
             <span className="text-secondary-foreground">reliable workers</span>
           </div>
           <div className="flex flex-col gap-1 md:col-start-2 md:row-start-2 justify-self-end md:justify-self-start">
-            <span className="text-2xl font-medium text-secondary-foreground">+10</span>
+            <SectionTitle size={"h6"} className="text-left text-shadow-md text-2xl"><span>+10</span></SectionTitle>
             <span className="text-secondary-foreground">projects done</span>
           </div>
           <div className="flex flex-col gap-1 md:col-start-2 md:row-start-3">
-            <span className="text-2xl font-medium text-secondary-foreground">100%</span>
+            <SectionTitle size={"h6"} className="text-left text-shadow-md text-2xl"><span>100%</span></SectionTitle>
             <span className="text-secondary-foreground">success rate</span>
           </div>
         </div>

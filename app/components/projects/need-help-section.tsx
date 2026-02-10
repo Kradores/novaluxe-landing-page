@@ -1,6 +1,7 @@
 import { Button } from "~/components/ui/button";
 import { LogoProjects } from "~/components/icons";
 import { Link } from "react-router";
+import SectionTitle from "../common/section-title";
 
 const NeedHelpSection = () => {
   return (
@@ -10,11 +11,13 @@ const NeedHelpSection = () => {
       </div>
 
       <div className="relative z-10 mx-auto max-w-300 px-4 sm:px-6 text-center space-y-4">
-        <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wider text-primary-foreground">
-          Do You Need Help
-          <br />
-          With A Project?
-        </h2>
+        <SectionTitle asChild size={"h2"}>
+          <h2>
+            Do You Need Help
+            <br />
+            With A Project?
+          </h2>
+        </SectionTitle>
 
         <p className="text-primary-foreground/90 text-base md:text-lg">
           We will get back to you in 24 hours during the week days.

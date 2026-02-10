@@ -9,6 +9,7 @@ import {
   type CarouselApi,
 } from "~/components/ui/carousel";
 import { cn } from "~/lib/utils";
+import SectionTitle from "../common/section-title";
 
 const testimonials = [
   {
@@ -80,11 +81,13 @@ export const OurWorkSection = () => {
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="mx-auto">
           <div className="text-center mb-4 md:mb-7 lg:mb-12">
-            <h2 className="text-2xl md:text-5xl lg:text-6xl font-medium uppercase tracking-wide">
-              <span className="text-secondary-foreground">Our Work, Their</span>
-              <br />
-              <span className="text-foreground-light">Success</span>
-            </h2>
+            <SectionTitle size={"h2"}>
+              <h2>
+                <span className="text-secondary-foreground">Our Work, Their</span>
+                <br />
+                <span className="text-foreground-light">Success</span>
+              </h2>
+            </SectionTitle>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-y-3 gap-x-2">
@@ -177,10 +180,10 @@ const LeftQuote = ({ className }: { className?: string }) => {
 const RightQuote = ({ className }: { className?: string }) => {
   return (
     <div className={cn("relative", className)}>
-        <Quotes
-          flipped
-          className="w-full h-full"
-        />
+      <Quotes
+        flipped
+        className="w-full h-full"
+      />
       <img src="/images/ellipse-lg.png" loading="lazy" className="absolute max-w-none size-100 md:size-150 left-1/2 top-1/2 -translate-x-[90%] lg:-translate-x-[85%] -translate-y-[50%] object-cover" />
       <img src="/images/ellipse-sm.png" loading="lazy" className="absolute max-w-none size-50 md:size-75 left-1/2 top-1/2 -translate-x-[95%] lg:-translate-x-full -translate-y-[30%] object-cover" />
     </div>

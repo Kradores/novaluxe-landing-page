@@ -1,10 +1,9 @@
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
-import { LogoGray } from "~/components/icons";
 import { Button } from "~/components/ui/button";
-import PageTitle from "~/components/common/page-title";
 import { LazyVideo } from "~/components/common/lazy-video";
 import { navLinks } from "~/lib/site";
+import SectionTitle from "../common/section-title";
 
 export const WhoWeAreSection = () => {
   return (
@@ -12,9 +11,9 @@ export const WhoWeAreSection = () => {
       <div className="container mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="flex flex-col items-start text-left order-1">
-            <PageTitle className="text-left text-secondary mb-6 lg:mb-8">
+            <SectionTitle size={"h2"} variant={"dark"} className="text-left mb-4 md:mb-6 lg:mb-7">
               Who We Are
-            </PageTitle>
+            </SectionTitle>
             
             <p className="text-foreground text-base md:text-lg leading-relaxed mb-8 max-w-full lg:max-w-xl">
               We are a B2B technical partner specializing in electrical installations and photovoltaic systems. Founded in 2024, we support companies across Europe with safe, efficient, and high-quality solar solutions. Backed by a team with over 15 years of industry experience, we deliver reliable, results-driven projects that support the transition to clean, sustainable energy through advanced technology and professional execution.
@@ -35,7 +34,10 @@ export const WhoWeAreSection = () => {
 
           <div className="flex justify-center lg:justify-end order-2">
             <div className="relative w-full max-w-full lg:max-w-125 xl:max-w-150">
-              <LogoGray 
+              <img 
+                alt="logo Novaluxe"
+                src="/images/logo-video.webp"
+                loading="lazy"
                 className="w-full h-auto"
               />
               <div className="absolute top-[49%] left-[49.75%] -translate-x-1/2 -translate-y-1/2 w-[42%] aspect-square rounded-full overflow-hidden">

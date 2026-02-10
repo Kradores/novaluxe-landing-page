@@ -1,6 +1,7 @@
 import { Consultation, Proposal, Tech, Execution } from "~/components/icons";
 import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
+import SectionTitle from "../common/section-title";
 
 const steps = [
     {
@@ -37,11 +38,13 @@ const StepCard = ({ icon: Icon, title, description }: StepCardProps) => {
         <div className="flex flex-col items-center text-center gap-3">
             <div className="p-2 bg-secondary rounded-[24px] border border-foreground mb-2">
                 <div className="w-20.5 h-20.5 rounded-[20px] bg-foreground flex items-center justify-center shadow-md/70">
-                    <Icon width={40} height={40} className="md:w-12 md:h-12" />
+                    <Icon width={40} height={40} className="md:w-12 md:h-12" fill="var(--foreground-light)" />
                 </div>
             </div>
 
-            <h3 className="text-sm md:text-base font-medium uppercase tracking-wider text-secondary-foreground">{title}</h3>
+            <SectionTitle size={"h9"} asChild>
+                <h3>{title}</h3>
+            </SectionTitle>
             <p className="text-sm md:text-base text-foreground-light max-w-70">{description}</p>
         </div>
     );
@@ -55,9 +58,9 @@ const StepsSection = () => {
                     <span className="text-sm md:text-base font-medium uppercase tracking-wider text-primary">Ready to go in 4</span>
                 </div>
 
-                <h2 className="text-center text-3xl md:text-5xl lg:text-6xl font-medium uppercase tracking-wider text-secondary-foreground">
-                    Our Working Steps
-                </h2>
+                <SectionTitle size={"h2"} asChild>
+                    <h2>Our Working Steps</h2>
+                </SectionTitle>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8 lg:gap-6 w-full">
                     {steps.map((step, index) => (

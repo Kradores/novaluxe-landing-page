@@ -1,6 +1,8 @@
 import { Calendar, Settings, MapPin, ArrowDown } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { type Project } from "./projects.data";
+import SectionTitle from "../common/section-title";
+import { Execution, Proposal, Tech } from "../icons";
 
 interface InfoCardProps {
   icon: React.ReactNode;
@@ -11,11 +13,13 @@ interface InfoCardProps {
 const InfoCard = ({ icon, label, value }: InfoCardProps) => {
   return (
     <div className="flex flex-col items-center text-center space-y-2 p-4">
-      <div className="text-primary">{icon}</div>
-      <span className="text-xs font-medium text-primary uppercase tracking-wider">
-        {label}
-      </span>
-      <span className="text-sm text-foreground font-medium">{value}</span>
+      {icon}
+      <SectionTitle asChild size={"h9"} variant={"primary"}>
+        <span>
+          {label}
+        </span>
+      </SectionTitle>
+      <span className="text-sm md:text-base text-foreground font-medium">{value}</span>
     </div>
   );
 };
@@ -32,32 +36,34 @@ const ProjectTemplate = ({ project }: { project: Project }) => {
       </div>
 
       <div className="text-center space-y-2">
-        <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground uppercase tracking-wide">
-          {project.title}
-        </h1>
-        <p className="text-lg text-muted-foreground">{project.subtitle}</p>
+        <SectionTitle asChild size={"h2"} variant={"dark"}>
+          <h1>
+            {project.title}
+          </h1>
+        </SectionTitle>
+        <p className="text-sm md:text-base text-foreground">{project.subtitle}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
         <InfoCard
-          icon={<Calendar className="size-6" />}
+          icon={<Proposal className="size-10.5" fill="var(--primary)" />}
           label="Duration"
           value={project.duration}
         />
         <InfoCard
-          icon={<Settings className="size-6" />}
+          icon={<Execution className="size-10.5" fill="var(--primary)" />}
           label="Project Type"
           value={project.projectType}
         />
         <InfoCard
-          icon={<MapPin className="size-6" />}
+          icon={<Tech className="size-10.5" fill="var(--primary)" />}
           label="Location"
           value={project.location}
         />
       </div>
 
       <div className="max-w-3xl mx-auto">
-        <div className="prose prose-lg text-muted-foreground leading-relaxed whitespace-pre-line">
+        <div className="text-sm md:text-base text-center text-foreground leading-relaxed whitespace-pre-line">
           {project.content}
         </div>
       </div>
