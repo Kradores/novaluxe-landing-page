@@ -4,7 +4,7 @@ import { navItems, socialLinks } from "~/lib/site";
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-secondary pt-20 md:pt-22.5 lg:pt-35 pb-8 md:pb-10 lg:pb-12">
+    <footer className="w-full bg-background-dark pt-20 md:pt-22.5 lg:pt-35 pb-8 md:pb-10 lg:pb-12">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="flex flex-col gap-6 mb-8">
           <LogoFooter className="w-35 md:w-40 lg:w-45 h-auto" />

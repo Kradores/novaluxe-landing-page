@@ -18,7 +18,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
   useEffect(() => {
     if (isHovered) {
       const enterAnimation = () => {
-        animate(scope.current, { backgroundColor: "var(--secondary)" }, { duration: 0.5 });
+        animate(scope.current, { backgroundColor: "var(--background-dark)" }, { duration: 0.5 });
         animate("div#btn-overlay", { opacity: 1 }, { duration: 0.5 });
         animate("h3", { color: "var(--primary)" }, { duration: 0.5 });
         animate("p", { color: "var(--secondary-foreground)" }, { duration: 0.5 });

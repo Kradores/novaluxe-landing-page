@@ -76,7 +76,7 @@ export const OurWorkSection = () => {
   }, [api]);
 
   return (
-    <section className="bg-secondary py-16 pb-30 md:py-24 lg:py-32 overflow-hidden">
+    <section className="bg-blue-dark-glow py-16 pb-30 md:py-24 lg:py-32 overflow-hidden">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="mx-auto z-10">
           <div className="text-center mb-4 md:mb-7 lg:mb-12">
