@@ -78,7 +78,7 @@ export const OurWorkSection = () => {
   return (
     <section className="bg-blue-dark-glow py-16 pb-30 md:py-24 lg:py-32 overflow-hidden">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
-        <div className="mx-auto z-10">
+        <div className="mx-auto">
           <div className="text-center mb-4 md:mb-7 lg:mb-12">
             <h2 className="text-2xl md:text-5xl lg:text-6xl font-medium uppercase tracking-wide">
               <span className="text-secondary-foreground">Our Work, Their</span>
@@ -89,7 +89,7 @@ export const OurWorkSection = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-y-3 gap-x-2">
             <LeftQuote className="w-30 h-23 md:w-40 md:h-31 lg:w-50 lg:h-40" />
-            <div className="w-full max-w-full md:max-w-100 lg:max-w-xl xl:max-w-2xl mx-auto z-3">
+            <div className="w-full max-w-full md:max-w-100 lg:max-w-xl xl:max-w-2xl mx-auto z-10">
               <Carousel
                 setApi={setApi}
                 opts={{
@@ -117,7 +117,7 @@ export const OurWorkSection = () => {
             <RightQuote className="w-30 h-23 md:w-40 md:h-31 lg:w-50 lg:h-40" />
           </div>
 
-          <div className="hidden md:flex items-center justify-center gap-4 mt-4">
+          <div className="hidden md:flex items-center justify-center gap-4 mt-4 relative z-10">
             <Button
               variant="outline"
               size="icon"
