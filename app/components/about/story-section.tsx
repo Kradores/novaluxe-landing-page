@@ -37,6 +37,7 @@ export const StorySection = () => {
                 src={block.image}
                 alt={block.title}
                 className="bg-card h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className={cn("flex flex-col gap-4", block.reverse ? "md:order-1" : "")}>

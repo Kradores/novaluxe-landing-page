@@ -11,10 +11,9 @@ export const AboutHeroSection = () => {
         src={"/images/about-hero-bg.webp"}
         alt="Solar panel installation"
         className="absolute inset-0 w-full h-full object-cover"
+        rel="preload"
+        fetchPriority="high"
       />
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-blue-dark-glow/10" />
-
       <div className="relative z-10 flex flex-col items-center text-center px-3 max-md:pt-35 max-md:pb-42 md:py-37 lg:py-50 max-w-300">
         <SectionTitle size={"h1"} className="leading-tight">
           WHO WE ARE?
