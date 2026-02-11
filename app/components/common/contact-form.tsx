@@ -25,7 +25,7 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 interface ContactFormProps {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export const ContactForm = ({ children }: ContactFormProps) => {
@@ -66,7 +66,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
                   <Input
                     placeholder="Full Name"
                     {...field}
-                    className="rounded-full bg-background/20 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
+                    className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
                   />
                 </FormControl>
                 <FormMessage className="text-primary-foreground/90" />
@@ -83,7 +83,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
                   <Input
                     placeholder="Business Name"
                     {...field}
-                    className="rounded-full bg-background/20 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
+                    className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
                   />
                 </FormControl>
                 <FormMessage className="text-primary-foreground/90" />
@@ -102,7 +102,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
                       type="email"
                       placeholder="Email"
                       {...field}
-                      className="rounded-full bg-background/20 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
+                      className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
                     />
                   </FormControl>
                   <FormMessage className="text-primary-foreground/90" />
@@ -120,7 +120,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
                       type="tel"
                       placeholder="Phone no."
                       {...field}
-                      className="rounded-full bg-background/20 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
+                      className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
                     />
                   </FormControl>
                   <FormMessage className="text-primary-foreground/90" />
@@ -138,7 +138,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
                   <Textarea
                     placeholder="Describe your project"
                     {...field}
-                    className="rounded-2xl bg-background/20 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 min-h-30 resize-none"
+                    className="rounded-2xl bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 min-h-30 resize-none"
                   />
                 </FormControl>
                 <FormMessage className="text-primary-foreground/90" />
@@ -148,7 +148,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
 
           <Button
             type="submit"
-            className="w-full rounded-full bg-background text-primary hover:bg-background/90 h-12 mt-2"
+            className="w-full rounded-full bg-background text-primary hover:bg-background/90 h-12 mt-2 mb-3 md:mb-4"
           >
             Send Message
           </Button>

@@ -1,12 +1,14 @@
 import { clsx, type ClassValue } from "clsx"
 import { matchPath } from "react-router";
 import { twMerge } from "tailwind-merge"
+import { navLinks } from "./site";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function isProjectPage(path: string): boolean {
-  const match = matchPath({ path: "projects/:slug" }, path);
-  return Boolean(match);
+export function isLightBgPage(path: string): boolean {
+  const isProjectTemplate = matchPath({ path: "projects/:slug" }, path);
+  const isContact = matchPath({ path: navLinks.contact }, path);
+  return Boolean(isProjectTemplate) || Boolean(isContact);
 };

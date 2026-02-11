@@ -11,7 +11,7 @@ import {
 } from "~/components/ui/sheet";
 import { CONTACT_PHONE, navItems } from "~/lib/site";
 import { useLocation } from "react-router";
-import { cn, isProjectPage } from "~/lib/utils";
+import { cn, isLightBgPage } from "~/lib/utils";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -26,7 +26,7 @@ export function MobileNav() {
           className="lg:hidden"
           aria-label="Open menu"
         >
-          <Menu className={cn("h-6 w-6 text-secondary-foreground", isProjectPage(location.pathname) && "text-foreground")} />
+          <Menu className={cn("h-6 w-6 text-secondary-foreground", isLightBgPage(location.pathname) && "text-foreground")} />
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="w-full sm:w-100 border-0 pl-2">

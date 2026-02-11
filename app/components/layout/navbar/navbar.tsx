@@ -4,7 +4,7 @@ import { MobileNav } from "./mobile-navbar";
 import { LanguageSwitcher } from "./language-switcher";
 import { NavLink } from "~/components/common/nav-link";
 import { CONTACT_PHONE, navLinks } from "~/lib/site";
-import { cn, isProjectPage } from "~/lib/utils";
+import { cn, isLightBgPage } from "~/lib/utils";
 import { useLocation } from "react-router";
 
 export function Navbar({ className }: { className?: string }) {
@@ -14,14 +14,14 @@ export function Navbar({ className }: { className?: string }) {
       <div className="mx-auto max-w-300 px-4 sm:px-6">
         <div className="flex items-center justify-between py-6">
           <NavLink to={navLinks.home} className="shrink-0 lg:mr-43" aria-label="Home">
-            <Logo className={cn("h-16 w-16 fill-background", isProjectPage(location.pathname) && "fill-foreground")} />
+            <Logo className={cn("h-16 w-16 fill-background", isLightBgPage(location.pathname) && "fill-foreground")} />
           </NavLink>
 
           <DesktopNav />
 
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <span className={cn("text-base font-medium text-secondary-foreground transition-colors", isProjectPage(location.pathname) && "text-foreground")}>
+            <span className={cn("text-base font-medium text-secondary-foreground transition-colors", isLightBgPage(location.pathname) && "text-foreground")}>
               {CONTACT_PHONE}
             </span>
             <MobileNav />

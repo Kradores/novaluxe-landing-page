@@ -1,11 +1,12 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import SectionTitle from "~/components/common/section-title";
-import { ContactForm } from "../common/contact-form";
+import { ContactForm } from "~/components/common/contact-form";
+import { CONTACT_ADDRESS, CONTACT_EMAIL, CONTACT_PHONE } from "~/lib/site";
 
 const contactInfo = [
-  { icon: Phone, text: "+34 8977 876667" },
-  { icon: Mail, text: "novaluxedynamic@hotmail.com" },
-  { icon: MapPin, text: "Palma del Río, Spain, 14700" },
+  { icon: Phone, text: CONTACT_PHONE },
+  { icon: Mail, text: CONTACT_EMAIL },
+  { icon: MapPin, text: CONTACT_ADDRESS },
 ];
 
 export const WhatsNextSection = () => {

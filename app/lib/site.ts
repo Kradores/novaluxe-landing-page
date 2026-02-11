@@ -18,6 +18,8 @@ export const navItems = [
 ];
 
 export const CONTACT_PHONE = "+34 8977 876667";
+export const CONTACT_EMAIL = "novaluxedynamic@hotmail.com";
+export const CONTACT_ADDRESS = "Palma del Río, Spain, 14700";
 
 export const socialLinks = [
   { icon: Instagram, href: "#", label: "Instagram" },
