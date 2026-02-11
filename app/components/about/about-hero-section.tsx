@@ -14,19 +14,19 @@ export const AboutHeroSection = () => {
         rel="preload"
         fetchPriority="high"
       />
-      <div className="relative z-10 flex flex-col items-center text-center px-3 max-md:pt-35 max-md:pb-42 md:py-37 lg:py-50 max-w-300">
+      <div className="relative z-10 flex flex-col items-center gap-4.5 text-center px-3 max-md:pt-35 max-md:pb-42 md:py-37 lg:py-50 max-w-300">
         <SectionTitle size={"h1"} className="leading-tight">
           WHO WE ARE?
         </SectionTitle>
-        <p className="mt-4 max-w-md text-background text-base md:text-lg">
+        <p className="max-w-md text-background text-base md:text-lg">
           Lorem ipsum tristique enim at in odio neque eget dignissim orci.
         </p>
 
-        <p className="mt-10 text-background text-lg md:text-xl font-bold">
+        <p className="text-background text-lg md:text-xl font-bold">
           Want a custom solution?
         </p>
 
-        <div className="mt-4 flex flex-col sm:flex-row items-center gap-4">
+        <div>
           <div className="bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full gap-3 md:gap-4.5 flex flex-row">
             <Button
               asChild
