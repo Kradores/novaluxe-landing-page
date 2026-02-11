@@ -2,6 +2,7 @@ import { Consultation, Proposal, Tech, Execution } from "~/components/icons";
 import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
 import SectionTitle from "../common/section-title";
+import { navLinks } from "~/lib/site";
 
 const steps = [
     {
@@ -73,7 +74,7 @@ const StepsSection = () => {
                         asChild
                         className="group-hover:bg-orange-glow"
                     >
-                        <Link to="/contact">Get a Quote</Link>
+                        <Link to={navLinks.contact}>Get a Quote</Link>
                     </Button>
                 </div>
             </div>

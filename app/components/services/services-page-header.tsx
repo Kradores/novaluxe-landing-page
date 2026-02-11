@@ -2,6 +2,7 @@
 import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
 import SectionTitle from "~/components/common/section-title";
+import { navLinks } from "~/lib/site";
 
 const ServicesPageHeader = () => {
   return (<section className="flex flex-col bg-foreground bg-[url(/images/services-header.webp)] bg-cover bg-center bg-no-repeat md:rounded-b-[32px]">
@@ -16,7 +17,7 @@ const ServicesPageHeader = () => {
             asChild
             className="group-hover:bg-orange-glow"
           >
-            <Link to="/contact">Get a Quote</Link>
+            <Link to={navLinks.contact}>Get a Quote</Link>
           </Button>
         </div>
       </div>

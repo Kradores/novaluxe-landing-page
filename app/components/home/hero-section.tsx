@@ -6,6 +6,7 @@ import { Link } from "react-router";
 import ImageFrame from "~/components/common/image-frame";
 import { cn } from "~/lib/utils";
 import SectionTitle from "~/components/common/section-title";
+import { navLinks } from "~/lib/site";
 
 const HeroSection = ({ className }: { className?: string }) => {
   return (
@@ -26,7 +27,7 @@ const HeroSection = ({ className }: { className?: string }) => {
               asChild
               className="group-hover:bg-orange-glow"
             >
-              <Link to="/contact">Get a Quote</Link>
+              <Link to={navLinks.contact}>Get a Quote</Link>
             </Button>
           </div>
         </div>

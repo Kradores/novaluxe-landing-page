@@ -6,6 +6,7 @@ export const navLinks = {
   projects: "/projects",
   about: "/about",
   contact: "/contact",
+  join: "/join-our-team"
 }
 
 export const navItems = [

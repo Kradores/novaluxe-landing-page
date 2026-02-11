@@ -81,7 +81,7 @@ export const OurWorkSection = () => {
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="mx-auto">
           <div className="text-center mb-4 md:mb-7 lg:mb-12">
-            <SectionTitle size={"h2"}>
+            <SectionTitle asChild size={"h2"}>
               <h2>
                 <span className="text-secondary-foreground">Our Work, Their</span>
                 <br />

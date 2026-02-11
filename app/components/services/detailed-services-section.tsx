@@ -2,6 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router";
 import { Button } from "~/components/ui/button";
 import SectionTitle from "../common/section-title";
+import { navLinks } from "~/lib/site";
 
 interface ServiceItemProps {
   title: string;
@@ -58,7 +59,7 @@ const ServiceCard = ({
           asChild
           className="group-hover:bg-orange-glow"
         >
-          <Link to="/contact">Get a Quote</Link>
+          <Link to={navLinks.contact}>Get a Quote</Link>
         </Button>
       </div>
     </div>

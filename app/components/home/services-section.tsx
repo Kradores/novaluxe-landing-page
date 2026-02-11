@@ -4,6 +4,7 @@ import { cn } from "~/lib/utils";
 import { useAnimate } from "motion/react";
 import { useEffect, useState } from "react";
 import SectionTitle from "../common/section-title";
+import { navLinks } from "~/lib/site";
 
 interface ServiceCardProps {
   image: string;
@@ -57,7 +58,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
               asChild
               className="group-hover:bg-orange-glow"
             >
-              <Link to="/contact">Get a Quote</Link>
+              <Link to={navLinks.contact}>Get a Quote</Link>
             </Button>
           </div>
         </div>
