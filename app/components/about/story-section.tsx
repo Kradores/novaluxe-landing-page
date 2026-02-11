@@ -1,4 +1,5 @@
 import { cn } from "~/lib/utils";
+import SectionTitle from "~/components/common/section-title";
 
 const blocks = [
   {
@@ -26,12 +27,12 @@ const blocks = [
 
 export const StorySection = () => {
   return (
-    <section className="bg-background py-16 md:py-24">
-      <div className="mx-auto max-w-300 px-4 md:px-6 flex flex-col gap-16 md:gap-24">
+    <section className="bg-background py-20 md:py-25 lg:py-30">
+      <div className="mx-auto max-w-300 px-4 md:px-6 flex flex-col gap-10 md:gap-15">
         {blocks.map((block) => (
-          <div key={block.title} className="bg-card grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center rounded-[24px] lg:rounded-[32px]">
+          <div key={block.title} className="bg-card grid grid-cols-1 md:grid-cols-2 items-center rounded-[24px] lg:rounded-[32px] shadow-sm/4">
             <div
-              className={cn("h-full overflow-hidden rounded-[24px] lg:rounded-[32px]", block.reverse ? "md:order-2" : "")}
+              className={cn("h-full overflow-hidden rounded-[24px] lg:rounded-[32px]", block.reverse && "md:order-2")}
             >
               <img
                 src={block.image}
@@ -40,11 +41,13 @@ export const StorySection = () => {
                 loading="lazy"
               />
             </div>
-            <div className={cn("flex flex-col gap-4", block.reverse ? "md:order-1" : "")}>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wider text-secondary-foreground">
-                {block.title}
-              </h2>
-              <p className="text-muted-foreground text-sm md:text-base leading-relaxed">{block.description}</p>
+            <div className={cn("flex flex-col gap-4 md:gap-8 p-5 md:p-7 lg:p-9", block.reverse && "md:order-1")}>
+              <SectionTitle asChild size={"h2"} variant={"dark"} className="text-start">
+                <h2>
+                  {block.title}
+                </h2>
+              </SectionTitle>
+              <p className="text-foreground text-sm md:text-base leading-relaxed">{block.description}</p>
             </div>
           </div>
         ))}
