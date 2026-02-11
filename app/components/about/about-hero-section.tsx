@@ -37,16 +37,8 @@ export const AboutHeroSection = () => {
             </Button>
             <Button
               asChild
-              className="hidden max-[360px]:flex bg-transparent border border-primary-foreground text-primary-foreground hover:border-primary-hover hover:text-primary-hover hover:bg-transparent text-sm md:text-base"
-            >
-              <Link to={navLinks.join} className="flex items-center gap-2.5">
-                Join Us
-                <ArrowRight className="size-3.75" />
-              </Link>
-            </Button>
-            <Button
-              asChild
-              className="block max-[360px]:hidden bg-transparent border border-primary-foreground text-primary-foreground hover:border-primary-hover hover:text-primary-hover hover:bg-transparent text-sm md:text-base"
+              variant={"outline"}
+              className="border-primary-foreground text-primary-foreground text-sm md:text-base"
             >
               <Link to={navLinks.join} className="flex items-center gap-2.5">
                 Join our Team
