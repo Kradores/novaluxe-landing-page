@@ -27,7 +27,7 @@ const InfoCard = ({ icon, label, value }: InfoCardProps) => {
 const ProjectTemplate = ({ project }: { project: Project }) => {
   return (
     <section className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col items-center gap-12 pt-25 pb-15 lg:pb-25">
-      <div className="w-full overflow-hidden rounded-2xl lg:rounded-3xl">
+      <div className="w-full overflow-hidden rounded-2xl lg:rounded-3xl shadow-sm/8">
         <img
           src={project.headerImage}
           alt={project.title}
@@ -73,7 +73,7 @@ const ProjectTemplate = ({ project }: { project: Project }) => {
           {project.images.map((image, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-xl aspect-4/3"
+              className="overflow-hidden rounded-xl aspect-4/3 shadow-sm/8"
             >
               <img
                 src={image}
