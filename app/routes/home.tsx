@@ -18,9 +18,7 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
   return (
     <main className="flex flex-col w-full">
-      <div className="flex flex-col bg-foreground bg-[url(/images/hero-bg.webp)] bg-cover bg-center bg-no-repeat">
-        <HeroSection className="mx-auto" />
-      </div>
+      <HeroSection />
       <TrustedBySection />
       <WhoWeAreSection />
       <OurWorkSection />

@@ -14,15 +14,7 @@ import { domAnimation, LazyMotion } from "motion/react";
 import { Navbar } from "./components/layout/navbar/navbar";
 import { Footer } from "./components/layout/footer";
 
-export const links: Route.LinksFunction = () => [
-  {
-    rel: "preload",
-    as: "image",
-    href: "/images/hero-bg.webp",
-    type: "image/webp",
-    fetchPriority: "high",
-  }
-];
+export const links: Route.LinksFunction = () => [];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
