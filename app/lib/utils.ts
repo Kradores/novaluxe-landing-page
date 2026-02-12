@@ -10,5 +10,6 @@ export function cn(...inputs: ClassValue[]) {
 export function isLightBgPage(path: string): boolean {
   const isProjectTemplate = matchPath({ path: "projects/:slug" }, path);
   const isContact = matchPath({ path: navLinks.contact }, path);
-  return Boolean(isProjectTemplate) || Boolean(isContact);
+  const isJoin = matchPath({ path: navLinks.join }, path);
+  return Boolean(isProjectTemplate) || Boolean(isContact) || Boolean(isJoin);
 };
