@@ -69,6 +69,7 @@ body {
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-footer: var(--background-dark);
+  --color-fade: var(--fade);
   --text-8xl: 5.375rem;
   --text-7xl: 3.875rem;
   --text-6xl: 3.5rem;
@@ -132,6 +133,7 @@ body {
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --orange-mid: hsla(18, 63%, 37%, 1);
+  --fade: hsla(207, 10%, 87%, 1);
 }
 
 .dark {

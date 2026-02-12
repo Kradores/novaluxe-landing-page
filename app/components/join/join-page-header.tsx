@@ -1,7 +1,8 @@
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "~/components/ui/button";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
+import { navLinks } from "~/lib/site";
 
 const JoinPageHeader = () => {
   return (
@@ -16,10 +17,10 @@ const JoinPageHeader = () => {
 
         <div className="flex flex-row items-center gap-4">
             <Button asChild>
-              <Link to="/contact">Apply Now</Link>
+              <Link to={navLinks.contact}>Apply Now</Link>
             </Button>
             <Button asChild variant="outline">
-              <Link to="/about" className="flex items-center gap-2">
+              <Link to={navLinks.about} className="flex items-center gap-2">
                 Read More
                 <ArrowRight className="size-4" />
               </Link>
