@@ -15,21 +15,19 @@ export const WhatsNextSection = () => {
     <section className="w-full bg-background pt-16 md:pt-24 lg:pt-32">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          <div className="flex flex-col gap-8">
-            <SectionTitle asChild size={"h2"} variant={"dark"} className="text-left">
+          <div className="flex flex-col">
+            <SectionTitle asChild size={"h2"} variant={"dark"} className="text-left mb-6 md:mb-7">
               <h2>What's Next ?</h2>
             </SectionTitle>
 
-            <p className="text-foreground text-base md:text-lg leading-relaxed max-w-md">
+            <p className="text-foreground text-base md:text-lg leading-relaxed max-w-md mb-10 md:mb-8 lg:mb-10 xl:mb-12">
               We will get back to you in 24 hours during weekdays. For urgent matters, feel free to call us directly.
             </p>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2">
               {contactInfo.map((item, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center">
-                    <item.icon className="w-5 h-5 text-foreground" />
-                  </div>
+                <div key={index} className="flex items-center gap-3 py-2">
+                  <item.icon className="w-6 h-6 text-foreground" />
                   <span className="text-foreground text-sm md:text-base">
                     {item.text}
                   </span>

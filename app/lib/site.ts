@@ -25,5 +25,5 @@ export const socialLinks = [
   { icon: Instagram, href: "#", label: "Instagram" },
   { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61556946033798", label: "Facebook" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/nicolai-cojocari-ab8663373/", label: "LinkedIn" },
-  { icon: Whatsapp, href: "#", label: "WhatsApp" },
+  { icon: Whatsapp, href: "https://wa.me/+348977876667", label: "WhatsApp" },
 ];
