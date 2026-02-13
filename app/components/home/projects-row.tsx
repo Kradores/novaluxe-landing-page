@@ -15,7 +15,7 @@ const ProjectsRow = ({
 
   return (
     <div
-      className={cn("flex flex-row justify-end gap-4 overflow-hidden", className)}
+      className={cn("flex flex-row justify-end gap-5 lg:gap-6 xl:gap-8 overflow-hidden", className)}
       onMouseLeave={() => setActiveIndex(defaultOpen)}
     >
       {children.map((child, index) =>

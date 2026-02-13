@@ -17,14 +17,14 @@ const MobileView = () => {
       <div className="w-full mx-auto">
         <Carousel
           opts={{
-            align: "center",
+            align: "start",
             loop: true,
           }}
           className="w-full"
         >
           <CarouselContent>
             {getMobileProjects().map(data => (
-              <CarouselItem key={data.id} className="w-full aspect-video">
+              <CarouselItem key={data.id} className="aspect-video basis-[90%]">
                 <MobileProject {...data} />
               </CarouselItem>
             ))}

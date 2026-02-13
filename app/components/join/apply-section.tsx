@@ -31,7 +31,7 @@ const ApplySection = () => {
             </div>
           </div>
 
-          <div className="relative -mb-10 md:-mb-12.5 lg:-mb-25">
+          <div className="relative -mb-10 md:-mb-12 lg:-mb-30">
             <ApplyForm />
           </div>
         </div>

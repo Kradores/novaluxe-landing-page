@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import { ArrowDown, ChevronDown } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,14 +18,14 @@ export function LanguageSwitcher() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild className={cn("text-secondary-foreground transition-colors hover:text-primary-hover rounded-full", isLightBgPage(location.pathname) && "text-foreground")}>
+      <DropdownMenuTrigger asChild className={cn("group text-secondary-foreground transition-all hover:[text-shadow:0_0_1px_currentColor] rounded-full", isLightBgPage(location.pathname) && "text-foreground")}>
         <Button
           variant="ghost"
           className="flex items-center gap-1 px-2 text-base font-medium"
           aria-label="Select language"
         >
           {language}
-          <ChevronDown className="h-4 w-4" />
+          <ArrowDown className="h-4 w-4 stroke-3 transition-all duration-500 ease-in-out group-hover:stroke-4" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-20">
@@ -33,7 +33,7 @@ export function LanguageSwitcher() {
           <DropdownMenuItem
             key={lang}
             onClick={() => setLanguage(lang)}
-            className="transition-colors text-base hover:text-primary-hover"
+            className="transition-all text-base hover:[text-shadow:0_0_1px_currentColor]"
           >
             {lang}
           </DropdownMenuItem>

@@ -3,7 +3,7 @@ import { Slot } from "radix-ui";
 import { cn } from "~/lib/utils";
 
 const titleVariants = cva(
-  "text-center font-bold uppercase tracking-wider",
+  "text-center font-bold uppercase tracking-wider leading-[120%]",
   {
     variants: {
       variant: {

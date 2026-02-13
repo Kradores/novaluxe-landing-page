@@ -83,8 +83,7 @@ export const OurWorkSection = () => {
           <div className="text-center mb-4 md:mb-7 lg:mb-12">
             <SectionTitle asChild size={"h2"}>
               <h2>
-                <span className="text-secondary-foreground">Our Work, Their</span>
-                <br />
+                <span className="text-secondary-foreground mr-3">Our Work, Their</span>
                 <span className="text-foreground-light">Success</span>
               </h2>
             </SectionTitle>
@@ -105,10 +104,10 @@ export const OurWorkSection = () => {
                   {testimonials.map((testimonial, index) => (
                     <CarouselItem key={index}>
                       <div>
-                        <p className="text-secondary-foreground text-base md:text-lg lg:text-xl leading-normal mb-4">
+                        <p className="text-secondary-foreground font-medium text-base md:text-lg lg:text-xl leading-normal mb-4">
                           "{testimonial.quote} {testimonial.highlight}"
                         </p>
-                        <p className="text-foreground-light text-lg">
+                        <p className="text-foreground-light font-medium text-lg">
                           {testimonial.author}, {testimonial.title}, {testimonial.company} ({testimonial.location})
                         </p>
                       </div>

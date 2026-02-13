@@ -20,7 +20,7 @@ export const WhoWeAreSection = () => {
             </p>
             
             <div className="flex flex-row gap-4">
-              <Button asChild variant="default">
+              <Button asChild variant="default" className="px-11 md:px-13">
                 <Link to={navLinks.contact}>Get a Quote</Link>
               </Button>
               <Button asChild variant="outline">
