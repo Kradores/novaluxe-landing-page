@@ -21,7 +21,7 @@ export function Navbar({ className }: { className?: string }) {
 
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <span className={cn("text-base font-medium text-secondary-foreground transition-colors", isLightBgPage(location.pathname) && "text-foreground")}>
+            <span className={cn("hidden lg:block text-base font-medium text-secondary-foreground transition-colors", isLightBgPage(location.pathname) && "text-foreground")}>
               {CONTACT_PHONE}
             </span>
             <MobileNav />

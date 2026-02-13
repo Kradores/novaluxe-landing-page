@@ -53,7 +53,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
         />
         <div id="btn-overlay" className={"absolute inset-0 bg-secondary/50 flex flex-col justify-center items-center p-4 md:p-6 opacity-0"}>
           <img src="/images/ellipse-btn.png" loading="lazy" className="absolute max-w-122 w-full h-auto left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover" />
-          <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full hover:shadow-lg">
+          <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full">
             <Button
               asChild
               className="group-hover:bg-orange-glow"

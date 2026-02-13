@@ -24,7 +24,7 @@ const NeedHelpSection = () => {
           We will get back to you in 24 hours during the week days.
         </p>
 
-        <div className="mx-auto w-fit bg-background/20 backdrop-blur-lg border border-background/20 p-2 rounded-full hover:shadow-lg transition-all duration-500 ease-in-out">
+        <div className="mx-auto w-fit bg-background/20 backdrop-blur-lg border border-background/20 p-2 rounded-full">
           <Button asChild variant="secondary">
             <Link to={navLinks.contact}>Contact Us Today</Link>
           </Button>

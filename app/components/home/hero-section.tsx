@@ -29,7 +29,7 @@ const HeroSection = () => {
 
           <div className="flex flex-col items-center gap-5 md:col-start-1 lg:col-start-2 md:row-start-2 lg:row-start-1">
             <p className="text-center text-lg font-medium text-secondary-foreground md:text-xl">Want a custom solution?</p>
-            <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full hover:shadow-lg">
+            <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full">
               <Button
                 asChild
                 className="group-hover:bg-orange-glow"
