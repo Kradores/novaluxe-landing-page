@@ -44,13 +44,13 @@ const ServiceCard = ({
             {title}
           </h2>
         </SectionTitle>
-        <p className="text-foreground">{description}</p>
+        <p className="text-foreground text-sm md:text-base font-normal">{description}</p>
 
         <ul className="space-y-3.5">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start gap-3">
               <CheckCircle2 className="size-6 text-background fill-primary shrink-0 self-center" />
-              <span className="text-foreground font-medium">{feature}</span>
+              <span className="text-foreground text-sm md:text-base font-medium">{feature}</span>
             </li>
           ))}
         </ul>

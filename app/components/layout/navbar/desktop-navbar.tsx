@@ -12,7 +12,7 @@ export function DesktopNav() {
           <li key={item.to}>
             <NavLink
               to={item.to}
-              className={cn("font-medium text-secondary-foreground transition-all hover:[text-shadow:0_0_1px_currentColor]", isLightBgPage(location.pathname) && "text-foreground")}
+              className={cn("text-base font-normal text-secondary-foreground transition-all hover:[text-shadow:0_0_1px_currentColor]", isLightBgPage(location.pathname) && "text-foreground")}
             >
               {item.label}
             </NavLink>

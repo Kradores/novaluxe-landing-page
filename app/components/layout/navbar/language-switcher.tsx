@@ -21,7 +21,7 @@ export function LanguageSwitcher() {
       <DropdownMenuTrigger asChild className={cn("group text-secondary-foreground transition-all hover:[text-shadow:0_0_1px_currentColor] rounded-full", isLightBgPage(location.pathname) && "text-foreground")}>
         <Button
           variant="ghost"
-          className="flex items-center gap-1 px-2 text-base font-medium"
+          className="flex items-center gap-1 px-2"
           aria-label="Select language"
         >
           {language}
@@ -33,7 +33,7 @@ export function LanguageSwitcher() {
           <DropdownMenuItem
             key={lang}
             onClick={() => setLanguage(lang)}
-            className="transition-all text-base hover:[text-shadow:0_0_1px_currentColor]"
+            className="transition-all text-sm md:text-base hover:[text-shadow:0_0_1px_currentColor]"
           >
             {lang}
           </DropdownMenuItem>
