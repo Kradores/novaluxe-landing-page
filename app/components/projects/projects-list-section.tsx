@@ -22,12 +22,12 @@ const DateDisplay = ({
       </span>
     </SectionTitle>
     <div className="flex flex-col self-end">
-      <SectionTitle asChild size={"h8"} variant={"dark"} className="leading-tight">
+      <SectionTitle asChild size={"h8"} variant={"dark"} className="leading-tight text-left">
         <span>
           {month}
         </span>
       </SectionTitle>
-      <SectionTitle asChild size={"h8"} variant={"dark"} className="leading-tight">
+      <SectionTitle asChild size={"h8"} variant={"dark"} className="leading-tight text-left">
         <span>
           {year}
         </span>

@@ -62,7 +62,7 @@ const ValuesSection = () => {
                     ))}
                 </div>
 
-                <div className="bg-background/10 backdrop-blur-md border border-background/20 p-2 rounded-full gap-3 md:gap-4.5 flex flex-row">
+                <div className="bg-foreground/10 backdrop-blur-md border border-foreground/20 p-2 rounded-full gap-3 md:gap-4.5 flex flex-row">
                     <Button
                         asChild
                         className="hover:bg-orange-glow text-sm md:text-base"

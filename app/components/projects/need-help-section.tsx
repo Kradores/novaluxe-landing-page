@@ -6,7 +6,7 @@ import { navLinks } from "~/lib/site";
 
 const NeedHelpSection = () => {
   return (
-    <section className="relative overflow-hidden bg-primary pt-22 pb-33 lg:pb-28">
+    <section className="relative overflow-hidden bg-orange-glow pt-22 pb-33 lg:pb-28">
       <div className="absolute bottom-0 left-1/2 -translate-x-[50.8%] translate-y-1/3 pointer-events-none">
         <LogoProjects width={1550} height={777} />
       </div>

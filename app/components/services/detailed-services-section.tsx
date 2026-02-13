@@ -49,7 +49,7 @@ const ServiceCard = ({
         <ul className="space-y-3.5">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start gap-3">
-              <CheckCircle2 className="size-5 text-background fill-primary shrink-0 mt-0.5" />
+              <CheckCircle2 className="size-6 text-background fill-primary shrink-0 self-center" />
               <span className="text-foreground font-medium">{feature}</span>
             </li>
           ))}

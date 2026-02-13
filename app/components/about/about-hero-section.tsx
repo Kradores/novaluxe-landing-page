@@ -14,7 +14,7 @@ export const AboutHeroSection = () => {
         rel="preload"
         fetchPriority="high"
       />
-      <div className="relative z-10 flex flex-col items-center gap-4.5 text-center px-3 max-md:pt-35 max-md:pb-42 md:py-37 lg:py-50 max-w-300">
+      <div className="relative z-10 flex flex-col items-center gap-4.5 text-center px-3 max-md:pt-35 max-md:pb-42 md:py-72 lg:py-80 max-w-300">
         <SectionTitle size={"h1"} className="leading-tight">
           WHO WE ARE?
         </SectionTitle>

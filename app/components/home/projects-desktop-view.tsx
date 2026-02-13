@@ -45,13 +45,13 @@ const DesktopView = () => {
             We have worked on a wide range of projects, from small startups to large enterprises.
           </p>
         </div>
-        <ProjectsRow defaultOpen={0} className="h-44 lg:h-62 xl:h-80">
+        <ProjectsRow defaultOpen={0} className="h-50 lg:h-62 xl:h-80">
           {getDesktopProjects().row1.map(data => (
             <Project variants={variants} key={data.id} {...data} />
           ))}
         </ProjectsRow>
       </div>
-      <ProjectsRow defaultOpen={1} className="h-44 lg:h-62 xl:h-80">
+      <ProjectsRow defaultOpen={1} className="h-50 lg:h-62 xl:h-80">
         {getDesktopProjects().row2.map(data => (
           <Project variants={variants} key={data.id} {...data} />
         ))}

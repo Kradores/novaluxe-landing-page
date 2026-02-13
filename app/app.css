@@ -8,12 +8,22 @@
   font-style: bold;
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/Alexandria-Bold.ttf") format("ttf");
+  src: url("/fonts/Alexandria-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url("/fonts/Inter-Variable.ttf") format("truetype");
 }
 
 @theme {
-  --font-sans: "Alexandria", ui-sans-serif, system-ui, sans-serif,
+  --font-sans: "Alexandria", ui-sans-serif, system-ui, sans-serif, 
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-mono: "Inter", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 html,
@@ -176,5 +186,13 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  p, 
+  button, 
+  span, 
+  textarea, 
+  input {
+    font-family: var(--font-mono);
   }
 }
