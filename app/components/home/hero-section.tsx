@@ -21,7 +21,7 @@ const HeroSection = () => {
         <SectionTitle size={"h1"} className="text-shadow-md">WE DO THE HARD WORK</SectionTitle>
         <div className="grid justify-stretch gap-4 md:grid-cols-2 lg:grid-cols-3 text-shadow-md">
           <div className="flex pt-10 h-fit">
-            <p className="leading-relaxed text-secondary-foreground font-medium text-center md:text-left">
+            <p className="leading-normal text-secondary-foreground font-medium text-center md:text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
             </p>

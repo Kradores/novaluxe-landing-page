@@ -20,7 +20,7 @@ const ContactSection = () => {
               <h1>let's Get in contact</h1>
             </SectionTitle>
 
-            <p className="text-foreground text-base md:text-lg leading-relaxed max-w-md mb-10 md:mb-8 lg:mb-10 xl:mb-12">
+            <p className="text-foreground text-base md:text-lg leading-normal max-w-md mb-10 md:mb-8 lg:mb-10 xl:mb-12">
               We will get back to you in 24 hours during the week days.
             </p>
 

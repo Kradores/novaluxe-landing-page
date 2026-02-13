@@ -60,7 +60,7 @@ const ProjectCard = ({
           {title}
         </h2>
       </SectionTitle>
-      <p className="text-sm md:text-base text-foreground leading-relaxed max-w-2xl">
+      <p className="text-sm md:text-base text-foreground leading-normal max-w-2xl">
         {description}
       </p>
       <Button variant="outline" asChild className="mt-4">

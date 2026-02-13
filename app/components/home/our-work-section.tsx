@@ -105,7 +105,7 @@ export const OurWorkSection = () => {
                   {testimonials.map((testimonial, index) => (
                     <CarouselItem key={index}>
                       <div>
-                        <p className="text-secondary-foreground text-base md:text-lg lg:text-xl leading-relaxed mb-4">
+                        <p className="text-secondary-foreground text-base md:text-lg lg:text-xl leading-normal mb-4">
                           "{testimonial.quote} {testimonial.highlight}"
                         </p>
                         <p className="text-foreground-light text-lg">

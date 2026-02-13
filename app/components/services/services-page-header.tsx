@@ -11,7 +11,7 @@ const ServicesPageHeader = () => {
         our services
       </SectionTitle>
       <div className="space-y-5 mx-auto">
-        <p className="leading-relaxed text-secondary-foreground font-medium text-center text-shadow-md/30">Want a custom solution?</p>
+        <p className="leading-normal text-secondary-foreground font-medium text-center text-shadow-md/30">Want a custom solution?</p>
         <div className="group w-fit bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full">
           <Button
             asChild

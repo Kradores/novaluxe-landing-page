@@ -47,7 +47,7 @@ export const StorySection = () => {
                   {block.title}
                 </h2>
               </SectionTitle>
-              <p className="text-foreground text-sm md:text-base leading-relaxed">{block.description}</p>
+              <p className="text-foreground text-sm md:text-base leading-normal">{block.description}</p>
             </div>
           </div>
         ))}

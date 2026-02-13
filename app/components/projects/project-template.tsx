@@ -63,7 +63,7 @@ const ProjectTemplate = ({ project }: { project: Project }) => {
       </div>
 
       <div className="max-w-3xl mx-auto">
-        <div className="text-sm md:text-base text-center text-foreground leading-relaxed whitespace-pre-line">
+        <div className="text-sm md:text-base text-center text-foreground leading-normal whitespace-pre-line">
           {project.content}
         </div>
       </div>
