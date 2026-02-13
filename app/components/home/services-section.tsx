@@ -68,7 +68,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
         <h3>{title}</h3>
       </SectionTitle>
 
-      <p className="text-sm md:text-base text-foreground">
+      <p className="text-sm md:text-base font-normal text-foreground">
         {description}
       </p>
     </div>

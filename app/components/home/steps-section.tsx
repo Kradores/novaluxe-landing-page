@@ -7,30 +7,39 @@ import { navLinks } from "~/lib/site";
 const steps = [
     {
         icon: Consultation,
-        title: "Consultation & Project Assessment",
+        title: [
+            "Consultation & Project",
+            "Assessment"
+        ],
         description:
             "We have the initial consultation, visit the site, and assess feasibility to define project requirements.",
     },
     {
         icon: Proposal,
-        title: "Proposal & Planning",
+        title: [
+            "Proposal &",
+            "Planning"
+        ],
         description: "We prepare, adjust, and plan a customized budget for each project.",
     },
     {
         icon: Tech,
-        title: "Technical Preparation",
+        title: [
+            "Technical",
+            "Preparation"
+        ],
         description: "We calculate, coordinate teams, and train specialists for each installation.",
     },
     {
         icon: Execution,
-        title: "Project Execution",
+        title: ["Project", "Execution"],
         description: "We execute the complete installation with quality, safety, and efficiency.",
     },
 ];
 
 interface StepCardProps {
     icon: React.ElementType;
-    title: string;
+    title: string[];
     description: string;
 }
 
@@ -43,10 +52,10 @@ const StepCard = ({ icon: Icon, title, description }: StepCardProps) => {
                 </div>
             </div>
 
-            <SectionTitle size={"h9"} asChild>
-                <h3>{title}</h3>
+            <SectionTitle asChild size={"h9"} className="flex flex-col">
+                <h3>{title.map((t) => <span>{t}</span>)}</h3>
             </SectionTitle>
-            <p className="text-sm md:text-base text-foreground-light max-w-70">{description}</p>
+            <p className="text-sm md:text-base font-normal text-foreground-light max-w-70">{description}</p>
         </div>
     );
 };
@@ -56,7 +65,7 @@ const StepsSection = () => {
         <section className="w-full bg-blue-dark-glow py-16 md:py-24">
             <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col items-center gap-10 md:gap-16">
                 <div className="px-6 py-2 border border-primary/40 bg-primary/8 rounded-full">
-                    <span className="text-sm md:text-base font-medium uppercase tracking-wider text-primary">Ready to go in 4</span>
+                    <span className="text-sm md:text-base font-normal uppercase tracking-wider text-primary">Ready to go in 4</span>
                 </div>
 
                 <SectionTitle size={"h2"} asChild>

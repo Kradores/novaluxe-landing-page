@@ -18,17 +18,17 @@ const HeroSection = () => {
         fetchPriority="high"
       />
       <div className="overflow-hidden relative z-10 gap-7 pt-40 md:pt-33 lg:pt-43 xl:pt-50 pb-14 md:pb-57 lg:pb-20 px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col mx-auto">
-        <SectionTitle size={"h1"} className="text-shadow-md">WE DO THE HARD WORK</SectionTitle>
-        <div className="grid justify-stretch gap-4 md:grid-cols-2 lg:grid-cols-3 text-shadow-md">
+        <SectionTitle size={"h1"}>WE DO THE HARD WORK</SectionTitle>
+        <div className="grid justify-stretch gap-4 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex pt-10 h-fit">
-            <p className="leading-normal text-secondary-foreground font-medium text-center md:text-left">
+            <p className="leading-normal text-secondary-foreground font-normal text-center md:text-left text-sm md:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
             </p>
           </div>
 
           <div className="flex flex-col items-center gap-5 md:col-start-1 lg:col-start-2 md:row-start-2 lg:row-start-1">
-            <p className="text-center text-lg font-medium text-secondary-foreground md:text-xl">Want a custom solution?</p>
+            <p className="text-center text-lg md:text-xl font-medium text-secondary-foreground">Want a custom solution?</p>
             <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full">
               <Button
                 asChild
@@ -47,15 +47,15 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col gap-1">
-              <SectionTitle size={"h6"} className="text-left text-shadow-md text-2xl"><span>+45</span></SectionTitle>
+              <SectionTitle size={"h6"} className="text-left text-2xl"><span>+45</span></SectionTitle>
               <span className="text-secondary-foreground">reliable workers</span>
             </div>
             <div className="flex flex-col gap-1 md:col-start-2 md:row-start-2 justify-self-end md:justify-self-start">
-              <SectionTitle size={"h6"} className="text-left text-shadow-md text-2xl"><span>+10</span></SectionTitle>
+              <SectionTitle size={"h6"} className="text-left text-2xl"><span>+10</span></SectionTitle>
               <span className="text-secondary-foreground">projects done</span>
             </div>
             <div className="flex flex-col gap-1 md:col-start-2 md:row-start-3">
-              <SectionTitle size={"h6"} className="text-left text-shadow-md text-2xl"><span>100%</span></SectionTitle>
+              <SectionTitle size={"h6"} className="text-left text-2xl"><span>100%</span></SectionTitle>
               <span className="text-secondary-foreground">success rate</span>
             </div>
           </div>

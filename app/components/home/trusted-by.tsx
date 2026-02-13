@@ -11,9 +11,9 @@ const brands: { name: string; src: string }[] = [
 const TrustedBySection = () => {
   return (
     <section className="bg-blue-dark-glow py-12 6xl:mt-0">
-      <h2 className="text-center text-foreground-light text-sm lg:text-xl font-medium tracking-wider mb-8 lg:mb-12">
+      <p className="text-center text-foreground-light text-sm md:text-lg lg:text-xl font-normal tracking-wider mb-8 lg:mb-12">
         Trusted by industry leaders
-      </h2>
+      </p>
 
       <Marquee className="h-11 md:h-13 lg:min-h-22.5">
         <MarqueeContent className="space-x-10">

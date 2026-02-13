@@ -188,7 +188,8 @@ body {
     @apply bg-background text-foreground;
   }
 
-  p, 
+  p,
+  a,
   button, 
   span, 
   textarea, 

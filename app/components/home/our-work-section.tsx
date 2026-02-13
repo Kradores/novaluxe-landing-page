@@ -13,8 +13,7 @@ import SectionTitle from "../common/section-title";
 
 const testimonials = [
   {
-    quote: "Novaluxe Dynamic Team made things easy from day one. Great communication, fast execution, and they really listened to what we needed, adapting quickly without overcomplicating the process at all.",
-    highlight: "We'd absolutely recommend them.",
+    quote: "Novaluxe Dynamic Team made things easy from day one. Great communication, fast execution, and they really listened to what we needed, adapting quickly without overcomplicating the process at all. We'd absolutely recommend them.",
     author: "Maria Gonzalez",
     title: "CEO",
     company: "GreenTech Solutions",
@@ -77,7 +76,7 @@ export const OurWorkSection = () => {
   }, [api]);
 
   return (
-    <section className="bg-blue-dark-glow py-16 pb-30 md:py-24 lg:py-32 overflow-hidden">
+    <section className="bg-blue-dark-glow py-25 md:py-45 overflow-hidden">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="mx-auto">
           <div className="text-center mb-4 md:mb-7 lg:mb-12">
@@ -89,7 +88,7 @@ export const OurWorkSection = () => {
             </SectionTitle>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-y-3 gap-x-2">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-y-3 gap-x-2 mb-12">
             <LeftQuote className="w-30 h-23 md:w-40 md:h-31 lg:w-50 lg:h-40" />
             <div className="w-full max-w-full md:max-w-100 lg:max-w-xl xl:max-w-2xl mx-auto z-10">
               <Carousel
@@ -104,7 +103,7 @@ export const OurWorkSection = () => {
                   {testimonials.map((testimonial, index) => (
                     <CarouselItem key={index}>
                       <div>
-                        <p className="text-secondary-foreground font-medium text-base md:text-lg lg:text-xl leading-normal mb-4">
+                        <p className="text-secondary-foreground font-normal text-lg lg:text-xl leading-normal mb-6">
                           "{testimonial.quote} {testimonial.highlight}"
                         </p>
                         <p className="text-foreground-light font-medium text-lg">
@@ -119,7 +118,7 @@ export const OurWorkSection = () => {
             <RightQuote className="w-30 h-23 md:w-40 md:h-31 lg:w-50 lg:h-40" />
           </div>
 
-          <div className="hidden md:flex items-center justify-center gap-4 mt-4 relative z-10">
+          <div className="hidden md:flex items-center justify-center gap-4 relative z-10">
             <Button
               variant="outline"
               size="icon"
