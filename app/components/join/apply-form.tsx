@@ -15,6 +15,7 @@ import type { ReactNode } from "react";
 import SectionTitle from "~/components/common/section-title";
 import { Label } from "../ui/label";
 import { Upload } from "lucide-react";
+import { Spinner } from "../ui/spinner";
 
 const fileSizeLimit = 5 * 1024 * 1024;
 
@@ -22,9 +23,9 @@ const formSchema = z.object({
   fullName: z.string().min(2, "Name must be at least 2 characters").max(100),
   email: z.email("Invalid email address").max(255),
   language: z.string().min(1, "Spoken langugage is required").max(100),
-  age: z.coerce.number<number>({ error: "Age is required"}).min(18, "Valid age required").max(99),
+  age: z.coerce.number<number>({ error: "Age is required" }).min(18, "Valid age required").max(99),
   message: z.string().max(5000).optional(),
-  file: z.instanceof(File, { error: "CV is required"}).refine((file) => (file?.size ?? 0) <= fileSizeLimit, {
+  file: z.instanceof(File, { error: "CV is required" }).refine((file) => (file?.size ?? 0) <= fileSizeLimit, {
     message: "File size should not exceed 5MB",
   })
 });
@@ -175,9 +176,13 @@ const ApplyForm = ({ children }: ContactFormProps) => {
                           onChange(file);
                         }}
                       />
-                      <div className="flex flex-row gap-2.5 absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 text-secondary-foreground">
-                        <span>Upload your CV*</span>
-                        <Upload className="size-4" />
+                      <div className="absolute flex flex-row gap-2.5 bottom-1/2 left-0 translate-y-1/2 text-secondary-foreground w-full justify-center px-7">
+                        {value ? (<>
+                          <span className="text-ellipsis text-nowrap overflow-hidden">{value.name}</span>
+                        </>) : (<>
+                          <span>Upload your CV*</span>
+                          <Upload className="size-4" />
+                        </>)}
                       </div>
                     </Label>
                   </FormControl>
@@ -191,8 +196,10 @@ const ApplyForm = ({ children }: ContactFormProps) => {
           <Button
             type="submit"
             className="w-full rounded-full bg-background text-primary hover:bg-background/90 h-12 mt-2 mb-3 md:mb-4"
+            disabled={form.formState.isSubmitting}
           >
-            Send Message
+            {form.formState.isSubmitting && <Spinner className="mr-2 size-4" />}
+            {form.formState.isSubmitting ? "Applying..." : "Apply Now"}
           </Button>
         </form>
       </Form>
