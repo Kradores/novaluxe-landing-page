@@ -76,7 +76,7 @@ const ApplyForm = ({ children }: ContactFormProps) => {
                   <Input
                     placeholder="Full Name*"
                     {...field}
-                    className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
+                    className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12 text-sm md:text-base font-normal"
                   />
                 </FormControl>
                 <FormMessage className="text-primary-foreground/90" />
@@ -94,7 +94,7 @@ const ApplyForm = ({ children }: ContactFormProps) => {
                     type="email"
                     placeholder="Email*"
                     {...field}
-                    className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
+                    className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12 text-sm md:text-base font-normal"
                   />
                 </FormControl>
                 <FormMessage className="text-primary-foreground/90" />
@@ -112,7 +112,7 @@ const ApplyForm = ({ children }: ContactFormProps) => {
                     <Input
                       placeholder="Spoken Language*"
                       {...field}
-                      className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
+                      className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12 text-sm md:text-base font-normal"
                     />
                   </FormControl>
                   <FormMessage className="text-primary-foreground/90" />
@@ -129,7 +129,7 @@ const ApplyForm = ({ children }: ContactFormProps) => {
                     <Input
                       placeholder="Age*"
                       {...field}
-                      className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12"
+                      className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12 text-sm md:text-base font-normal"
                     />
                   </FormControl>
                   <FormMessage className="text-primary-foreground/90" />
@@ -147,7 +147,7 @@ const ApplyForm = ({ children }: ContactFormProps) => {
                   <Textarea
                     placeholder="Your message"
                     {...field}
-                    className="rounded-2xl bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 min-h-30 resize-none"
+                    className="rounded-2xl bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 min-h-30 resize-none text-sm md:text-base font-normal"
                   />
                 </FormControl>
                 <FormMessage className="text-primary-foreground/90" />
@@ -176,7 +176,7 @@ const ApplyForm = ({ children }: ContactFormProps) => {
                           onChange(file);
                         }}
                       />
-                      <div className="absolute flex flex-row gap-2.5 bottom-1/2 left-0 translate-y-1/2 text-secondary-foreground w-full justify-center px-7">
+                      <div className="absolute flex flex-row gap-2.5 bottom-1/2 left-0 translate-y-1/2 text-secondary-foreground w-full justify-center px-7 text-sm md:text-base font-medium">
                         {value ? (<>
                           <span className="text-ellipsis text-nowrap overflow-hidden">{value.name}</span>
                         </>) : (<>

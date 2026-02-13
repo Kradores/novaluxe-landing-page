@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="flex flex-col gap-6 mb-8">
           <LogoFooter className="w-35 md:w-40 lg:w-45 h-auto" />
-          <p className="text-secondary-foreground/70 text-sm md:text-base max-w-md">
+          <p className="text-secondary-foreground/70 text-sm md:text-base font-normal max-w-md">
             Your trusted partner in Electrical & Construction Solutions
           </p>
 
@@ -37,7 +37,7 @@ export const Footer = () => {
                 <li key={item.to}>
                   <NavLink
                     to={item.to}
-                    className="text-sm font-medium text-secondary-foreground transition-colors hover:text-primary-hover"
+                    className="text-sm md:text-base font-medium text-secondary-foreground transition-all hover:[text-shadow:0_0_1px_currentColor]"
                   >
                     {item.label}
                   </NavLink>
@@ -46,7 +46,7 @@ export const Footer = () => {
             </ul>
           </nav>
 
-          <p className="text-sm md:text-base text-secondary-foreground/70">
+          <p className="text-sm md:text-base font-normal text-secondary-foreground/70">
             © 2025 Novaluxe Dynamics S.L. All rights Reserved
           </p>
         </div>

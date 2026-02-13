@@ -36,7 +36,7 @@ const MobileProject = ({
           <SectionTitle asChild size={"h9"} className="text-left text-nowrap">
             <h3>{title}</h3>
           </SectionTitle>
-          <p className="text-sm font-medium text-background text-nowrap">{description}</p>
+          <p className="text-sm font-normal text-background text-nowrap">{description}</p>
         </div>
       </div>
     </div>

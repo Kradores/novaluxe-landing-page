@@ -1,7 +1,8 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import SectionTitle from "~/components/common/section-title";
 import { ContactForm } from "~/components/common/contact-form";
 import { CONTACT_ADDRESS, CONTACT_EMAIL, CONTACT_PHONE } from "~/lib/site";
+import { MapPin } from "~/components/icons";
 
 const contactInfo = [
   { icon: Phone, text: CONTACT_PHONE },
@@ -20,7 +21,7 @@ export const WhatsNextSection = () => {
               <h2>What's Next ?</h2>
             </SectionTitle>
 
-            <p className="text-foreground text-base md:text-lg leading-normal max-w-md mb-10 md:mb-8 lg:mb-10 xl:mb-12">
+            <p className="text-foreground text-sm md:text-base font-normal leading-normal max-w-md mb-10 md:mb-8 lg:mb-10 xl:mb-12">
               We will get back to you in 24 hours during weekdays. For urgent matters, feel free to call us directly.
             </p>
 

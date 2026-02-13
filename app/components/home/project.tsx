@@ -51,7 +51,7 @@ const Project = ({
           <SectionTitle asChild size={"h9"} className="text-left text-nowrap">
             <h3>{title}</h3>
           </SectionTitle>
-          <p className="text-sm lg:text-base font-medium text-background text-nowrap">{description}</p>
+          <p className="text-base font-normal text-background text-nowrap">{description}</p>
         </div>
       </m.div>
     </m.div>

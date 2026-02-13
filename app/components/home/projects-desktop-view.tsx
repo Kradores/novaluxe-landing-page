@@ -41,7 +41,7 @@ const DesktopView = () => {
           <SectionTitle asChild size={"h2"} variant={"dark"} className="text-left">
             <h2>Our Projects</h2>
           </SectionTitle>
-          <p className="text-foreground">
+          <p className="text-foreground font-normal">
             We have worked on a wide range of projects, from small startups to large enterprises.
           </p>
         </div>
