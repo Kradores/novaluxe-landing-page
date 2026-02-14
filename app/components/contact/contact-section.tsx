@@ -20,7 +20,7 @@ const ContactSection = () => {
               <h1>let's Get in contact</h1>
             </SectionTitle>
 
-            <p className="text-foreground text-base md:text-lg leading-normal max-w-md mb-10 md:mb-8 lg:mb-10 xl:mb-12">
+            <p className="text-foreground text-sm md:text-base leading-normal max-w-md mb-10 md:mb-8 lg:mb-10 xl:mb-12">
               We will get back to you in 24 hours during the week days.
             </p>
 
@@ -28,7 +28,7 @@ const ContactSection = () => {
               {contactInfo.map((item, index) => (
                 <div key={index} className="flex items-center gap-3 py-2">
                   <item.icon className="w-6 h-6 text-foreground" />
-                  <span className="text-foreground text-sm md:text-base">
+                  <span className="text-foreground text-sm md:text-base font-medium">
                     {item.text}
                   </span>
                 </div>

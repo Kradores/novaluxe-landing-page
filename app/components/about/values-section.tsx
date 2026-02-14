@@ -53,7 +53,7 @@ const ValuesSection = () => {
                     <SectionTitle size={"h2"} asChild>
                         <h2>Our values</h2>
                     </SectionTitle>
-                    <p className="max-w-xl justify-center text-center text-foreground-light">In the medium and long term, our goal is to continue growing, strengthen our presence in the sector, and consistently offer advanced technology at a fair price.</p>
+                    <p className="max-w-xl justify-center text-sm md:text-base text-center text-foreground-light">In the medium and long term, our goal is to continue growing, strengthen our presence in the sector, and consistently offer advanced technology at a fair price.</p>
                 </div>
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8 lg:gap-6 w-full">
@@ -65,14 +65,14 @@ const ValuesSection = () => {
                 <div className="bg-foreground/10 backdrop-blur-md border border-foreground/20 p-2 rounded-full gap-3 md:gap-4.5 flex flex-row">
                     <Button
                         asChild
-                        className="hover:bg-orange-glow text-sm md:text-base"
+                        className="hover:bg-orange-glow"
                     >
                         <Link to={navLinks.contact}>Get a Quote</Link>
                     </Button>
                     <Button
                         asChild
                         variant={"outline"}
-                        className="border-primary-foreground text-primary-foreground text-sm md:text-base"
+                        className="border-primary-foreground text-primary-foreground"
                     >
                         <Link to={navLinks.join} className="flex items-center gap-2.5">
                             Join our Team

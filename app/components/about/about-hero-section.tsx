@@ -18,11 +18,11 @@ export const AboutHeroSection = () => {
         <SectionTitle size={"h1"} className="leading-tight">
           WHO WE ARE?
         </SectionTitle>
-        <p className="max-w-md text-background text-base md:text-lg">
+        <p className="max-w-md text-background text-sm md:text-base">
           Lorem ipsum tristique enim at in odio neque eget dignissim orci.
         </p>
 
-        <p className="text-background text-lg md:text-xl font-bold">
+        <p className="text-background text-lg md:text-xl font-medium">
           Want a custom solution?
         </p>
 
@@ -30,14 +30,14 @@ export const AboutHeroSection = () => {
           <div className="bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full gap-3 md:gap-4.5 flex flex-row">
             <Button
               asChild
-              className="hover:bg-orange-glow text-sm md:text-base"
+              className="hover:bg-orange-glow"
             >
               <Link to={navLinks.contact}>Get a Quote</Link>
             </Button>
             <Button
               asChild
               variant={"outline"}
-              className="border-primary-foreground text-primary-foreground text-sm md:text-base"
+              className="border-primary-foreground text-primary-foreground"
             >
               <Link to={navLinks.join} className="flex items-center gap-2.5">
                 Join our Team

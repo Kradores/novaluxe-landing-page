@@ -47,7 +47,7 @@ const Project = ({
           <ArrowUpRight className="size-3 lg:size-4 text-foreground" />
         </NavLink>
 
-        <div className="flex flex-col gap-2.5 text-shadow-lg">
+        <div className="flex flex-col gap-2.5">
           <SectionTitle asChild size={"h9"} className="text-left text-nowrap">
             <h3>{title}</h3>
           </SectionTitle>

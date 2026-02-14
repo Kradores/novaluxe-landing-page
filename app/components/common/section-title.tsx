@@ -15,6 +15,7 @@ const titleVariants = cva(
         default: "text-base",
         h1: "text-4xl md:text-7xl xl:text-8xl",
         h2: "text-2xl md:text-[46px] xl:text-6xl",
+        h3: "text-2xl md:text-4xl xl:text-5xl",
         h4: "text-[26px] md:text-4xl",
         h5: "text-xl md:text-3xl",
         h6: "text-[20px] md:text-2xl",
