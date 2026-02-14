@@ -36,8 +36,8 @@ export const JobOfferSection = () => {
             <div className="flex flex-col md:gap-4">
               {jobDetails.map((item) => (
                 <div key={item.label} className="grid grid-cols-1 md:grid-cols-2 py-4 border-b border-fade">
-                  <span className="text-foreground font-normal text-lg md:text-xl content-center">{item.label}</span>
-                  <span className="text-foreground font-medium text-lg md:text-xl content-center">{item.value}</span>
+                  <span className="text-foreground font-medium text-lg md:text-xl content-center">{item.label}</span>
+                  <span className="text-foreground font-normal text-lg md:text-xl content-center">{item.value}</span>
                 </div>
               ))}
             </div>
@@ -54,9 +54,9 @@ export const JobOfferSection = () => {
                 <div key={item.title} className="pb-6 md:pb-4 border-b border-fade space-y-3 md:space-y-4">
                   <div className="flex items-start gap-1.5">
                     <CheckCircle2 className="size-6 text-background fill-primary shrink-0 self-center" />
-                    <span className="text-foreground font-normal text-lg md:text-xl content-center">{item.title}</span>
+                    <span className="text-foreground font-medium text-lg md:text-xl content-center">{item.title}</span>
                   </div>
-                  <p className="text-foreground font-medium text-lg md:text-xl content-center">{item.description}</p>
+                  <p className="text-foreground font-normal text-lg md:text-xl content-center">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -72,7 +72,7 @@ export const JobOfferSection = () => {
               {requirements.map((item) => (
                 <div key={item} className="flex items-start gap-1.5">
                   <CheckCircle2 className="size-6 text-background fill-primary shrink-0 self-center" />
-                  <span className="text-foreground font-normal text-lg md:text-xl content-center">{item}</span>
+                  <span className="text-foreground font-medium text-lg md:text-xl content-center">{item}</span>
                 </div>
               ))}
             </div>
