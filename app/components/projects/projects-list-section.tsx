@@ -16,19 +16,19 @@ const DateDisplay = ({
   const month = format(date, "MMM").toUpperCase();
   const year = format(date, "yyyy");
   return <div className="flex-row gap-2 flex items-center justify-center">
-    <SectionTitle asChild size={"h2"} variant={"primary"}>
-      <span>
+    <SectionTitle asChild size={"h2"} variant={"primary"} className="leading-none">
+      <span className="font-sans max-md:text-5xl">
         {day}
       </span>
     </SectionTitle>
     <div className="flex flex-col self-end">
       <SectionTitle asChild size={"h8"} variant={"dark"} className="leading-tight text-left">
-        <span>
+        <span className="font-sans max-md:text-lg">
           {month}
         </span>
       </SectionTitle>
       <SectionTitle asChild size={"h8"} variant={"dark"} className="leading-tight text-left">
-        <span>
+        <span className="font-sans max-md:text-lg">
           {year}
         </span>
       </SectionTitle>

@@ -20,7 +20,7 @@ const NeedHelpSection = () => {
           </h2>
         </SectionTitle>
 
-        <p className="text-primary-foreground/90 text-base md:text-lg">
+        <p className="text-primary-foreground/90 text-sm md:text-base">
           We will get back to you in 24 hours during the week days.
         </p>
 
