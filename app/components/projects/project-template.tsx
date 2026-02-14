@@ -19,7 +19,7 @@ const InfoCard = ({ icon, label, value }: InfoCardProps) => {
           {label}
         </span>
       </SectionTitle>
-      <span className="text-sm md:text-base text-foreground font-medium">{value}</span>
+      <span className="text-base md:text-lg text-foreground font-medium">{value}</span>
     </div>
   );
 };
