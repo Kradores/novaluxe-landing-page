@@ -23,7 +23,7 @@ const ApplySection = () => {
               {contactInfo.map((item, index) => (
                 <div key={index} className="flex items-center gap-3 py-2">
                   <item.icon className="w-6 h-6 text-foreground" />
-                  <span className="text-foreground text-sm md:text-base">
+                  <span className="text-foreground text-sm md:text-base font-medium">
                     {item.text}
                   </span>
                 </div>
