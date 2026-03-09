@@ -31,7 +31,7 @@ const Project = ({
       onHoverStart={setActive}
       onTap={setActive}
       className={cn(
-        "relative rounded-lg overflow-hidden cursor-pointer bg-cover bg-no-repeat",
+        "relative rounded-xl overflow-hidden cursor-pointer bg-cover bg-no-repeat",
         className
       )}
     >

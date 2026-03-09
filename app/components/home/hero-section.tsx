@@ -1,17 +1,19 @@
 import { Button } from "~/components/ui/button";
-import worker1 from "/images/worker-1.webp";
-import worker2 from "/images/worker-2.webp";
-import worker3 from "/images/worker-3.webp";
 import { Link } from "react-router";
 import ImageFrame from "~/components/common/image-frame";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
+import { ResponsiveImage } from "~/components/common/responsive-img";
 
 const HeroSection = () => {
   return (
     <section className="relative bg-foreground overflow-hidden flex items-center justify-center">
-      <img
-        src={"/images/hero-bg.webp"}
+      <ResponsiveImage
+        src="/images/hero-bg/hero-bg-375.webp"
+        path="/images/hero-bg"
+        fileName="hero-bg"
+        fileExtension="webp"
+        sizesSet={[375, 600, 800, 1024, 1280, 1440, 2560]}
         alt="Solar panel installation"
         className="absolute inset-0 w-full h-full object-cover"
         rel="preload"
@@ -41,9 +43,9 @@ const HeroSection = () => {
 
           <div className="grid grid-cols-2 grid-rows-3 gap-4 md:gap-7 pt-11 md:col-start-2 lg:col-start-3 md:row-start-1 md:row-span-2 lg:row-span-1">
             <div className="flex flex-row justify-end">
-              <ImageFrame src={worker3} alt="Team member in blue helmet" className="z-10 rounded-full h-12 w-12 border-background border" />
-              <ImageFrame src={worker2} alt="Team member in yellow helmet" className="-ml-6 z-20 rounded-full h-12 w-12 border-background border" />
-              <ImageFrame src={worker1} alt="Team member in white helmet" className="-ml-6 z-30 rounded-full h-12 w-12 border-background border" classNames={{ image: "object-[10%]" }} />
+              <ImageFrame src={"/images/worker-3.webp"} alt="Team member in blue helmet" className="z-10 rounded-full h-12 w-12 border-background border" />
+              <ImageFrame src={"/images/worker-2.webp"} alt="Team member in yellow helmet" className="-ml-6 z-20 rounded-full h-12 w-12 border-background border" />
+              <ImageFrame src={"/images/worker-1.webp"} alt="Team member in white helmet" className="-ml-6 z-30 rounded-full h-12 w-12 border-background border" classNames={{ image: "object-[10%]" }} />
             </div>
 
             <div className="flex flex-col gap-1">

@@ -52,7 +52,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
           className="w-full h-62.5 sm:h-75 md:h-87.5 object-cover transition-all duration-500"
         />
         <div id="btn-overlay" className={"absolute inset-0 bg-secondary/50 flex flex-col justify-center items-center p-4 md:p-6 opacity-0"}>
-          <img src="/images/ellipse-btn.png" loading="lazy" className="absolute max-w-122 w-full h-auto left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover" />
+          <img src="/images/ellipse-btn.webp" loading="lazy" className="absolute max-w-122 w-full h-auto left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover" />
           <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full">
             <Button
               asChild
@@ -77,7 +77,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
 
 const services = [
   {
-    image: "/images/service-1.webp",
+    image: "/images/service-0.webp",
     title: "Photovoltaic Systems Building",
     description:
       "We design and install efficient solar systems that reduce energy costs, improve sustainability, and ensure long term performance.",

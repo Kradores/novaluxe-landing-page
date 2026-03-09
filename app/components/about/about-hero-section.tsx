@@ -3,12 +3,17 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
+import { ResponsiveImage } from "../common/responsive-img";
 
 export const AboutHeroSection = () => {
   return (
     <section className="relative overflow-hidden flex items-center justify-center">
-      <img
-        src={"/images/about-hero-bg.webp"}
+      <ResponsiveImage
+        src="/images/about-hero-bg/about-hero-bg-375.webp"
+        path="/images/about-hero-bg"
+        fileName="about-hero-bg"
+        fileExtension="webp"
+        sizesSet={[375, 600, 800, 1024, 1280, 1440, 2560]}
         alt="Solar panel installation"
         className="absolute inset-0 w-full h-full object-cover"
         rel="preload"

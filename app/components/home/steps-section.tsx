@@ -53,7 +53,7 @@ const StepCard = ({ icon: Icon, title, description }: StepCardProps) => {
             </div>
 
             <SectionTitle asChild size={"h9"} className="flex flex-col">
-                <h3>{title.map((t) => <span>{t}</span>)}</h3>
+                <h3>{title.map((t) => <span key={t}>{t}</span>)}</h3>
             </SectionTitle>
             <p className="text-sm md:text-base font-normal text-foreground-light max-w-70">{description}</p>
         </div>

@@ -23,10 +23,10 @@ const ServiceCard = ({
 }: ServiceItemProps) => {
   return (
     <div
-      className={`bg-card rounded-2xl flex flex-col shadow-sm/4 ${reversed ? "md:flex-row-reverse" : "md:flex-row"
-        } gap-1 md:gap-2 lg:gap-8 items-stretch`}
+      className={`bg-card rounded-2xl flex flex-col shadow-sm/4 items-stretch gap-y-4 ${reversed ? "md:flex-row-reverse" : "md:flex-row"
+        }`}
     >
-      <div className="order-2 lg:order-0">
+      <div className="order-2 md:order-0">
         <div
           className="h-full rounded-2xl overflow-hidden"
         >
@@ -38,7 +38,7 @@ const ServiceCard = ({
         </div>
       </div>
 
-      <div className="w-full order-1 lg:order-0 p-3 md:p-6 lg:p-8 md:min-w-118 space-y-8">
+      <div className="w-full order-1 md:order-0 p-3 md:p-6 lg:p-8 md:min-w-118 lg:max-w-[53%] space-y-8">
         <SectionTitle asChild size={"h5"} variant={"dark"} className="text-left">
           <h2>
             {title}
