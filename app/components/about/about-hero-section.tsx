@@ -3,9 +3,12 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
-import { ResponsiveImage } from "../common/responsive-img";
+import { ResponsiveImage } from "~/components/common/responsive-img";
+import { useTranslation } from "react-i18next";
 
 export const AboutHeroSection = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "about.hero" });
+  
   return (
     <section className="relative overflow-hidden flex items-center justify-center">
       <ResponsiveImage
@@ -14,21 +17,21 @@ export const AboutHeroSection = () => {
         fileName="about-hero-bg"
         fileExtension="webp"
         sizesSet={[375, 600, 800, 1024, 1280, 1440, 2560]}
-        alt="Solar panel installation"
+        alt={t("imageAlt")}
         className="absolute inset-0 w-full h-full object-cover"
         rel="preload"
         fetchPriority="high"
       />
       <div className="relative z-10 flex flex-col items-center gap-4.5 text-center px-3 max-md:pt-35 pb-42 md:py-27 lg:pb-24 xl:pb-51 2xl:pb-66 max-w-300">
         <SectionTitle size={"h1"} className="leading-tight">
-          WHO WE ARE?
+          {t("title")}
         </SectionTitle>
         <p className="max-w-md text-background text-sm md:text-base">
-          Lorem ipsum tristique enim at in odio neque eget dignissim orci.
+          {t("description")}
         </p>
 
         <p className="text-background text-lg md:text-xl font-medium">
-          Want a custom solution?
+          {t("ctaQuestion")}
         </p>
 
         <div>
@@ -37,7 +40,7 @@ export const AboutHeroSection = () => {
               asChild
               className="hover:bg-orange-glow"
             >
-              <Link to={navLinks.contact}>Get a Quote</Link>
+              <Link to={navLinks.contact}>{t("buttons.getQuote")}</Link>
             </Button>
             <Button
               asChild
@@ -45,7 +48,7 @@ export const AboutHeroSection = () => {
               className="border-primary-foreground text-primary-foreground"
             >
               <Link to={navLinks.join} className="flex items-center gap-2.5">
-                Join our Team
+                {t("buttons.joinTeam")}
                 <ArrowRight className="size-3.75" />
               </Link>
             </Button>

@@ -31,6 +31,56 @@
       "submit": "Get a Quote"
     }
   },
+  "about": {
+    "hero": {
+      "imageAlt": "Solar panel installation",
+      "title": "WHO WE ARE?",
+      "description": "A team you can rely on from planning to installation.",
+      "ctaQuestion": "Want a custom solution?",
+      "buttons": {
+        "getQuote": "Get a Quote",
+        "joinTeam": "Join our Team"
+      }
+    },
+    "stats": {
+      "description": "We are a practical team delivering reliable electrical and energy solutions for homes and businesses, with passion for sustainability.",
+      "items": {
+        "workers": "reliable workers",
+        "projects": "projects done",
+        "success": "success rate"
+      }
+    },
+    "story": {
+      "blocks": {
+        "aboutUs": {
+          "title": "ABOUT US",
+          "description": "Novaluxe was founded in early 2024 by Nicolai Cojocari with the aim of providing high-quality electrical and technical solutions for photovoltaic projects. The company was created in response to the need to reduce CO₂ emissions and accelerate the transition to an energy model based on clean and sustainable sources."
+        },
+        "mission": {
+          "title": "OUR MISSION",
+          "description": "Our mission is to design and implement efficient, safe solar systems tailored to the needs of each project, always ensuring professional, results-oriented work. Novaluxe operates in the B2B sector, partnering with companies that require a reliable technical partner for electrical installations and photovoltaic system assembly."
+        },
+        "global": {
+          "title": "AROUND THE WORLD",
+          "description": "Although we are a Spanish company, we operate across Europe, contributing technical expertise and experience to projects of different scales. Our team consists of professionals with over 15 years of experience in the industry, enabling us to deliver robust and well-executed solutions."
+        }
+      }
+    },
+    "values": {
+      "title": "Our values",
+      "description": "In the medium and long term, our goal is to continue growing, strengthen our presence in the sector, and consistently offer advanced technology at a fair price.",
+      "items": {
+        "professionalism": "Professionalism",
+        "safety": "Safety",
+        "responsibility": "responsibility",
+        "commitment": "commitment"
+      },
+      "buttons": {
+        "getQuote": "Get a Quote",
+        "joinTeam": "Join our Team"
+      }
+    }
+  },
   "projects": {
     "generic": {
       "projectType": "Project Type",
@@ -281,26 +331,38 @@
       },
       "ProjectsSection": {
         "title": "Our Projects",
-        "description": "We have worked on a wide range of projects, from small startups to large enterprises."
+        "description": "Real energy and electrical installation projects, focused on quality and long-term results."
       },
       "StepsSection": {
         "ready": "Ready to go in 4",
         "heading": "Our Working Steps",
         "steps": [
           {
-            "title": ["Consultation & Project", "Assessment"],
+            "title": [
+              "Consultation & Project",
+              "Assessment"
+            ],
             "description": "We have the initial consultation, visit the site, and assess feasibility to define project requirements."
           },
           {
-            "title": ["Proposal &", "Planning"],
+            "title": [
+              "Proposal &",
+              "Planning"
+            ],
             "description": "We prepare, adjust, and plan a customized budget for each project."
           },
           {
-            "title": ["Technical", "Preparation"],
+            "title": [
+              "Technical",
+              "Preparation"
+            ],
             "description": "We calculate, coordinate teams, and train specialists for each installation."
           },
           {
-            "title": ["Project", "Execution"],
+            "title": [
+              "Project",
+              "Execution"
+            ],
             "description": "We execute the complete installation with quality, safety, and efficiency."
           }
         ],
@@ -308,7 +370,7 @@
       },
       "WhatsNextSection": {
         "heading": "What's Next ?",
-        "paragraph": "We will get back to you in 24 hours during weekdays. For urgent matters, feel free to call us directly.",
+        "paragraph": "We will get back to you in 24 hours during the week days.",
         "formTitle": "Get a Quotation"
       }
     }
