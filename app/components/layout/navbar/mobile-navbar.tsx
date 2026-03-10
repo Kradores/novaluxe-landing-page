@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { NavLink } from "~/components/common/nav-link";
 import { Button } from "~/components/ui/button";
 import {
@@ -12,8 +12,10 @@ import {
 import { CONTACT_PHONE, navItems } from "~/lib/site";
 import { useLocation } from "react-router";
 import { cn, isLightBgPage } from "~/lib/utils";
+import { useTranslation } from "react-i18next";
 
 export function MobileNav() {
+  const { t } = useTranslation("translation", { keyPrefix: "nav" });
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
@@ -31,7 +33,7 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent side="right" className="w-full sm:w-100 border-0 pl-2">
         <SheetHeader>
-          <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+          <SheetTitle className="sr-only">{t("title")}</SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col gap-6 mt-8">
           <ul className="flex flex-col gap-4">
@@ -43,7 +45,7 @@ export function MobileNav() {
                   activeClassName="text-foreground"
                   onClick={() => setOpen(false)}
                 >
-                  {item.label}
+                  {t(item.label)}
                 </NavLink>
               </li>
             ))}

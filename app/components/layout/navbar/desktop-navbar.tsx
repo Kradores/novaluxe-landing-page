@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import { matchPath, useLocation } from "react-router";
 import { NavLink } from "~/components/common/nav-link";
 import { navItems } from "~/lib/site";
 import { cn, isLightBgPage } from "~/lib/utils";
 
 export function DesktopNav() {
+  const { t } = useTranslation("translation", { keyPrefix: "nav" });
   const location = useLocation();
   return (
     <nav className={cn("hidden lg:flex items-center justify-center py-3.5 px-5 bg-background/20 rounded-full", isLightBgPage(location.pathname) && "bg-foreground-light/10")}>
@@ -14,7 +16,7 @@ export function DesktopNav() {
               to={item.to}
               className={cn("text-base font-normal text-secondary-foreground transition-all hover:[text-shadow:0_0_1px_currentColor]", isLightBgPage(location.pathname) && "text-foreground")}
             >
-              {item.label}
+              {t(item.label)}
             </NavLink>
           </li>
         ))}

@@ -1,15 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { NavLink } from "~/components/common/nav-link";
 import { LogoFooter } from "~/components/icons";
 import { navItems, socialLinks } from "~/lib/site";
 
 export const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="w-full bg-background-dark pt-20 md:pt-25 lg:pt-20 pb-8 md:pb-10 lg:pb-12">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="flex flex-col gap-6 mb-8">
           <LogoFooter className="w-35 md:w-40 lg:w-45 h-auto" />
           <p className="text-secondary-foreground/70 text-sm md:text-base font-normal max-w-md">
-            Your trusted partner in Electrical & Construction Solutions
+            {t("footer.trust")}
           </p>
 
           <div className="flex items-center gap-3">
@@ -39,7 +41,7 @@ export const Footer = () => {
                     to={item.to}
                     className="text-sm md:text-base font-medium text-secondary-foreground transition-all hover:[text-shadow:0_0_1px_currentColor]"
                   >
-                    {item.label}
+                    {t(`nav.${item.label}`)}
                   </NavLink>
                 </li>
               ))}
@@ -47,7 +49,7 @@ export const Footer = () => {
           </nav>
 
           <p className="text-sm md:text-base font-normal text-secondary-foreground/70">
-            © 2025 Novaluxe Dynamics S.L. All rights Reserved
+            {t("footer.rights")}
           </p>
         </div>
       </div>

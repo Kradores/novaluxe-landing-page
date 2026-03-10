@@ -203,5 +203,17 @@
       "projectType": "Photovoltaic System",
       "location": "Spain, Ford Valencia"
     }
+  },
+  "footer": {
+    "trust": "Your trusted partner in Electrical & Construction Solutions",
+    "rights": "© 2025 Novaluxe Dynamics S.L. All rights Reserved"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "title": "Navigation Menu"
   }
 }

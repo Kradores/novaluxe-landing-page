@@ -10,11 +10,11 @@ export const navLinks = {
 }
 
 export const navItems = [
-  { to: navLinks.home, label: "Home" },
-  { to: navLinks.services, label: "Services" },
-  { to: navLinks.projects, label: "Projects" },
-  { to: navLinks.about, label: "About" },
-  { to: navLinks.contact, label: "Contact" },
+  { to: navLinks.home, label: "home" },
+  { to: navLinks.services, label: "services" },
+  { to: navLinks.projects, label: "projects" },
+  { to: navLinks.about, label: "about" },
+  { to: navLinks.contact, label: "contact" },
 ];
 
 export const CONTACT_PHONE = "+34 8977 876667";
