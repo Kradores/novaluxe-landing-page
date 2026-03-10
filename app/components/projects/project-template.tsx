@@ -100,7 +100,7 @@ const ProjectTemplate = ({ project }: { project: Project }) => {
 
       <div className="flex justify-center">
         <Button variant="outline" onClick={loadMoreImages} disabled={images.length >= project.images.length}>
-          Load More <ArrowDown className="size-4" />
+          {t("generic.loadMore")} <ArrowDown className="size-4" />
         </Button>
       </div>
     </section>
