@@ -49,13 +49,27 @@ const DesktopView = () => {
         </div>
         <ProjectsRow defaultOpen={0} className="h-50 lg:h-62 xl:h-80">
           {getDesktopProjects().row1.map(data => (
-            <Project variants={variants} key={data.id} className={data.className} title={t(`projects.${data.id}.title`)} description={`${t(`projects.${data.id}.location`)} | ${t(`projects.${data.id}.duration`, { months: data.duration })}`} />
+            <Project
+              variants={variants}
+              key={data.id}
+              className={data.className}
+              title={t(`projects.${data.id}.title`)}
+              description={`${t(`projects.${data.id}.location`)} | ${t(`projects.${data.id}.duration`, { months: data.duration })}`}
+              href={data.href}
+            />
           ))}
         </ProjectsRow>
       </div>
       <ProjectsRow defaultOpen={1} className="h-50 lg:h-62 xl:h-80">
         {getDesktopProjects().row2.map(data => (
-          <Project variants={variants} key={data.id} className={data.className} title={t(`projects.${data.id}.title`)} description={`${t(`projects.${data.id}.location`)} | ${t(`projects.${data.id}.duration`, { months: data.duration })}`} />
+          <Project
+            variants={variants}
+            key={data.id}
+            className={data.className}
+            title={t(`projects.${data.id}.title`)}
+            description={`${t(`projects.${data.id}.location`)} | ${t(`projects.${data.id}.duration`, { months: data.duration })}`}
+            href={data.href}
+          />
         ))}
       </ProjectsRow>
     </section>

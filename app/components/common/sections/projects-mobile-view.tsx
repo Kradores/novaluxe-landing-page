@@ -27,7 +27,12 @@ const MobileView = () => {
           <CarouselContent>
             {getMobileProjects().map(data => (
               <CarouselItem key={data.id} className="aspect-video basis-[90%]">
-                <MobileProject className={data.className} title={t(`projects.${data.id}.title`)} description={`${t(`projects.${data.id}.location`)} | ${t(`projects.${data.id}.duration`, { months: data.duration })}`} />
+                <MobileProject
+                  className={data.className}
+                  title={t(`projects.${data.id}.title`)}
+                  description={`${t(`projects.${data.id}.location`)} | ${t(`projects.${data.id}.duration`, { months: data.duration })}`}
+                  href={data.href}
+                />
               </CarouselItem>
             ))}
           </CarouselContent>

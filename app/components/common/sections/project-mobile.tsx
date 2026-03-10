@@ -7,12 +7,14 @@ import SectionTitle from "~/components/common/section-title";
 interface MobileProjectProps {
   title: string;
   description: string;
+  href: string;
   className?: string;
 }
 
 const MobileProject = ({
   title,
   description,
+  href,
   className,
 }: MobileProjectProps) => {
   return (
@@ -26,7 +28,7 @@ const MobileProject = ({
         className="w-full h-full flex flex-col p-6 justify-between"
       >
         <NavLink
-          to={navLinks.contact}
+          to={href}
           className="bg-background rounded-full w-6 h-6 flex items-center justify-center self-end"
         >
           <ArrowUpRight className="size-3 text-foreground" />

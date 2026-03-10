@@ -13,6 +13,7 @@ interface ProjectProps {
   isOpen?: boolean;
   setActive?: () => void;
   variants: Variants;
+  href: string;
 }
 
 const Project = ({
@@ -22,6 +23,7 @@ const Project = ({
   isOpen = false,
   setActive,
   variants,
+  href,
 }: ProjectProps) => {
   return (
     <m.div
@@ -41,7 +43,7 @@ const Project = ({
         className="w-full h-full flex flex-col p-6 justify-between"
       >
         <NavLink
-          to={navLinks.contact}
+          to={href}
           className="bg-background rounded-full w-6 lg:w-11 h-6 lg:h-11 flex items-center justify-center self-end"
         >
           <ArrowUpRight className="size-3 lg:size-4 text-foreground" />
