@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { useTranslation } from "react-i18next";
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Textarea } from "~/components/ui/textarea";
@@ -14,21 +15,22 @@ import {
 import SectionTitle from "./section-title";
 import type { ReactNode } from "react";
 
-const formSchema = z.object({
-  fullName: z.string().min(2, "Name must be at least 2 characters").max(100),
-  businessName: z.string().min(1, "Business name is required").max(100),
-  email: z.string().email("Invalid email address").max(255),
-  phone: z.string().min(6, "Valid phone number required").max(20),
-  message: z.string().min(10, "Message must be at least 10 characters").max(1000),
-});
-
-type FormData = z.infer<typeof formSchema>;
-
 interface ContactFormProps {
   children?: ReactNode;
 }
 
 export const ContactForm = ({ children }: ContactFormProps) => {
+  const { t } = useTranslation("translation", { keyPrefix: "common.contact.form" });
+
+  const formSchema = z.object({
+    fullName: z.string().min(2, t("errors.fullNameMin")).max(100),
+    businessName: z.string().min(1, t("errors.businessNameRequired")).max(100),
+    email: z.email(t("errors.invalidEmail")).max(255),
+    phone: z.string().min(6, t("errors.phoneRequired")).max(20),
+    message: z.string().min(10, t("errors.messageMin")).max(1000),
+  });
+
+  type FormData = z.infer<typeof formSchema>;
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -64,7 +66,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
               <FormItem>
                 <FormControl>
                   <Input
-                    placeholder="Full Name"
+                    placeholder={t("fullName")}
                     {...field}
                     className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12 text-sm md:text-base font-normal"
                   />
@@ -81,7 +83,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
               <FormItem>
                 <FormControl>
                   <Input
-                    placeholder="Business Name"
+                    placeholder={t("businessName")}
                     {...field}
                     className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12 text-sm md:text-base font-normal"
                   />
@@ -100,7 +102,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
                   <FormControl>
                     <Input
                       type="email"
-                      placeholder="Email"
+                      placeholder={t("email")}
                       {...field}
                       className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12 text-sm md:text-base font-normal"
                     />
@@ -118,7 +120,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
                   <FormControl>
                     <Input
                       type="tel"
-                      placeholder="Phone no."
+                      placeholder={t("phone")}
                       {...field}
                       className="rounded-full bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 h-12 text-sm md:text-base font-normal"
                     />
@@ -136,7 +138,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
               <FormItem>
                 <FormControl>
                   <Textarea
-                    placeholder="Describe your project"
+                    placeholder={t("message")}
                     {...field}
                     className="rounded-2xl bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/70 min-h-30 resize-none text-sm md:text-base font-normal"
                   />
@@ -150,7 +152,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
             type="submit"
             className="w-full rounded-full bg-background text-primary hover:bg-background/90 h-12 mt-2 mb-3 md:mb-4 text-sm md:text-base font-medium"
           >
-            Send Message
+            {t("sendMessage")}
           </Button>
         </form>
       </Form>

@@ -4,8 +4,10 @@ import ProjectsRow from "./projects-row";
 import Project from "./project";
 import { useMemo } from "react";
 import SectionTitle from "~/components/common/section-title";
+import { useTranslation } from "react-i18next";
 
 const DesktopView = () => {
+  const { t } = useTranslation();
   const { breakpoint } = useBreakpoint();
 
   const variants = useMemo(() => {
@@ -39,21 +41,21 @@ const DesktopView = () => {
       <div className="flex flex-row justify-between gap-5">
         <div className="md:space-y-2.5 lg:space-y-4 self-center max-w-86 xl:max-w-105">
           <SectionTitle asChild size={"h2"} variant={"dark"} className="text-left">
-            <h2>Our Projects</h2>
+            <h2>{t("common.sections.ProjectsSection.title")}</h2>
           </SectionTitle>
           <p className="text-foreground font-normal">
-            We have worked on a wide range of projects, from small startups to large enterprises.
+            {t("common.sections.ProjectsSection.description")}
           </p>
         </div>
         <ProjectsRow defaultOpen={0} className="h-50 lg:h-62 xl:h-80">
           {getDesktopProjects().row1.map(data => (
-            <Project variants={variants} key={data.id} {...data} />
+            <Project variants={variants} key={data.id} className={data.className} title={t(`projects.${data.id}.title`)} description={`${t(`projects.${data.id}.location`)} | ${t(`projects.${data.id}.duration`, { months: data.duration })}`} />
           ))}
         </ProjectsRow>
       </div>
       <ProjectsRow defaultOpen={1} className="h-50 lg:h-62 xl:h-80">
         {getDesktopProjects().row2.map(data => (
-          <Project variants={variants} key={data.id} {...data} />
+          <Project variants={variants} key={data.id} className={data.className} title={t(`projects.${data.id}.title`)} description={`${t(`projects.${data.id}.location`)} | ${t(`projects.${data.id}.duration`, { months: data.duration })}`} />
         ))}
       </ProjectsRow>
     </section>

@@ -24,39 +24,33 @@ export const overlayVariants: Variants = {
 
 const projects = [
   {
-    id: "project-1",
-    title: "Project 1",
-    description: "Palma del Rio | Spain | 3 months",
+    id: "villares-del-orbigo",
+    duration: 3,
     className: "bg-[url('/images/project-1.webp')]",
   },
   {
-    id: "project-2",
-    title: "Project 2",
-    description: "Palma del Rio | Spain | 3 months",
+    id: "almodovar-del-campo",
+    duration: 4,
     className: "bg-[url('/images/project-2.webp')]",
   },
   {
-    id: "project-3",
-    title: "Project 3",
-    description: "Palma del Rio | Spain | 3 months",
+    id: "los-canuelos",
+    duration: 3,
     className: "bg-[url('/images/project-3.webp')]",
   },
   {
-    id: "project-4",
-    title: "Project 4",
-    description: "Palma del Rio | Spain | 3 months",
+    id: "covatilla",
+    duration: 3,
     className: "bg-[url('/images/project-4.webp')]",
   },
   {
-    id: "project-5",
-    title: "Project 5",
-    description: "Palma del Rio | Spain | 3 months",
+    id: "elgoibar",
+    duration: 2,
     className: "bg-[url('/images/project-5.webp')]",
   },
   {
-    id: "project-6",
-    title: "Project 6",
-    description: "Palma del Rio | Spain | 3 months",
+    id: "lepe-huelva",
+    duration: 3,
     className: "bg-[url('/images/project-6.webp')]",
   }
 ]

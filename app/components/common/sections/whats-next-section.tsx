@@ -3,6 +3,7 @@ import SectionTitle from "~/components/common/section-title";
 import { ContactForm } from "~/components/common/contact-form";
 import { CONTACT_ADDRESS, CONTACT_EMAIL, CONTACT_PHONE } from "~/lib/site";
 import { MapPin } from "~/components/icons";
+import { useTranslation } from "react-i18next";
 
 const contactInfo = [
   { icon: Phone, text: CONTACT_PHONE },
@@ -11,6 +12,7 @@ const contactInfo = [
 ];
 
 export const WhatsNextSection = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "common.sections.WhatsNextSection" });
 
   return (
     <section className="w-full bg-background pt-16 md:pt-24 lg:pt-32">
@@ -18,11 +20,11 @@ export const WhatsNextSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           <div className="flex flex-col">
             <SectionTitle asChild size={"h2"} variant={"dark"} className="text-left mb-6 md:mb-7">
-              <h2>What's Next ?</h2>
+              <h2>{t("heading")}</h2>
             </SectionTitle>
 
             <p className="text-foreground text-sm md:text-base font-normal leading-normal max-w-md mb-10 md:mb-8 lg:mb-10 xl:mb-12">
-              We will get back to you in 24 hours during weekdays. For urgent matters, feel free to call us directly.
+              {t("paragraph")}
             </p>
 
             <div className="flex flex-col gap-2">
@@ -39,7 +41,7 @@ export const WhatsNextSection = () => {
 
           <div className="relative -mb-10 md:-mb-12 lg:-mb-30">
             <ContactForm>
-              <h3>Get a Quotation</h3>
+              <h3>{t("formTitle")}</h3>
             </ContactForm>
           </div>
         </div>

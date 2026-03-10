@@ -3,39 +3,14 @@ import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
+import { useTranslation } from "react-i18next";
 
-const steps = [
-    {
-        icon: Consultation,
-        title: [
-            "Consultation & Project",
-            "Assessment"
-        ],
-        description:
-            "We have the initial consultation, visit the site, and assess feasibility to define project requirements.",
-    },
-    {
-        icon: Proposal,
-        title: [
-            "Proposal &",
-            "Planning"
-        ],
-        description: "We prepare, adjust, and plan a customized budget for each project.",
-    },
-    {
-        icon: Tech,
-        title: [
-            "Technical",
-            "Preparation"
-        ],
-        description: "We calculate, coordinate teams, and train specialists for each installation.",
-    },
-    {
-        icon: Execution,
-        title: ["Project", "Execution"],
-        description: "We execute the complete installation with quality, safety, and efficiency.",
-    },
-];
+const iconMap: Record<number, React.ElementType> = {
+  "0": Consultation,
+  "1": Proposal,
+  "2": Tech,
+  "3": Execution,
+};
 
 interface StepCardProps {
     icon: React.ElementType;
@@ -61,20 +36,26 @@ const StepCard = ({ icon: Icon, title, description }: StepCardProps) => {
 };
 
 const StepsSection = () => {
+    const { t } = useTranslation("translation", { keyPrefix: "common.sections.StepsSection" });
+    const steps = t("steps", { returnObjects: true }) as Array<{
+        title: string[];
+        description: string;
+    }>;
+    
     return (
         <section className="w-full bg-blue-dark-glow py-16 md:py-24">
             <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col items-center gap-10 md:gap-16">
                 <div className="px-6 py-2 border border-primary/40 bg-primary/8 rounded-full">
-                    <span className="text-sm md:text-base font-normal uppercase tracking-wider text-primary">Ready to go in 4</span>
+                    <span className="text-sm md:text-base font-normal uppercase tracking-wider text-primary">{t("ready")}</span>
                 </div>
 
                 <SectionTitle size={"h2"} asChild>
-                    <h2>Our Working Steps</h2>
+                    <h2>{t("heading")}</h2>
                 </SectionTitle>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8 lg:gap-6 w-full">
                     {steps.map((step, index) => (
-                        <StepCard key={index} icon={step.icon} title={step.title} description={step.description} />
+                        <StepCard key={index} icon={iconMap[index as keyof typeof iconMap]} title={step.title} description={step.description} />
                     ))}
                 </div>
 
@@ -83,7 +64,7 @@ const StepsSection = () => {
                         asChild
                         className="group-hover:bg-orange-glow"
                     >
-                        <Link to={navLinks.contact}>Get a Quote</Link>
+                        <Link to={navLinks.contact}>{t("button")}</Link>
                     </Button>
                 </div>
             </div>

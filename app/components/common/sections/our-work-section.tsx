@@ -10,42 +10,19 @@ import {
 } from "~/components/ui/carousel";
 import { cn } from "~/lib/utils";
 import SectionTitle from "~/components/common/section-title";
-
-const testimonials = [
-  {
-    quote: "Novaluxe Dynamic Team made things easy from day one. Great communication, fast execution, and they really listened to what we needed, adapting quickly without overcomplicating the process at all. We'd absolutely recommend them.",
-    author: "Maria Gonzalez",
-    title: "CEO",
-    company: "GreenTech Solutions",
-    location: "Seville, Spain",
-  },
-  {
-    quote: "Working with the team was a seamless experience. They delivered high-quality work on time and were always responsive to our needs. Their expertise in solar installations is unmatched.",
-    highlight: "Exceptional service from start to finish.",
-    author: "Thomas Mueller",
-    title: "Operations Director",
-    company: "EcoEnergy GmbH",
-    location: "Munich, Germany",
-  },
-  {
-    quote: "The professionalism and technical knowledge they brought to our project exceeded our expectations. They made the complex seem simple and kept us informed every step of the way.",
-    highlight: "True experts in their field.",
-    author: "Sophie Laurent",
-    title: "Project Manager",
-    company: "SunPower France",
-    location: "Lyon, France",
-  },
-  {
-    quote: "From initial consultation to final installation, everything was handled with precision. The team's dedication to quality and safety standards is impressive.",
-    highlight: "A reliable partner we trust completely.",
-    author: "Alessandro Rossi",
-    title: "Technical Director",
-    company: "Verde Energia",
-    location: "Milan, Italy",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export const OurWorkSection = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "common.sections.OurWorkSection" });
+  const testimonials = t("testimonials", { returnObjects: true }) as Array<{
+    quote: string;
+    author: string;
+    title: string;
+    company: string;
+    location: string;
+    highlight?: string;
+  }>;
+  const title = t("title", { returnObjects: true }) as string[];
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -80,10 +57,10 @@ export const OurWorkSection = () => {
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="mx-auto">
           <div className="text-center mb-4 md:mb-7 lg:mb-12">
-            <SectionTitle asChild size={"h2"}>
+            <SectionTitle asChild size={"h2"} className="max-w-[95%] mx-auto">
               <h2>
-                <span className="text-secondary-foreground mr-3">Our Work, Their</span>
-                <span className="text-foreground-light">Success</span>
+                <span className="text-secondary-foreground mr-3">{title[0]}</span>
+                <span className="text-foreground-light">{title[1]}</span>
               </h2>
             </SectionTitle>
           </div>
@@ -126,7 +103,7 @@ export const OurWorkSection = () => {
               className="h-10 w-10 rounded-full border-foreground text-foreground hover:border-foreground-light hover:text-foreground-light"
             >
               <ArrowLeft className="h-4 w-4" />
-              <span className="sr-only">Previous testimonial</span>
+              <span className="sr-only">{t("controls.previous")}</span>
             </Button>
 
             <div className="flex gap-2">
@@ -141,7 +118,7 @@ export const OurWorkSection = () => {
                       : "bg-foreground hover:bg-foreground-light"
                   )}
                 >
-                  <span className="sr-only">Go to slide {i + 1}</span>
+                  <span className="sr-only">{t("controls.slideAria", { index: i + 1 })}</span>
                 </button>
               ))}
             </div>
@@ -153,7 +130,7 @@ export const OurWorkSection = () => {
               className="h-10 w-10 rounded-full border-foreground text-foreground hover:border-foreground-light hover:text-foreground-light"
             >
               <ArrowRight className="h-4 w-4" />
-              <span className="sr-only">Next testimonial</span>
+              <span className="sr-only">{t("controls.next")}</span>
             </Button>
           </div>
         </div>

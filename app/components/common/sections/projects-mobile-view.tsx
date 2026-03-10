@@ -2,16 +2,18 @@ import { Carousel, CarouselContent, CarouselItem } from "~/components/ui/carouse
 import MobileProject from "./project-mobile";
 import { getMobileProjects } from "./projects-section.data";
 import SectionTitle from "~/components/common/section-title";
+import { useTranslation } from "react-i18next";
 
 const MobileView = () => {
+  const { t } = useTranslation();
   return (
     <section className="w-full flex flex-col gap-8 px-3 mx-auto py-25">
       <div className="space-y-4">
         <SectionTitle asChild size={"h2"} variant={"dark"} className="text-left">
-          <h2>Our Projects</h2>
+          <h2>{t("title")}</h2>
         </SectionTitle>
         <p className="text-sm text-foreground font-normal">
-          We have worked on a wide range of projects, from small startups to large enterprises.
+          {t("description")}
         </p>
       </div>
       <div className="w-full mx-auto">
@@ -25,7 +27,7 @@ const MobileView = () => {
           <CarouselContent>
             {getMobileProjects().map(data => (
               <CarouselItem key={data.id} className="aspect-video basis-[90%]">
-                <MobileProject {...data} />
+                <MobileProject className={data.className} title={t(`projects.${data.id}.title`)} description={`${t(`projects.${data.id}.location`)} | ${t(`projects.${data.id}.duration`, { months: data.duration })}`} />
               </CarouselItem>
             ))}
           </CarouselContent>
