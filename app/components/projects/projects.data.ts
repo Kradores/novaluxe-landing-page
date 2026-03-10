@@ -1,126 +1,177 @@
 export interface Project {
   slug: string;
   date: Date;
-  title: string;
-  subtitle: string;
-  description: string;
-  content: string;
-  duration: string;
-  projectType: string;
-  location: string;
+  duration: number;
   headerImage: string;
   images: string[];
 }
 
 export const projects: Project[] = [
   {
-    slug: "fv-lea-artibai",
-    date: new Date(2024, 10, 15), // November 15, 2024
-    title: "FV Lea Artibai",
-    subtitle: "Industrial Photovoltaic Installation",
-    description: "Large-scale photovoltaic system installation for industrial complex in the Lea Artibai region, delivering sustainable energy solutions.",
-    content: `This project involved the complete design and installation of a photovoltaic system for an industrial facility in the Lea Artibai region. Our team managed every aspect from initial consultation through final commissioning.
-
-The installation includes high-efficiency solar panels optimized for the local climate conditions, along with advanced monitoring systems to ensure peak performance year-round.`,
-    duration: "3 months",
-    projectType: "Photovoltaic System",
-    location: "Spain, Artibai",
-    headerImage: "/svg/placeholder.svg",
+    slug: "villares-del-orbigo",
+    date: new Date(2024, 3, 1),
+    duration: 3,
+    headerImage: "/images/projects/villares-del-orbigo/0-1440.webp",
     images: [
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
+      "/images/projects/villares-del-orbigo/1-500.webp",
+      "/images/projects/villares-del-orbigo/2-500.webp",
     ],
   },
   {
-    slug: "fv-elgoibar-eta-mendado",
-    date: new Date(2024, 9, 22), // October 22, 2024
-    title: "FV Elgoibar Eta Mendado",
-    subtitle: "Commercial Solar Energy Project",
-    description: "Comprehensive solar installation serving multiple commercial buildings in Elgoibar and Mendado areas.",
-    content: `A multi-site photovoltaic installation project spanning commercial facilities across Elgoibar and Mendado. This project demonstrates our capability to coordinate complex installations across multiple locations.
-
-The system was designed to maximize energy production while minimizing visual impact on the surrounding architecture.`,
-    duration: "4 months",
-    projectType: "Photovoltaic System",
-    location: "Spain, Elgoibar",
-    headerImage: "/svg/placeholder.svg",
+    slug: "almodovar-del-campo",
+    date: new Date(2024, 4, 1),
+    duration: 4,
+    headerImage: "/images/projects/almodovar-del-campo/0-1440.webp",
     images: [
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
+      "/images/projects/almodovar-del-campo/1-500.webp",
+      "/images/projects/almodovar-del-campo/2-500.webp",
+      "/images/projects/almodovar-del-campo/3-500.webp",
+      "/images/projects/almodovar-del-campo/4-500.webp",
+      "/images/projects/almodovar-del-campo/5-500.webp",
     ],
   },
   {
-    slug: "maestros-proveedores",
-    date: new Date(2024, 8, 10), // September 10, 2024
-    title: "Maestros Proveedores",
-    subtitle: "Warehouse Energy Optimization",
-    description: "Energy efficiency upgrade and solar installation for a major distribution center.",
-    content: `Complete energy optimization project for Maestros Proveedores distribution center. The project included roof-mounted solar panels and energy storage systems.
-
-Our solution reduced the facility's energy costs by 40% while providing reliable backup power during peak demand periods.`,
-    duration: "2 months",
-    projectType: "Energy Optimization",
-    location: "Spain, Barcelona",
-    headerImage: "/svg/placeholder.svg",
+    slug: "los-canuelos",
+    date: new Date(2024, 5, 1),
+    duration: 3,
+    headerImage: "/images/projects/los-canuelos/0-1440.webp",
     images: [
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
+      "/images/projects/los-canuelos/1-500.webp",
+      "/images/projects/los-canuelos/2-500.webp",
+      "/images/projects/los-canuelos/3-500.webp",
+      "/images/projects/los-canuelos/4-500.webp",
+      "/images/projects/los-canuelos/5-500.webp",
     ],
   },
   {
-    slug: "fv-epc-ford",
-    date: new Date(2024, 7, 5), // August 5, 2024
-    title: "FV EPC Ford",
-    subtitle: "Automotive Industry Solar Project",
-    description: "Large-scale EPC project for Ford manufacturing facility, featuring advanced solar technology.",
-    content: `Engineering, Procurement, and Construction (EPC) project for Ford's manufacturing facility. This flagship installation showcases our ability to deliver industrial-scale renewable energy solutions.
-
-The project includes over 2,000 solar panels with smart grid integration and real-time performance monitoring.`,
-    duration: "6 months",
-    projectType: "EPC Solar Project",
-    location: "Spain, Valencia",
-    headerImage: "/svg/placeholder.svg",
+    slug: "covatilla",
+    date: new Date(2024, 6, 1),
+    duration: 3,
+    headerImage: "/images/projects/covatilla/0-1440.webp",
     images: [
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
+      "/images/projects/covatilla/1-500.webp",
+      "/images/projects/covatilla/2-500.webp",
+      "/images/projects/covatilla/3-500.webp",
     ],
   },
   {
-    slug: "fv-omya-clariana-larboc",
-    date: new Date(2024, 5, 18), // June 18, 2024
-    title: "FV Omya Clariana L'Arboc",
-    subtitle: "Industrial Mining Facility Installation",
-    description: "Photovoltaic installation for Omya mining operations in Clariana L'Arboc region.",
-    content: `Specialized solar installation for Omya's industrial mining facility in Clariana L'Arboc. The project required custom engineering solutions to accommodate the unique site requirements.
-
-Despite challenging terrain conditions, our team successfully installed a high-capacity system that now powers significant portions of the facility's operations.`,
-    duration: "5 months",
-    projectType: "Industrial PV System",
-    location: "Spain, Tarragona",
-    headerImage: "/svg/placeholder.svg",
+    slug: "elgoibar",
+    date: new Date(2024, 7, 1),
+    duration: 2,
+    headerImage: "/images/projects/elgoibar/0-1440.webp",
     images: [
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
-      "/svg/placeholder.svg",
+      "/images/projects/elgoibar/1-500.webp",
+      "/images/projects/elgoibar/2-500.webp",
+      "/images/projects/elgoibar/3-500.webp",
+      "/images/projects/elgoibar/4-500.webp",
+      "/images/projects/elgoibar/5-500.webp",
+      "/images/projects/elgoibar/6-500.webp",
+      "/images/projects/elgoibar/7-500.webp",
+      "/images/projects/elgoibar/8-500.webp",
+      "/images/projects/elgoibar/9-500.webp",
+      "/images/projects/elgoibar/10-500.webp",
+    ],
+  },
+  {
+    slug: "lepe-huelva",
+    date: new Date(2024, 8, 1),
+    duration: 3,
+    headerImage: "/images/projects/lepe-huelva/0-1440.webp",
+    images: [
+      "/images/projects/lepe-huelva/1-500.webp",
+      "/images/projects/lepe-huelva/2-500.webp",
+      "/images/projects/lepe-huelva/3-500.webp",
+      "/images/projects/lepe-huelva/4-500.webp",
+    ],
+  },
+  {
+    slug: "mansilla-de-las-mulas",
+    date: new Date(2024, 9, 1),
+    duration: 3,
+    headerImage: "/images/projects/mansilla-de-las-mulas/0-1440.webp",
+    images: [
+      "/images/projects/mansilla-de-las-mulas/1-500.webp",
+      "/images/projects/mansilla-de-las-mulas/2-500.webp",
+      "/images/projects/mansilla-de-las-mulas/3-500.webp",
+      "/images/projects/mansilla-de-las-mulas/4-500.webp",
+      "/images/projects/mansilla-de-las-mulas/5-500.webp",
+    ],
+  },
+  {
+    slug: "markina",
+    date: new Date(2024, 10, 1),
+    duration: 2,
+    headerImage: "/images/projects/markina/0-1440.webp",
+    images: [
+      "/images/projects/markina/1-500.webp",
+      "/images/projects/markina/2-500.webp",
+      "/images/projects/markina/3-500.webp",
+    ],
+  },
+  {
+    slug: "martos-jaen",
+    date: new Date(2024, 11, 1),
+    duration: 3,
+    headerImage: "/images/projects/martos-jaen/0-1440.webp",
+    images: [
+      "/images/projects/martos-jaen/1-500.webp",
+      "/images/projects/martos-jaen/2-500.webp",
+    ],
+  },
+  {
+    slug: "binisegui-menorca",
+    date: new Date(2024, 12, 1),
+    duration: 4,
+    headerImage: "/images/projects/binisegui-menorca/0-1440.webp",
+    images: [
+      "/images/projects/binisegui-menorca/1-500.webp",
+      "/images/projects/binisegui-menorca/2-500.webp",
+      "/images/projects/binisegui-menorca/3-500.webp",
+      "/images/projects/binisegui-menorca/4-500.webp",
+    ],
+  },
+  {
+    slug: "omya",
+    date: new Date(2025, 1, 1),
+    duration: 2,
+    headerImage: "/images/projects/omya/0-1440.webp",
+    images: [
+      "/images/projects/omya/1-500.webp",
+      "/images/projects/omya/2-500.webp",
+      "/images/projects/omya/3-500.webp",
+    ],
+  },
+  {
+    slug: "guadalcazar",
+    date: new Date(2025, 2, 1),
+    duration: 3,
+    headerImage: "/images/projects/guadalcazar/0-1440.webp",
+    images: [
+    ],
+  },
+  {
+    slug: "ororbia-pamplona",
+    date: new Date(2025, 3, 1),
+    duration: 2,
+    headerImage: "/images/projects/ororbia-pamplona/0-1440.webp",
+    images: [
+    ],
+  },
+  {
+    slug: "petunia-ciudad-real",
+    date: new Date(2025, 4, 1),
+    duration: 3,
+    headerImage: "/images/projects/petunia-ciudad-real/0-1440.webp",
+    images: [
+      "/images/projects/petunia-ciudad-real/1-500.webp",
+    ],
+  },
+  {
+    slug: "ford-valencia",
+    date: new Date(2025, 5, 1),
+    duration: 2,
+    headerImage: "/images/projects/ford-valencia/0-1440.webp",
+    images: [
     ],
   },
 ];

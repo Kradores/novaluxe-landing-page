@@ -13,6 +13,7 @@ import { Spinner } from "./components/ui/spinner";
 import { domAnimation, LazyMotion } from "motion/react";
 import { Navbar } from "./components/layout/navbar/navbar";
 import { Footer } from "./components/layout/footer";
+import "./i18n";
 
 export const links: Route.LinksFunction = () => [];
 

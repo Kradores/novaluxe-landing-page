@@ -3,6 +3,8 @@ import { Button } from "~/components/ui/button";
 import { type Project } from "./projects.data";
 import SectionTitle from "../common/section-title";
 import { Execution, Proposal, Tech } from "../icons";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface InfoCardProps {
   icon: React.ReactNode;
@@ -25,59 +27,70 @@ const InfoCard = ({ icon, label, value }: InfoCardProps) => {
 };
 
 const ProjectTemplate = ({ project }: { project: Project }) => {
+  const { t } = useTranslation("translation", { keyPrefix: `projects`});
+  const [images, setImages] = useState<string[]>(project.images.slice(0, 6));
+  const title = t(`${project.slug}.title`, "Project Title");
+  const content = t(`${project.slug}.content`, { returnObjects: true }) as string[];
+
+  const loadMoreImages = () => {
+    setImages(project.images);
+  };
   return (
     <section className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col items-center gap-12 pt-25 pb-15 lg:pb-25">
       <div className="w-full overflow-hidden rounded-2xl lg:rounded-3xl shadow-sm/8">
         <img
           src={project.headerImage}
-          alt={project.title}
+          alt={title}
           className="w-full h-64 sm:h-80 lg:h-96 object-cover"
         />
       </div>
 
-      <div className="text-center space-y-2">
+      <div className="text-center">
         <SectionTitle asChild size={"h2"} variant={"dark"}>
           <h1>
-            {project.title}
+            {title}
           </h1>
         </SectionTitle>
-        <p className="text-sm md:text-base text-foreground">{project.subtitle}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
         <InfoCard
           icon={<Proposal className="size-10.5" fill="var(--primary)" />}
-          label="Duration"
-          value={project.duration}
+          label={t("generic.duration")}
+          value={t(`${project.slug}.duration`, { months: project.duration })}
         />
         <InfoCard
           icon={<Execution className="size-10.5" fill="var(--primary)" />}
-          label="Project Type"
-          value={project.projectType}
+          label={t("generic.projectType")}
+          value={t(`${project.slug}.projectType`)}
         />
         <InfoCard
           icon={<Tech className="size-10.5" fill="var(--primary)" />}
-          label="Location"
-          value={project.location}
+          label={t("generic.location")}
+          value={t(`${project.slug}.location`)}
         />
       </div>
 
       <div className="max-w-3xl mx-auto">
         <div className="text-sm md:text-base text-center text-foreground leading-normal whitespace-pre-line">
-          {project.content}
+          {content.map((paragraph, index) => (
+            <p key={index} className="mb-4">
+              {paragraph}
+            </p>
+          ))}
         </div>
       </div>
 
       <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {project.images.map((image, index) => (
+          {images.map((image, index) => (
             <div
               key={index}
               className="overflow-hidden rounded-xl aspect-4/3 shadow-sm/8"
             >
               <img
                 src={image}
-                alt={`${project.title} - Image ${index + 1}`}
+                alt={`${title} - Image ${index + 1}`}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -86,7 +99,7 @@ const ProjectTemplate = ({ project }: { project: Project }) => {
       </div>
 
       <div className="flex justify-center">
-        <Button variant="outline">
+        <Button variant="outline" onClick={loadMoreImages} disabled={images.length >= project.images.length}>
           Load More <ArrowDown className="size-4" />
         </Button>
       </div>

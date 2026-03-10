@@ -4,6 +4,7 @@ import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
 import { projects } from "./projects.data";
 import SectionTitle from "../common/section-title";
+import { useTranslation } from "react-i18next";
 
 interface DateDisplayProps {
   date: Date;
@@ -39,16 +40,13 @@ const DateDisplay = ({
 interface ProjectCardProps {
   slug: string;
   date: Date;
-  title: string;
-  description: string;
 }
 
 const ProjectCard = ({
   slug,
   date,
-  title,
-  description
 }: ProjectCardProps) => {
+  const { t } = useTranslation("translation", { keyPrefix: `projects`});
   return <article className="flex flex-col md:flex-row gap-6 md:gap-12">
     <div className="self-start shrink-0">
       <DateDisplay date={date} />
@@ -57,15 +55,15 @@ const ProjectCard = ({
     <div className="flex-1 space-y-4">
       <SectionTitle asChild size={"h6"} variant={"dark"} className="text-left">
         <h2>
-          {title}
+          {t(`${slug}.title`)}
         </h2>
       </SectionTitle>
       <p className="text-sm md:text-base text-foreground leading-normal max-w-2xl">
-        {description}
+        {t(`${slug}.description`)}
       </p>
       <Button variant="outline" asChild className="mt-4">
         <Link to={`/projects/${slug}`}>
-          Read More <ArrowRight className="size-4" />
+          {t(`generic.readMore`)} <ArrowRight className="size-4" />
         </Link>
       </Button>
     </div>
@@ -75,7 +73,7 @@ const ProjectCard = ({
 const ProjectsListSection = () => {
   return <section className="py-20 md:py-25 lg:py-30 bg-background">
     <div className="mx-auto max-w-200 px-4 sm:px-6 space-y-20">
-      {projects.map(project => <ProjectCard key={project.slug} slug={project.slug} date={project.date} title={project.title} description={project.description} />)}
+      {projects.map(project => <ProjectCard key={project.slug} slug={project.slug} date={project.date} />)}
     </div>
   </section>;
 };

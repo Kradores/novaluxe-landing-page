@@ -1,0 +1,180 @@
+{
+  "home": {
+    "hero": {
+      "title": "WE DO THE HARD WORK"
+    }
+  },
+  "projects": {
+    "generic": {
+      "projectType": "Project Type",
+      "location": "Location",
+      "duration": "Duration",
+      "readMore": "Read More"
+    },
+    "villares-del-orbigo": {
+      "title": "PSFV Villares de Órbigo",
+      "duration": "{{months}} months",
+      "description": "Utility-scale photovoltaic installation requiring strict grid compliance and optimized cable routing across uneven terrain...",
+      "content": [
+        "Utility-scale photovoltaic installation requiring strict grid compliance and optimized cable routing across uneven terrain.",
+        "Novaluxe Dynamics delivered full electrical execution, ensuring efficient inverter integration and high-performance commissioning. The project was completed on schedule with zero safety incidents."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Villares de Órbigo"
+    },
+    "almodovar-del-campo": {
+      "title": "PSFV Almodovar del Campo",
+      "duration": "{{months}} months",
+      "description": "Large-scale solar park with complex grounding and medium-voltage connection requirements...",
+      "content": [
+        "Large-scale solar park with complex grounding and medium-voltage connection requirements.",
+        "Our team engineered and installed a robust electrical infrastructure, optimizing string distribution and minimizing energy losses. The result: a reliable, high-yield photovoltaic system ready for long-term performance."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Almodovar del Campo"
+    },
+    "los-canuelos": {
+      "title": "PSFV Los Canuelos",
+      "duration": "{{months}} months",
+      "description": "Challenging soil conditions required reinforced mounting and careful trench planning for underground cabling...",
+      "content": [
+        "Challenging soil conditions required reinforced mounting and careful trench planning for underground cabling.",
+        "We implemented precise installation workflows and quality-controlled connections, ensuring structural stability and electrical safety under demanding site conditions."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Los Canuelos"
+    },
+    "covatilla": {
+      "title": "PSFV Covatilla 4",
+      "duration": "{{months}} months",
+      "description": "Challenging soil conditions required reinforced mounting and careful trench planning for underground cabling...",
+      "content": [
+        "Mountain-area photovoltaic installation exposed to wind and environmental stress.",
+        "Novaluxe optimized mechanical anchoring and executed high-standard electrical assembly, delivering a durable system engineered for resilience and maximum uptime."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Covatilla"
+    },
+    "elgoibar": {
+      "title": "PSFV Elgoibar",
+      "duration": "{{months}} months",
+      "description": "Challenging soil conditions required reinforced mounting and careful trench planning for underground cabling...",
+      "content": [
+        "Industrial-area solar deployment requiring careful coordination with local infrastructure and safety regulations.",
+        "Our B2B-focused team ensured seamless integration with grid requirements and delivered precise inverter configuration and system testing."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Elgoibar"
+    },
+    "lepe-huelva": {
+      "title": "PSFV Lepe (Huelva)",
+      "duration": "{{months}} months",
+      "description": "Coastal-region project exposed to high humidity and corrosion risk...",
+      "content": [
+        "Coastal-region project exposed to high humidity and corrosion risk.",
+        "We selected durable components and applied enhanced protection standards, ensuring long-term reliability and optimal system efficiency despite environmental challenges."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Lepe (Huelva)"
+    },
+    "mansilla-de-las-mulas": {
+      "title": "PSFV Mansilla de las Mulas",
+      "duration": "{{months}} months",
+      "description": "Utility-scale installation with tight deadlines and multi-team coordination...",
+      "content": [
+        "Utility-scale installation with tight deadlines and multi-team coordination.",
+        "Novaluxe provided structured project management, efficient cable layout, and rigorous quality checks, delivering a safe and performance-optimized photovoltaic solution."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Mansilla de las Mulas"
+    },
+    "markina": {
+      "title": "PSFV Markina",
+      "duration": "{{months}} months",
+      "description": "Compact but technically demanding photovoltaic plant requiring detailed electrical planning...",
+      "content": [
+        "Compact but technically demanding photovoltaic plant requiring detailed electrical planning.",
+        "Our engineers optimized inverter placement and minimized transmission losses, ensuring maximum output within limited spatial conditions."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Markina"
+    },
+    "martos-jaen": {
+      "title": "PSFV Martos (Jaén)",
+      "duration": "{{months}} months",
+      "description": "High-temperature region installation requiring thermal-aware system design...",
+      "content": [
+        "High-temperature region installation requiring thermal-aware system design.",
+        "We implemented optimized ventilation spacing and high-resistance cabling, guaranteeing stable performance and long-term durability."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Martos (Jaén)"
+    },
+    "binisegui-menorca": {
+      "title": "PSFV Binisegui - Menorca",
+      "duration": "{{months}} months",
+      "description": "Island-based project with logistical and material supply constraints...",
+      "content": [
+        "Island-based project with logistical and material supply constraints.",
+        "Novaluxe coordinated transport, assembly, and commissioning with precision, delivering a grid-ready photovoltaic system built for efficiency and sustainability."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Menorca"
+    },
+    "omya": {
+      "title": "PSFV Omya",
+      "duration": "{{months}} months",
+      "description": "Island-based project with logistical and material supply constraints...",
+      "content": [
+        "Industrial self-consumption photovoltaic system designed to reduce operational energy costs.",
+        "Our team executed complete electrical installation and ensured seamless integration with the facility's internal power network, maximizing ROI."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Omya"
+    },
+    "guadalcazar": {
+      "title": "PSFV Guadalcázar",
+      "duration": "{{months}} months",
+      "description": "Agricultural-area solar installation requiring adaptable terrain solutions...",
+      "content": [
+        "Agricultural-area solar installation requiring adaptable terrain solutions.",
+        "We engineered flexible mounting layouts and executed safe, high-quality electrical works to deliver a resilient and high-yield solar asset."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Guadalcázar"
+    },
+    "ororbia-pamplona": {
+      "title": "PSFV Ororbia (Pamplona)",
+      "duration": "{{months}} months",
+      "description": "Medium-scale photovoltaic plant requiring strict grid interconnection compliance...",
+      "content": [
+        "Medium-scale photovoltaic plant requiring strict grid interconnection compliance.",
+        "Novaluxe handled MV connections, protection systems, and full commissioning, ensuring regulatory alignment and stable energy production."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Ororbia (Pamplona)"
+    },
+    "petunia-ciudad-real": {
+      "title": "PSFV Petunia - Ciudad Real",
+      "duration": "{{months}} months",
+      "description": "Large open-field installation demanding optimized string design and efficient manpower deployment...",
+      "content": [
+        "Large open-field installation demanding optimized string design and efficient manpower deployment.",
+        "Our team delivered structured assembly, rigorous testing, and performance validation, ensuring high system availability from day one."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Petunia (Ciudad Real)"
+    },
+    "ford-valencia": {
+      "title": "Ford Valencia - Industrial PV Installation",
+      "duration": "{{months}} months",
+      "description": "Medium-scale photovoltaic plant requiring strict grid interconnection compliance...",
+      "content": [
+        "Industrial rooftop photovoltaic system requiring uninterrupted factory operations during installation.",
+        "Novaluxe implemented phased electrical works and strict safety protocols, delivering a seamless transition to renewable energy without operational downtime."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Ford Valencia"
+    }
+  }
+}

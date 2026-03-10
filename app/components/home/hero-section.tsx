@@ -4,8 +4,10 @@ import ImageFrame from "~/components/common/image-frame";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 import { ResponsiveImage } from "~/components/common/responsive-img";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative bg-foreground overflow-hidden flex items-center justify-center">
       <ResponsiveImage
@@ -20,7 +22,7 @@ const HeroSection = () => {
         fetchPriority="high"
       />
       <div className="overflow-hidden relative z-10 gap-7 pt-40 md:pt-33 lg:pt-43 xl:pt-50 pb-14 md:pb-57 lg:pb-20 px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col mx-auto">
-        <SectionTitle size={"h1"}>WE DO THE HARD WORK</SectionTitle>
+        <SectionTitle size={"h1"}>{t("home.hero.title")}</SectionTitle>
         <div className="grid justify-stretch gap-4 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex pt-10 h-fit">
             <p className="leading-normal text-secondary-foreground font-normal text-center md:text-left text-sm md:text-base">

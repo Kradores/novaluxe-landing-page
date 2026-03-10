@@ -1,0 +1,26 @@
+{
+  "home": {
+    "hero": {
+      "title": "HACEMOS EL TRABAJO DURO"
+    }
+  },
+  "projects": {
+    "generic": {
+      "projectType": "Tipo de Proyecto",
+      "location": "Ubicación",
+      "duration": "Duración",
+      "readMore": "Leer más"
+    },
+    "villares-del-orbigo": {
+      "title": "PSFV Villares de Órbigo",
+      "duration": "{{months}} months",
+      "description": "Utility-scale photovoltaic installation requiring strict grid compliance and optimized cable routing across uneven terrain...",
+      "content": [
+        "Utility-scale photovoltaic installation requiring strict grid compliance and optimized cable routing across uneven terrain.",
+        "Novaluxe Dynamics delivered full electrical execution, ensuring efficient inverter integration and high-performance commissioning. The project was completed on schedule with zero safety incidents."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Villares de Órbigo"
+    }
+  }
+}
