@@ -484,5 +484,42 @@
         "readMore": "Read More"
       }
     }
+  },
+  "services": {
+    "hero": {
+      "imageAlt": "Services we provide",
+      "title": "our services",
+      "ctaQuestion": "Want a custom solution?",
+      "button": "Get a Quote"
+    },
+    "detailed": {
+      "button": "Get a Quote",
+      "items": {
+        "photovoltaic": {
+          "title": "Photovoltaic Systems Building",
+          "description": "We design and build photovoltaic systems worldwide, managing the entire process from planning to final installation.",
+          "imageAlt": "Photovoltaic solar panels installation",
+          "features": [
+            "Initial client consultation & site visit",
+            "Project feasibility analysis",
+            "Project & budget planning",
+            "Technical design and training of the technical team",
+            "Full execution and supervision of the project on site"
+          ]
+        },
+        "renovations": {
+          "title": "House Renovations & Electric Work",
+          "description": "We carry out house renovations and electrical work from start to finish. We plan, coordinate, and execute every detail.",
+          "imageAlt": "Worker performing house renovation",
+          "features": [
+            "Consultation & site assessment",
+            "Scope & technical review",
+            "Project & budget planning",
+            "Work coordination",
+            "Execution on site & quality control"
+          ]
+        }
+      }
+    }
   }
 }

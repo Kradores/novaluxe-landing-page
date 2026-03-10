@@ -1,8 +1,9 @@
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router";
 import { Button } from "~/components/ui/button";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
+import { useTranslation } from "react-i18next";
 
 interface ServiceItemProps {
   title: string;
@@ -21,28 +22,23 @@ const ServiceCard = ({
   imageAlt,
   reversed = false,
 }: ServiceItemProps) => {
+  const { t } = useTranslation("translation", { keyPrefix: "services.detailed" });
+  
   return (
     <div
-      className={`bg-card rounded-2xl flex flex-col shadow-sm/4 items-stretch gap-y-4 ${reversed ? "md:flex-row-reverse" : "md:flex-row"
-        }`}
+      className={`bg-card rounded-2xl flex flex-col shadow-sm/4 items-stretch gap-y-4 ${
+        reversed ? "md:flex-row-reverse" : "md:flex-row"
+      }`}
     >
       <div className="order-2 md:order-0">
-        <div
-          className="h-full rounded-2xl overflow-hidden"
-        >
-          <img
-            src={image}
-            alt={imageAlt}
-            className="object-cover h-full"
-          />
+        <div className="h-full rounded-2xl overflow-hidden">
+          <img src={image} alt={imageAlt} className="object-cover h-full" />
         </div>
       </div>
 
       <div className="w-full order-1 md:order-0 p-3 md:p-6 lg:p-8 md:min-w-118 lg:max-w-[53%] space-y-8">
         <SectionTitle asChild size={"h5"} variant={"dark"} className="text-left">
-          <h2>
-            {title}
-          </h2>
+          <h2>{title}</h2>
         </SectionTitle>
         <p className="text-foreground text-sm md:text-base font-normal">{description}</p>
 
@@ -55,59 +51,42 @@ const ServiceCard = ({
           ))}
         </ul>
 
-        <Button
-          asChild
-          className="group-hover:bg-orange-glow"
-        >
-          <Link to={navLinks.contact}>Get a Quote</Link>
+        <Button asChild className="group-hover:bg-orange-glow">
+          <Link to={navLinks.contact}>{t("button")}</Link>
         </Button>
       </div>
     </div>
   );
 };
 
-const services = [
-  {
-    title: "Photovoltaic Systems Building",
-    description:
-      "We design and build photovoltaic systems worldwide, managing the entire process from planning to final installation.",
-    features: [
-      "Initial client consultation & site visit",
-      "Project feasibility analysis",
-      "Project & budget planning",
-      "Technical design and training of the technical team",
-      "Full execution and supervision of the project on site",
-    ],
-    image: "images/service-1.webp",
-    imageAlt: "Photovoltaic solar panels installation",
-    reversed: false,
-  },
-  {
-    title: "House Renovations & Electric Work",
-    description:
-      "We carry out house renovations and electrical work from start to finish. We plan, coordinate, and execute every detail.",
-    features: [
-      "Consultation & site assessment",
-      "Scope & technical review",
-      "Project & budget planning",
-      "Work coordination",
-      "Execution on site & quality control",
-    ],
-    image: "images/service-2.webp",
-    imageAlt: "Worker performing house renovation",
-    reversed: true,
-  },
-];
-
 const DetailedServicesSection = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "services.detailed" });
+
+  const services = [
+    {
+      id: "photovoltaic",
+      image: "images/service-1.webp",
+      reversed: false,
+    },
+    {
+      id: "renovations",
+      image: "images/service-2.webp",
+      reversed: true,
+    },
+  ];
+
   return (
     <section className="py-20 md:py-25 lg:py-30">
       <div className="mx-auto max-w-300 px-4 sm:px-6">
         <div className="space-y-20 lg:space-y-32">
           {services.map((service) => (
             <ServiceCard
-              key={service.title}
-              {...service}
+              key={service.id}
+              title={t(`items.${service.id}.title`)}
+              description={t(`items.${service.id}.description`)}
+              imageAlt={t(`items.${service.id}.imageAlt`)}
+              features={t(`items.${service.id}.features`, { returnObjects: true }) as string[]}
+              image={service.image}
               reversed={service.reversed}
             />
           ))}
