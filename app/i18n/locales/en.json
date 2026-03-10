@@ -374,5 +374,100 @@
         "formTitle": "Get a Quotation"
       }
     }
+  },
+  "contact": {
+    "title": "let's Get in contact",
+    "description": "We will get back to you in 24 hours during the week days."
+  },
+  "join": {
+    "apply": {
+      "title": "Apply today",
+      "formHeader": "Send us your CV",
+      "form": {
+        "placeholders": {
+          "fullName": "Full Name*",
+          "email": "Email*",
+          "language": "Spoken Language*",
+          "age": "Age*",
+          "message": "Your message",
+          "upload": "Upload your CV*"
+        },
+        "validation": {
+          "nameMin": "Name must be at least 2 characters",
+          "emailInvalid": "Invalid email address",
+          "langRequired": "Spoken language is required",
+          "ageRequired": "Age is required",
+          "ageMin": "Valid age required (18+)",
+          "cvRequired": "CV is required",
+          "fileSize": "File size should not exceed 5MB"
+        },
+        "buttons": {
+          "submit": "Apply Now",
+          "submitting": "Applying..."
+        }
+      }
+    },
+    "jobOffer": {
+      "details": {
+        "heading": "JOB DETAILS",
+        "location": {
+          "label": "Location",
+          "value": "Spain (EU projects possible)"
+        },
+        "housing": {
+          "label": "Food and Housing",
+          "value": "Provided / Paid"
+        },
+        "target": {
+          "label": "Target Workers",
+          "value": "Men, 24-45 years old"
+        },
+        "physical": {
+          "label": "Physical Requirements",
+          "value": "Relatively strong, without health problems"
+        },
+        "relocation": {
+          "label": "Relocation",
+          "value": "Workers must relocate based on project requirements"
+        }
+      },
+      "responsibilities": {
+        "heading": "RESPONSIBILITIES",
+        "items": {
+          "panels": {
+            "title": "Photovoltaic Panel Installation",
+            "description": "Installation and montage of solar panels for renewable energy projects"
+          },
+          "excavation": {
+            "title": "Excavation Work",
+            "description": "Site preparation and excavation for construction projects"
+          },
+          "drones": {
+            "title": "Drone Site Inspection",
+            "description": "Use of drones for site inspection and project monitoring"
+          },
+          "machinery": {
+            "title": "Construction Machinery Operation",
+            "description": "Operation of various construction machinery and equipment"
+          }
+        }
+      },
+      "requirements": {
+        "heading": "REQUIREMENTS",
+        "list": [
+          "Valid driving license required",
+          "Language: Romanian or Spanish",
+          "Experience in construction or technical work (preferred but not mandatory)"
+        ]
+      }
+    },
+    "hero": {
+      "title": "JOIN OUR TEAM",
+      "description": "Ready to be part of a proactive team? Give us a call.",
+      "buttons": {
+        "apply": "Apply Now",
+        "readMore": "Read More"
+      }
+    }
   }
 }

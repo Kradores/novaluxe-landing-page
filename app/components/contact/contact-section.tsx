@@ -2,6 +2,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import SectionTitle from "~/components/common/section-title";
 import { ContactForm } from "~/components/common/contact-form";
 import { CONTACT_ADDRESS, CONTACT_EMAIL, CONTACT_PHONE } from "~/lib/site";
+import { useTranslation } from "react-i18next";
 
 const contactInfo = [
   { icon: Phone, text: CONTACT_PHONE },
@@ -10,6 +11,7 @@ const contactInfo = [
 ];
 
 const ContactSection = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "contact" });
 
   return (
     <section className="w-full bg-background pt-35 md:pt-32 lg:pt-41">
@@ -17,11 +19,11 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 max-lg:gap-12">
           <div className="flex flex-col">
             <SectionTitle asChild size={"h2"} variant={"dark"} className="text-left mb-6 md:mb-7">
-              <h1>let's Get in contact</h1>
+              <h1>{t("title")}</h1>
             </SectionTitle>
 
             <p className="text-foreground text-sm md:text-base leading-normal max-w-md mb-10 md:mb-8 lg:mb-10 xl:mb-12">
-              We will get back to you in 24 hours during the week days.
+              {t("description")}
             </p>
 
             <div className="flex flex-col gap-2">
@@ -46,4 +48,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-
