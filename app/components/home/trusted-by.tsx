@@ -1,4 +1,5 @@
 import { Marquee, MarqueeContent, MarqueeItem } from "components/ui/marquee";
+import { useTranslation } from "react-i18next";
 
 const brands: { name: string; src: string }[] = [
   { name: "Brand 1", src: "/svg/brand-1.svg" },
@@ -9,10 +10,11 @@ const brands: { name: string; src: string }[] = [
 ];
 
 const TrustedBySection = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "home.trustedBy" });
   return (
     <section className="bg-blue-dark-glow py-12 6xl:mt-0">
       <p className="text-center text-foreground-light text-sm md:text-lg lg:text-xl font-normal tracking-wider mb-8 lg:mb-12">
-        Trusted by industry leaders
+        {t("description")}
       </p>
 
       <Marquee className="h-11 md:h-13 lg:min-h-22.5">

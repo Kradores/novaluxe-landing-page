@@ -1,6 +1,6 @@
 import { Navigate, useParams } from "react-router";
-import ProjectsSection from "~/components/home/projects-section";
-import StepsSection from "~/components/home/steps-section";
+import ProjectsSection from "~/components/common/sections/projects-section";
+import StepsSection from "~/components/common/sections/steps-section";
 import NeedHelpSection from "~/components/projects/need-help-section";
 import ProjectTemplate from "~/components/projects/project-template";
 import { getProjectBySlug } from "~/components/projects/projects.data";

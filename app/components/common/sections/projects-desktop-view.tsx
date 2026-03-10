@@ -3,7 +3,7 @@ import { getDesktopProjects, projectVariants } from "./projects-section.data";
 import ProjectsRow from "./projects-row";
 import Project from "./project";
 import { useMemo } from "react";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 
 const DesktopView = () => {
   const { breakpoint } = useBreakpoint();

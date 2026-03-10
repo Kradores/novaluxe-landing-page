@@ -9,7 +9,7 @@ import {
   type CarouselApi,
 } from "~/components/ui/carousel";
 import { cn } from "~/lib/utils";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "../section-title";
 
 const testimonials = [
   {

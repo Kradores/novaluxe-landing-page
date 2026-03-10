@@ -1,10 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
-import { NavLink } from "../common/nav-link";
+import { NavLink } from "~/components/common/nav-link";
 import { navLinks } from "~/lib/site";
 import { overlayVariants } from "./projects-section.data";
 import { m, type Variants } from "motion/react";
 import { cn } from "~/lib/utils";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 
 interface ProjectProps {
   title: string;

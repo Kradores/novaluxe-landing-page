@@ -1,8 +1,8 @@
 import { cn } from "~/lib/utils";
-import { NavLink } from "../common/nav-link";
+import { NavLink } from "~/components/common/nav-link";
 import { navLinks } from "~/lib/site";
 import { ArrowUpRight } from "lucide-react";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 
 interface MobileProjectProps {
   title: string;

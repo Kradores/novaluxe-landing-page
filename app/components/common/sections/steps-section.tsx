@@ -1,7 +1,7 @@
 import { Consultation, Proposal, Tech, Execution } from "~/components/icons";
 import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 
 const steps = [

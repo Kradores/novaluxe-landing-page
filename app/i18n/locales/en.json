@@ -1,7 +1,34 @@
 {
   "home": {
     "hero": {
-      "title": "WE DO THE HARD WORK"
+      "title": "WE DO THE HARD WORK",
+      "subtitle": "Want a custom solution?",
+      "description": "Reliable electrical and smart energy solutions for homes and businesses. We plan, install, and deliver projects that work from day one.",
+      "submit": "Get a Quote",
+      "reliableWorkers": "reliable workers",
+      "projectsDone": "projects done",
+      "successRate": "success rate"
+    },
+    "trustedBy": {
+      "description": "Trusted by industry leaders"
+    },
+    "services": {
+      "submit": "Get a Quote",
+      "title": "Our Reliable Services",
+      "photovoltaicService": {
+        "title": "Photovoltaic Systems Building",
+        "description": "We design and install efficient solar systems that reduce energy costs, improve sustainability, and ensure long term performance."
+      },
+      "renovationService": {
+        "title": "House Renovations & Electric Work",
+        "description": "We handle renovations and electrical work safely and professionally, delivering functional spaces that meet modern standards."
+      }
+    },
+    "whoWeAre": {
+      "title": "Who We Are",
+      "description": "We are a B2B technical partner specializing in electrical installations and photovoltaic systems. Founded in 2024, we support companies across Europe with safe, efficient, and high-quality solar solutions. Backed by a team with over 15 years of industry experience, we deliver reliable, results-driven projects that support the transition to clean, sustainable energy through advanced technology and professional execution.",
+      "readMore": "Read More",
+      "submit": "Get a Quote"
     }
   },
   "projects": {

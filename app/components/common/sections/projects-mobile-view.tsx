@@ -1,7 +1,7 @@
 import { Carousel, CarouselContent, CarouselItem } from "~/components/ui/carousel";
 import MobileProject from "./project-mobile";
 import { getMobileProjects } from "./projects-section.data";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 
 const MobileView = () => {
   return (

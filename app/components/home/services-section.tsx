@@ -3,8 +3,9 @@ import { Link } from "react-router";
 import { cn } from "~/lib/utils";
 import { useAnimate } from "motion/react";
 import { useEffect, useState } from "react";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
+import { useTranslation } from "react-i18next";
 
 interface ServiceCardProps {
   image: string;
@@ -13,6 +14,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
+  const { t } = useTranslation("translation", { keyPrefix: "home.services" });
   const [isHovered, setIsHovered] = useState(false);
   const [scope, animate] = useAnimate()
 
@@ -58,7 +60,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
               asChild
               className="group-hover:bg-orange-glow"
             >
-              <Link to={navLinks.contact}>Get a Quote</Link>
+              <Link to={navLinks.contact}>{t("submit")}</Link>
             </Button>
           </div>
         </div>
@@ -78,27 +80,29 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
 const services = [
   {
     image: "/images/service-0.webp",
-    title: "Photovoltaic Systems Building",
-    description:
-      "We design and install efficient solar systems that reduce energy costs, improve sustainability, and ensure long term performance.",
+    key: "photovoltaicService"
   },
   {
     image: "/images/service-2.webp",
-    title: "House Renovations & Electric Work",
-    description:
-      "We handle renovations and electrical work safely and professionally, delivering functional spaces that meet modern standards.",
+    key: "renovationService"
   },
 ];
 
 export const ServicesSection = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "home.services" });
   return (
     <section className="w-full bg-background py-16 md:py-24">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col gap-8 md:gap-12">
-        <SectionTitle asChild size={"h2"} variant={"dark"}><h2>Our Reliable Services</h2></SectionTitle>
+        <SectionTitle asChild size={"h2"} variant={"dark"}><h2>{t("title")}</h2></SectionTitle>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
           {services.map((service, index) => (
-            <ServiceCard key={index} image={service.image} title={service.title} description={service.description} />
+            <ServiceCard
+              key={service.key}
+              image={service.image}
+              title={t(`${service.key}.title`)}
+              description={t(`${service.key}.description`)}
+            />
           ))}
         </div>
       </div>

@@ -1,5 +1,5 @@
-import { OurWorkSection } from "~/components/home/our-work-section";
-import { WhatsNextSection } from "~/components/home/whats-next-section";
+import { OurWorkSection } from "~/components/common/sections/our-work-section";
+import { WhatsNextSection } from "~/components/common/sections/whats-next-section";
 import DetailedServicesSection from "~/components/services/detailed-services-section";
 import ServicesPageHeader from "~/components/services/services-page-header";
 

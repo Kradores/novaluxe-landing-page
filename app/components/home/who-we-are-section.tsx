@@ -5,28 +5,30 @@ import { LazyVideo } from "~/components/common/lazy-video";
 import { navLinks } from "~/lib/site";
 import SectionTitle from "~/components/common/section-title";
 import { ResponsiveImage } from "~/components/common/responsive-img";
+import { useTranslation } from "react-i18next";
 
 export const WhoWeAreSection = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "home.whoWeAre" });
   return (
     <section className="bg-background py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="flex flex-col items-start text-left order-1">
             <SectionTitle size={"h2"} variant={"dark"} className="text-left mb-4 md:mb-6 lg:mb-7">
-              Who We Are
+              {t("title")}
             </SectionTitle>
 
             <p className="text-foreground font-normal text-sm md:text-base leading-normal mb-8 max-w-full lg:max-w-xl">
-              We are a B2B technical partner specializing in electrical installations and photovoltaic systems. Founded in 2024, we support companies across Europe with safe, efficient, and high-quality solar solutions. Backed by a team with over 15 years of industry experience, we deliver reliable, results-driven projects that support the transition to clean, sustainable energy through advanced technology and professional execution.
+              {t("description")}
             </p>
 
             <div className="flex flex-row gap-4">
               <Button asChild variant="default" className="px-11 md:px-13">
-                <Link to={navLinks.contact}>Get a Quote</Link>
+                <Link to={navLinks.contact}>{t("submit")}</Link>
               </Button>
               <Button asChild variant="outline">
                 <Link to={navLinks.about} className="flex items-center gap-2">
-                  Read More
+                  {t("readMore")}
                   <ArrowRight className="size-4" />
                 </Link>
               </Button>
