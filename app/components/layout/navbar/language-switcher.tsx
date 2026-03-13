@@ -1,4 +1,4 @@
-import { ArrowDown, ChevronDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,

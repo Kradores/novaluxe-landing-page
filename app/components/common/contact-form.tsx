@@ -42,9 +42,22 @@ export const ContactForm = ({ children }: ContactFormProps) => {
     },
   });
 
-  const onSubmit = (data: FormData) => {
-    console.log("Form submitted:", data);
-    // TODO: Add email sending logic here
+  const onSubmit = async (data: FormData) => {
+    const response = await fetch('http://localhost:4001/api/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        subject: "Request from Contact Form",
+        content: data,
+        from: data.email
+      }),
+    });
+
+    if (response.ok) {
+      console.log("Email sent!");
+    } else {
+      console.error("Failed to send email");
+    }
   };
 
   return (

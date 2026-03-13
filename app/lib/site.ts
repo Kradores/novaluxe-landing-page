@@ -1,5 +1,7 @@
 import { Facebook, Instagram, Linkedin, Whatsapp } from "~/components/icons";
 
+export const siteName = "Novaluxe Dynamics";
+
 export const navLinks = {
   home: "/",
   services: "/services",

@@ -1,4 +1,4 @@
-import { Calendar, Settings, MapPin, ArrowDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { type Project } from "./projects.data";
 import SectionTitle from "../common/section-title";
