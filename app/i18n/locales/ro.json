@@ -1,1 +1,530 @@
-{}
+{
+  "home": {
+    "hero": {
+      "title": "Noi facem munca grea",
+      "subtitle": "Cauți o soluție personalizată?",
+      "description": "Soluții electrice fiabile și inteligente de energie pentru locuințe și afaceri. Planificăm, instalăm și livrăm proiecte care funcționează din prima zi.",
+      "submit": "Obține o Ofertă",
+      "reliableWorkers": "lucrători capabili",
+      "projectsDone": "proiecte finalizate",
+      "successRate": "rata de succes"
+    },
+    "trustedBy": {
+      "description": "Susținuți de liderii din industrie"
+    },
+    "services": {
+      "submit": "Obține o Ofertă",
+      "title": "Serviciile noastre de încredere",
+      "photovoltaicService": {
+        "title": "Construirea sistemelor fotovoltaice",
+        "description": "Proiectăm și instalăm sisteme solare eficiente care reduc costurile cu energia, îmbunătățesc sustenabilitatea și asigură performanță pe termen lung."
+      },
+      "renovationService": {
+        "title": "Renovări locuințe și lucrări electrice",
+        "description": "Gestionăm renovările și lucrările electrice în siguranță și profesionist, livrând spații funcționale care respectă standardele moderne."
+      }
+    },
+    "whoWeAre": {
+      "title": "Cine suntem?",
+      "description": "Suntem un partener tehnic business-to-business specializat în instalații electrice și sisteme fotovoltaice. Fondată în 2024, compania sprijină firme din întreaga Europă cu soluții solare sigure, eficiente și de înaltă calitate. Susținuți de o echipă cu peste 15 ani de experiență în industrie, livrăm proiecte fiabile și orientate spre rezultate, care sprijină tranziția către energie curată și sustenabilă prin tehnologie avansată și execuție profesionistă.",
+      "readMore": "Citește Mai Departe",
+      "submit": "Obține o Ofertă"
+    }
+  },
+  "about": {
+    "hero": {
+      "imageAlt": "Solar panel installation",
+      "title": "Cine suntem noi?",
+      "description": "O echipă pe care vă puteți baza de la planificare până la instalare.",
+      "ctaQuestion": "Cauți o soluție personalizată?",
+      "buttons": {
+        "getQuote": "Obține o Ofertă",
+        "joinTeam": "Alătură-te Echipei"
+      }
+    },
+    "stats": {
+      "description": "Suntem o echipă practică ce oferă soluții electrice și energetice fiabile pentru locuințe și companii, cu pasiune pentru sustenabilitate.",
+      "items": {
+        "workers": "lucrători capabili",
+        "projects": "proiecte finalizate",
+        "success": "rata de succes"
+      }
+    },
+    "story": {
+      "blocks": {
+        "aboutUs": {
+          "title": "Despre noi",
+          "description": "Novaluxe a fost fondată la începutul anului 2024 de Nicolai Cojocari, cu scopul de a oferi soluții electrice și tehnice de înaltă calitate pentru proiecte fotovoltaice. Compania a fost creată ca răspuns la nevoia de a reduce emisiile de CO₂ și de a accelera tranziția către un model energetic bazat pe surse curate și sustenabile."
+        },
+        "mission": {
+          "title": "Misiunea noastră ",
+          "description": "Misiunea noastră este să proiectăm și să implementăm sisteme solare eficiente și sigure, adaptate nevoilor fiecărui proiect, asigurând mereu o execuție profesionistă, orientată spre rezultate. Novaluxe activează în sectorul B2B, colaborând cu companii care au nevoie de un partener tehnic de încredere pentru instalații electrice și montaj de sisteme fotovoltaice."
+        },
+        "global": {
+          "title": "La nivel european",
+          "description": "Deși suntem o companie spaniolă, activăm în întreaga Europă, contribuind cu expertiză tehnică la proiecte de diferite dimensiuni. Echipa noastră este formată din profesioniști cu peste 15 ani de experiență în industrie, ceea ce ne permite să livrăm soluții solide și bine executate."
+        }
+      }
+    },
+    "values": {
+      "title": "Valorile noastre",
+      "description": "Pe termen mediu și lung, ne propunem să continuăm să creștem, să ne consolidăm prezența în sector și să oferim constant tehnologie avansată la un preț corect.",
+      "items": {
+        "professionalism": "profesionalism",
+        "safety": "Siguranță",
+        "responsibility": "responsabilitate",
+        "commitment": "angajament"
+      },
+      "buttons": {
+        "getQuote": "Obține o Ofertă",
+        "joinTeam": "Alătură-te Echipei"
+      }
+    }
+  },
+  "projects": {
+    "generic": {
+      "projectType": "TIP PROIECT",
+      "location": "LOCAȚIE",
+      "duration": "duraTA",
+      "readMore": "Citește Mai Mult",
+      "loadMore": "Mai Mult"
+    },
+    "villares-del-orbigo": {
+      "title": "PSFV Villares de Órbigo",
+      "duration": "{{months}} luni",
+      "description": "Instalație fotovoltaică la scară mare, care a necesitat conformitate strictă cu cerințele rețelei și optimizarea traseelor de cabluri pe teren denivelat...",
+      "content": [
+        "Instalație fotovoltaică la scară mare, care a necesitat conformitate strictă cu cerințele rețelei și optimizarea traseelor de cabluri pe teren denivelat.",
+        "Novaluxe Dynamics a asigurat execuția electrică completă, garantând integrarea eficientă a invertoarelor și punerea în funcțiune la standarde ridicate de performanță. Proiectul a fost finalizat la timp, fără niciun incident de siguranță."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Villares de Órbigo"
+    },
+    "almodovar-del-campo": {
+      "title": "PSFV Almodovar del Campo",
+      "duration": "{{months}} luni",
+      "description": "Parc solar de mari dimensiuni, cu cerințe complexe de împământare și conectare la medie tensiune...",
+      "content": [
+        "Parc solar de mari dimensiuni, cu cerințe complexe de împământare și conectare la medie tensiune.",
+        "Echipa noastră a proiectat și instalat o infrastructură electrică robustă, optimizând distribuția stringurilor și minimizând pierderile de energie. Rezultatul: un sistem fotovoltaic fiabil, cu randament ridicat, pregătit pentru performanță pe termen lung."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Almodovar del Campo"
+    },
+    "los-canuelos": {
+      "title": "PSFV Los Canuelos",
+      "duration": "{{months}} luni",
+      "description": "Condițiile dificile ale solului au necesitat structuri de montaj consolidate și o planificare atentă a șanțurilor pentru cablarea subterană...",
+      "content": [
+        "Condițiile dificile ale solului au necesitat structuri de montaj consolidate și o planificare atentă a șanțurilor pentru cablarea subterană.",
+        "Am implementat fluxuri de instalare precise și conexiuni verificate riguros, asigurând stabilitate structurală și siguranță electrică în condiții solicitante de șantier."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Los Canuelos"
+    },
+    "covatilla": {
+      "title": "PSFV Covatilla 4",
+      "duration": "{{months}} luni",
+      "description": "Instalație fotovoltaică amplasată în zonă montană, expusă la vânt și factori de stres de mediu...",
+      "content": [
+        "Instalație fotovoltaică amplasată în zonă montană, expusă la vânt și factori de stres de mediu.",
+        "Novaluxe a optimizat ancorarea mecanică și a executat montajul electric la standarde înalte, livrând un sistem durabil, proiectat pentru reziliență și funcționare continuă la capacitate maximă."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Covatilla"
+    },
+    "elgoibar": {
+      "title": "PSFV Elgoibar",
+      "duration": "{{months}} luni",
+      "description": "Proiect solar într-o zonă industrială, care a necesitat coordonare atentă cu infrastructura locală și respectarea strictă a reglementărilor de siguranță...",
+      "content": [
+        "Proiect solar într-o zonă industrială, care a necesitat coordonare atentă cu infrastructura locală și respectarea strictă a reglementărilor de siguranță.",
+        "Echipa noastră specializată în proiecte pentru companii a asigurat integrarea fără întreruperi în cerințele rețelei, realizând configurarea precisă a invertoarelor și testarea completă a sistemului."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Elgoibar"
+    },
+    "lepe-huelva": {
+      "title": "PSFV Lepe (Huelva)",
+      "duration": "{{months}} luni",
+      "description": "Proiect în regiune de coastă, expus la umiditate ridicată și risc de coroziune...",
+      "content": [
+        "Proiect în regiune de coastă, expus la umiditate ridicată și risc de coroziune.",
+        "Am selectat componente durabile și am aplicat standarde sporite de protecție, asigurând fiabilitate pe termen lung și eficiență optimă a sistemului, în ciuda provocărilor de mediu."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Lepe (Huelva)"
+    },
+    "mansilla-de-las-mulas": {
+      "title": "PSFV Mansilla de las Mulas",
+      "duration": "{{months}} luni",
+      "description": "Instalație la scară mare, cu termene strânse și coordonare între mai multe echipe...",
+      "content": [
+        "Instalație la scară mare, cu termene strânse și coordonare între mai multe echipe.",
+        "Novaluxe a oferit management de proiect structurat, organizare eficientă a traseelor de cabluri și verificări riguroase de calitate, livrând o soluție fotovoltaică sigură și optimizată pentru performanță."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Mansilla de las Mulas"
+    },
+    "markina": {
+      "title": "PSFV Markina",
+      "duration": "{{months}} luni",
+      "description": "Centrală fotovoltaică compactă, dar cu cerințe tehnice ridicate, necesitând planificare electrică detaliată...",
+      "content": [
+        "Centrală fotovoltaică compactă, dar cu cerințe tehnice ridicate, necesitând planificare electrică detaliată.",
+        "Inginerii noștri au optimizat poziționarea invertoarelor și au redus pierderile de transmisie, asigurând producție maximă în condiții de spațiu limitat."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Markina"
+    },
+    "martos-jaen": {
+      "title": "PSFV Martos (Jaén)",
+      "duration": "{{months}} luni",
+      "description": "Instalație într-o regiune cu temperaturi ridicate, necesitând un design adaptat condițiilor termice...",
+      "content": [
+        "Instalație într-o regiune cu temperaturi ridicate, necesitând un design adaptat condițiilor termice.",
+        "Am implementat distanțare optimizată pentru ventilație și cabluri cu rezistență sporită, garantând performanță stabilă și durabilitate pe termen lung."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Martos (Jaén)"
+    },
+    "binisegui-menorca": {
+      "title": "PSFV Binisegui - Menorca",
+      "duration": "{{months}} luni",
+      "description": "Proiect realizat pe insulă, cu constrângeri logistice și de aprovizionare cu materiale...",
+      "content": [
+        "Proiect realizat pe insulă, cu constrângeri logistice și de aprovizionare cu materiale.",
+        "Novaluxe a coordonat transportul, montajul și punerea în funcțiune cu precizie, livrând un sistem fotovoltaic pregătit pentru conectarea la rețea, construit pentru eficiență și sustenabilitate."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Menorca"
+    },
+    "omya": {
+      "title": "PSFV Omya",
+      "duration": "{{months}} luni",
+      "description": "Sistem fotovoltaic industrial pentru autoconsum, conceput pentru reducerea costurilor operaționale cu energia...",
+      "content": [
+        "Sistem fotovoltaic industrial pentru autoconsum, conceput pentru reducerea costurilor operaționale cu energia.",
+        "Echipa noastră a realizat instalarea electrică completă și a asigurat integrarea perfectă în rețeaua internă a facilității, sporind profitabilitatea investiției"
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Omya"
+    },
+    "guadalcazar": {
+      "title": "PSFV Guadalcázar",
+      "duration": "{{months}} luni",
+      "description": "Instalație solară în zonă agricolă, necesitând soluții adaptabile la configurația terenului...",
+      "content": [
+        "Instalație solară în zonă agricolă, necesitând soluții adaptabile la configurația terenului.",
+        "Am proiectat structuri de montaj flexibile și am executat lucrări electrice sigure, la standarde înalte de calitate, livrând un activ solar rezilient și cu randament ridicat."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Guadalcázar"
+    },
+    "ororbia-pamplona": {
+      "title": "PSFV Ororbia (Pamplona)",
+      "duration": "{{months}} luni",
+      "description": "Centrală fotovoltaică de dimensiune medie, cu cerințe stricte privind interconectarea la rețea...",
+      "content": [
+        "Centrală fotovoltaică de dimensiune medie, cu cerințe stricte privind interconectarea la rețea.",
+        "Novaluxe a gestionat conexiunile la medie tensiune, sistemele de protecție și punerea în funcțiune completă, asigurând conformitatea cu reglementările și producție stabilă de energie."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Ororbia (Pamplona)"
+    },
+    "petunia-ciudad-real": {
+      "title": "PSFV Petunia - Ciudad Real",
+      "duration": "{{months}} luni",
+      "description": "Instalație de mari dimensiuni pe teren deschis, necesitând proiectare optimizată a stringurilor și utilizare eficientă a resurselor umane...",
+      "content": [
+        "Instalație de mari dimensiuni pe teren deschis, necesitând proiectare optimizată a stringurilor și utilizare eficientă a resurselor umane.",
+        "Echipa noastră a livrat un montaj structurat, testare riguroasă și validare a performanței, asigurând disponibilitate ridicată a sistemului încă din prima zi."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Petunia (Ciudad Real)"
+    },
+    "ford-valencia": {
+      "title": "Ford Valencia - Industrial PV Installation",
+      "duration": "{{months}} luni",
+      "description": "Sistem fotovoltaic industrial pe acoperiș, care a necesitat menținerea neîntreruptă a activității fabricii în timpul instalării...",
+      "content": [
+        "Sistem fotovoltaic industrial pe acoperiș, care a necesitat menținerea neîntreruptă a activității fabricii în timpul instalării.",
+        "Novaluxe a implementat lucrări electrice etapizate și protocoale stricte de siguranță, asigurând tranziția fără întreruperi la energie regenerabilă."
+      ],
+      "projectType": "Photovoltaic System",
+      "location": "Spain, Ford Valencia"
+    },
+    "needHelp": {
+      "title": {
+        "line1": "Ai nevoie de ajutor",
+        "line2": "cu un proiect?"
+      },
+      "description": "Te vom contacta în 24 de ore pe parcursul zilelor lucrătoare.",
+      "button": "Contactează-ne"
+    },
+    "hero": {
+      "imageAlt": "Solar panel installation",
+      "title": "proiectele noastre",
+      "ctaQuestion": "Cauți o soluție personalizată?",
+      "button": "Obține o Ofertă"
+    }
+  },
+  "footer": {
+    "trust": "Partenerul dumneavoastră de încredere pentru soluții electrice și de construcții",
+    "rights": "© 2025 Novaluxe Dynamics S.L. Toate drepturile rezervate"
+  },
+  "nav": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "projects": "Proiecte",
+    "about": "Despre",
+    "contact": "Contact",
+    "title": "Menu"
+  },
+  "common": {
+    "contact": {
+      "form": {
+        "fullName": "Nume și Prenume",
+        "businessName": "Numele Companiei",
+        "email": "Email",
+        "phone": "Nr. Telefon",
+        "message": "Descrie-ne proiectul tău sau pune o întrebare...",
+        "sendMessage": "Trimite Mesajul",
+        "errors": {
+          "fullNameMin": "Numele trebuie să aibă cel puțin 2 caractere",
+          "businessNameRequired": "Numele companiei este obligatoriu",
+          "invalidEmail": "Adresa de email nu este validă",
+          "phoneRequired": "Număr de telefon valid necesar",
+          "messageMin": "Mesajul trebuie să aibă cel puțin 10 caractere"
+        }
+      }
+    },
+    "sections": {
+      "OurWorkSection": {
+        "title": [
+          "Munca noastră,",
+          "succesul",
+          "lor"
+        ],
+        "testimonials": [
+          {
+            "quote": "Echipa <bold>Novaluxe Dynamics</bold> a făcut lucrurile simple încă din prima zi. Comunicare excelentă, execuție rapidă și au ascultat cu adevărat ce aveam nevoie, adaptându-se rapid fără să complice deloc procesul. <bold>Îi recomandăm cu toată încrederea.</bold>",
+            "author": "Maria Gonzalez",
+            "title": "CEO",
+            "company": "GreenTech Solutions",
+            "location": "Seville, Spain"
+          },
+          {
+            "quote": "Colaborarea cu <bold>Novaluxe Dynamics</bold> a fost, sincer, lipsită de stres. Au explicat totul clar, au respectat ce au promis și rezultatul final arată curat și foarte bine organizat. O echipă cu care este foarte ușor să lucrezi.",
+            "author": "Maria Gonzalez",
+            "title": "CEO",
+            "company": "GreenTech Solutions",
+            "location": "Seville, Spain"
+          },
+          {
+            "quote": "Ne-a plăcut mult cât de prompt au răspuns de fiecare dată. Orice întrebare am avut a primit răspuns rapid, iar pe tot parcursul proiectului <bold>ne-au ținut la curent cu progresul</bold>. S-a simțit că lucrezi cu oameni cărora chiar le pasă să facă o treabă bună.",
+            "author": "Maria Gonzalez",
+            "title": "CEO",
+            "company": "GreenTech Solutions",
+            "location": "Seville, Spain"
+          },
+          {
+            "quote": "<bold>O experiență foarte bună de la început până la final</bold>. Au lucrat rapid, au păstrat totul simplu și ne-au ajutat să luăm deciziile potrivite pe parcursul proiectului. Se vede clar că știu foarte bine ce fac și că sunt <bold>profesioniști.</bold>",
+            "author": "Maria Gonzalez",
+            "title": "CEO",
+            "company": "GreenTech Solutions",
+            "location": "Seville, Spain"
+          },
+          {
+            "quote": "Sincer, unul dintre <bold>cei mai buni contractori cu care am lucrat</bold>. Prietenoși, flexibili și foarte profesioniști. Întregul proces a decurs lin și fără stres, iar asta a făcut o <bold>mare diferență.</bold>",
+            "author": "Maria Gonzalez",
+            "title": "CEO",
+            "company": "GreenTech Solutions",
+            "location": "Seville, Spain"
+          }
+        ],
+        "controls": {
+          "previous": "Testimonialul anterior",
+          "next": "Testimonialul următor",
+          "slideAria": "Mergi la slide-ul {{index}}"
+        }
+      },
+      "ProjectsSection": {
+        "title": "Proiectele noastre",
+        "description": "Proiecte reale de montare a panourilor fotovoltaice și instalații electrice, cu accent   pe calitate și rezultate durabile."
+      },
+      "StepsSection": {
+        "ready": "Gata în 4 etape",
+        "heading": "Pașii noștri de lucru",
+        "steps": [
+          {
+            "title": [
+              "Consultanță și evaluarea",
+              "proiectului"
+            ],
+            "description": "Avem discuția inițială, vizităm locația și analizăm fezabilitatea pentru a defini cerințele proiectului."
+          },
+          {
+            "title": [
+              "Ofertă și",
+              "planificare"
+            ],
+            "description": "Pregătim, ajustăm și planificăm un buget personalizat pentru fiecare proiect."
+          },
+          {
+            "title": [
+              "Pregătire",
+              "tehnică"
+            ],
+            "description": "Realizăm calculele, coordonăm echipele și pregătim specialiștii pentru fiecare instalare."
+          },
+          {
+            "title": [
+              "Execuția",
+              "proiectului"
+            ],
+            "description": "Realizăm instalarea completă cu accent pe calitate, siguranță și eficiență."
+          }
+        ],
+        "button": "Obține o Ofertă"
+      },
+      "WhatsNextSection": {
+        "heading": "Ce urmează?",
+        "paragraph": "Vă vom răspunde în termen de 24 de ore în zilele lucrătoare.",
+        "formTitle": "Obțineți o ofertă personalizată"
+      }
+    }
+  },
+  "contact": {
+    "title": "Hai să luăm legătura",
+    "description": "Vă vom răspunde în termen de 24 de ore în zilele lucrătoare."
+  },
+  "join": {
+    "apply": {
+      "title": "Aplică astăzi",
+      "formHeader": "",
+      "form": {
+        "placeholders": {
+          "fullName": "Nume și Prenume*",
+          "email": "Email*",
+          "language": "Limba vorbită*",
+          "age": "Vârsta*",
+          "message": "Mesajul tău (opțional)",
+          "upload": "Încarcă un CV*"
+        },
+        "validation": {
+          "nameMin": "Numele trebuie să aibă cel puțin 2 caractere",
+          "emailInvalid": "Adresa de email nu este validă",
+          "langRequired": "Limba vorbită este obligatorie",
+          "ageRequired": "Vârsta este obligatorie",
+          "ageMin": "Vârstă validă necesară (18+)",
+          "cvRequired": "CV-ul este obligatoriu",
+          "fileSize": "Dimensiunea fișierului nu trebuie să depășească 5MB"
+        },
+        "buttons": {
+          "submit": "Aplică acum",
+          "submitting": "Se trimite aplicația..."
+        }
+      }
+    },
+    "jobOffer": {
+      "details": {
+        "heading": "detalii despre poziție",
+        "location": {
+          "label": "Locația",
+          "value": "Spania (posibil și proiecte în EU)"
+        },
+        "housing": {
+          "label": "Masă și Cazare",
+          "value": "Oferit / Plătit"
+        },
+        "target": {
+          "label": "Tiparul Angajatului",
+          "value": "Bărbat, 24-45 ani"
+        },
+        "physical": {
+          "label": "Cerințe Fizice",
+          "value": "Relativ puternic, fără probleme de sănătate"
+        },
+        "relocation": {
+          "label": "Relocare",
+          "value": "Lucrătorii vor fi relocați pe baza cerințelor proiectului"
+        }
+      },
+      "responsibilities": {
+        "heading": "Responsabilități",
+        "items": {
+          "panels": {
+            "title": "Instalări Panouri Fotovoltaice",
+            "description": "Instalarea și montajul panourilor solare pentru proiecte de energie regenerabilă"
+          },
+          "excavation": {
+            "title": "Excavări",
+            "description": "Pregătirea șantierului și lucrări de excavare pentru proiecte de construcții"
+          },
+          "drones": {
+            "title": "Inspecția Șantierului cu Drone",
+            "description": "Utilizarea dronelor pentru inspecția șantierului și monitorizarea proiectelor"
+          },
+          "machinery": {
+            "title": "Operarea Mașinăriilor de Construcții",
+            "description": "Operarea diferitelor utilaje și echipamente de construcții"
+          }
+        }
+      },
+      "requirements": {
+        "heading": "Cerințe",
+        "list": [
+          "Permis de conducere valid",
+          "Limba: română sau spaniolă",
+          "Experiență în construcții sau lucrări tehnice (preferabill, dar nu obligatoriu)"
+        ]
+      }
+    },
+    "hero": {
+      "title": "Alătură-te echipei noastre",
+      "description": "Ești pregătit să faci parte dintr-o echipă activă?",
+      "buttons": {
+        "apply": "Aplică Acum",
+        "readMore": "Citește Mai Mult"
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "imageAlt": "Services we provide",
+      "title": "Serviciile noastre",
+      "ctaQuestion": "Cauți o soluție personalizată?",
+      "button": "Obține o Ofertă"
+    },
+    "detailed": {
+      "button": "Obține o Ofertă",
+      "items": {
+        "photovoltaic": {
+          "title": "Construirea sistemelor fotovoltaice",
+          "description": "Proiectăm și instalăm sisteme solare eficiente care reduc costurile cu energia, îmbunătățesc sustenabilitatea și asigură performanță pe termen lung.",
+          "imageAlt": "Photovoltaic solar panels installation",
+          "features": [
+            "Consultație inițială cu clientul și vizită la locație",
+            "Analiza fezabilității proiectului",
+            "Planificarea proiectului și a bugetului",
+            "Proiectare tehnică și instruirea echipei tehnice",
+            "Execuția completă a proiectului și supraveghere la fața locului"
+          ]
+        },
+        "renovations": {
+          "title": "Renovări locuințe și lucrări electrice",
+          "description": "Gestionăm renovările și lucrările electrice în siguranță și profesionist, livrând spații funcționale care respectă standardele moderne.",
+          "imageAlt": "Worker performing house renovation",
+          "features": [
+            "Consultanță și evaluarea locației",
+            "Scopul și analiza tehnică",
+            "Planificarea proiectului și a bugetului",
+            "Coordonarea lucrărilor",
+            "Execuție pe șantier și controlul calității"
+          ]
+        }
+      }
+    }
+  }
+}

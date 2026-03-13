@@ -1,315 +1,527 @@
 {
   "home": {
     "hero": {
-      "title": "WE DO THE HARD WORK",
-      "subtitle": "Want a custom solution?",
-      "description": "Reliable electrical and smart energy solutions for homes and businesses. We plan, install, and deliver projects that work from day one.",
-      "submit": "Get a Quote",
-      "reliableWorkers": "reliable workers",
-      "projectsDone": "projects done",
-      "successRate": "success rate"
+      "title": "Nosotros hacemos el trabajo duro",
+      "subtitle": "¿Buscas una solución a medida?",
+      "description": "Soluciones eléctricas fiables y energía inteligente para particulares y empresas. Diseñamos e instalamos proyectos garantizando resultados desde el primer día.",
+      "submit": "Solicita presupuesto",
+      "reliableWorkers": "expertos",
+      "projectsDone": "proyectos",
+      "successRate": "tasa de éxito"
     },
     "trustedBy": {
-      "description": "Trusted by industry leaders"
+      "description": "Confiado por líderes del sector"
     },
     "services": {
-      "submit": "Get a Quote",
-      "title": "Our Reliable Services",
+      "submit": "Solicitar presupuesto",
+      "title": "Nuestros servicios de confianza",
       "photovoltaicService": {
-        "title": "Photovoltaic Systems Building",
-        "description": "We design and install efficient solar systems that reduce energy costs, improve sustainability, and ensure long term performance."
+        "title": "Montaje de sistemas fotovoltaicos",
+        "description": "Diseñamos e instalamos sistemas solares eficientes que reducen los costes energéticos, mejoran la sostenibilidad y garantizan el rendimiento a largo plazo."
       },
       "renovationService": {
-        "title": "House Renovations & Electric Work",
-        "description": "We handle renovations and electrical work safely and professionally, delivering functional spaces that meet modern standards."
+        "title": "Reformas de viviendas y trabajos eléctricos",
+        "description": "Nos encargamos de reformas y trabajos eléctricos de forma segura y profesional, entregando espacios funcionales que cumplen con los estándares modernos."
       }
     },
     "whoWeAre": {
-      "title": "Who We Are",
-      "description": "We are a B2B technical partner specializing in electrical installations and photovoltaic systems. Founded in 2024, we support companies across Europe with safe, efficient, and high-quality solar solutions. Backed by a team with over 15 years of industry experience, we deliver reliable, results-driven projects that support the transition to clean, sustainable energy through advanced technology and professional execution.",
-      "readMore": "Read More",
-      "submit": "Get a Quote"
+      "title": "¿Quiénes somos?",
+      "description": "Somos un socio técnico B2B especializado en instalaciones eléctricas y sistemas fotovoltaicos. Fundados en 2024, apoyamos a empresas de toda Europa con soluciones solares seguras, eficientes y de alta calidad. Respaldados por un equipo con más de 15 años de experiencia en el sector, entregamos proyectos fiables y orientados a resultados que impulsan la transición hacia una energía limpia y sostenible mediante tecnología avanzada y ejecución profesional.",
+      "readMore": "Leer más",
+      "submit": "Solicitar presupuesto"
+    }
+  },
+  "about": {
+    "hero": {
+      "imageAlt": "Solar panel installation",
+      "title": "¿Quienes somos?",
+      "description": "El equipo que puedes confiar desde la planificación hasta la instalación.",
+      "ctaQuestion": "¿Buscas una solución a medida?",
+      "buttons": {
+        "getQuote": "Solicitar presupuesto",
+        "joinTeam": "Únete a Nuestro Equipo"
+      }
+    },
+    "stats": {
+      "description": "Somos un equipo práctico que ofrece soluciones eléctricas y energéticas fiables para hogares y empresas, con pasión por la sostenibilidad.",
+      "items": {
+        "workers": "expertos",
+        "projects": "proyectos",
+        "success": "tasa de éxito"
+      }
+    },
+    "story": {
+      "blocks": {
+        "aboutUs": {
+          "title": "Sobre nosotros",
+          "description": "Novaluxe fue fundada a principios de 2024 por Nicolai Cojocari con el propósito de ofrecer soluciones eléctricas y técnicas de alta calidad en proyectos fotovoltaicos. La empresa surge como respuesta a la necesidad de reducir las emisiones de CO₂ y acelerar la transición hacia un modelo energético basado en fuentes limpias y sostenibles."
+        },
+        "mission": {
+          "title": "nuestra misión",
+          "description": "Nuestra misión es desarrollar e implementar sistemas solares eficientes, seguros y adaptados a las necesidades de cada proyecto, garantizando siempre un trabajo profesional y orientado a resultados. Novaluxe opera en el ámbito B2B, colaborando con empresas que buscan un socio técnico fiable para instalaciones eléctricas y montaje de sistemas fotovoltaicos."
+        },
+        "global": {
+          "title": "alrededor del mundo",
+          "description": "Aunque somos una empresa española, trabajamos en toda Europa, aportando experiencia y capacidad técnica a proyectos de distinta escala. Nuestro equipo está formado por profesionales con más de 15 años de experiencia en el sector, lo que nos permite ofrecer soluciones sólidas y bien ejecutadas."
+        }
+      }
+    },
+    "values": {
+      "title": "Nuestros valores",
+      "description": "A medio y largo plazo, nuestro objetivo es seguir creciendo, aumentar nuestro reconocimiento en el sector y ofrecer siempre tecnología avanzada a un precio justo.",
+      "items": {
+        "professionalism": "profesionalidad",
+        "safety": "seguridad",
+        "responsibility": "responsabilidad",
+        "commitment": "compromiso"
+      },
+      "buttons": {
+        "getQuote": "Solicitar Presupuesto",
+        "joinTeam": "Únete a Nuestro Equipo"
+      }
     }
   },
   "projects": {
     "generic": {
-      "projectType": "Project Type",
-      "location": "Location",
-      "duration": "Duration",
-      "readMore": "Read More"
+      "projectType": "tipo de proyecto",
+      "location": "ubicación",
+      "duration": "duración",
+      "readMore": "Leer más",
+      "loadMore": "Más"
     },
     "villares-del-orbigo": {
       "title": "PSFV Villares de Órbigo",
-      "duration": "{{months}} months",
-      "description": "Utility-scale photovoltaic installation requiring strict grid compliance and optimized cable routing across uneven terrain...",
+      "duration": "{{months}} meses",
+      "description": "Instalación fotovoltaica a gran escala que requería un estricto cumplimiento de la red y una optimización del cableado en terreno irregular...",
       "content": [
-        "Utility-scale photovoltaic installation requiring strict grid compliance and optimized cable routing across uneven terrain.",
-        "Novaluxe Dynamics delivered full electrical execution, ensuring efficient inverter integration and high-performance commissioning. The project was completed on schedule with zero safety incidents."
+        "Instalación fotovoltaica a gran escala que requería un estricto cumplimiento de la red y una optimización del cableado en terreno irregular.",
+        "Novaluxe Dynamics ejecutó toda la instalación eléctrica, garantizando una integración eficiente de los inversores y una puesta en marcha de alto rendimiento. El proyecto se completó dentro del plazo previsto y sin incidentes de seguridad."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Villares de Órbigo"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Villares de Órbigo"
     },
     "almodovar-del-campo": {
       "title": "PSFV Almodovar del Campo",
-      "duration": "{{months}} months",
-      "description": "Large-scale solar park with complex grounding and medium-voltage connection requirements...",
+      "duration": "{{months}} meses",
+      "description": "Parque solar de gran escala con requisitos complejos de puesta a tierra y conexión en media tensión...",
       "content": [
-        "Large-scale solar park with complex grounding and medium-voltage connection requirements.",
-        "Our team engineered and installed a robust electrical infrastructure, optimizing string distribution and minimizing energy losses. The result: a reliable, high-yield photovoltaic system ready for long-term performance."
+        "Parque solar de gran escala con requisitos complejos de puesta a tierra y conexión en media tensión.",
+        "Nuestro equipo diseñó e instaló una infraestructura eléctrica robusta, optimizando la distribución de strings y minimizando las pérdidas de energía. El resultado: un sistema fotovoltaico fiable y de alto rendimiento preparado para funcionar a largo plazo."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Almodovar del Campo"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Almodóvar del Campo"
     },
     "los-canuelos": {
-      "title": "PSFV Los Canuelos",
-      "duration": "{{months}} months",
-      "description": "Challenging soil conditions required reinforced mounting and careful trench planning for underground cabling...",
+      "title": "PSFV Los Cañuelos",
+      "duration": "{{months}} meses",
+      "description": "Las condiciones desafiantes del suelo requirieron un montaje reforzado y una planificación meticulosa de las zanjas para el cableado subterráneo...",
       "content": [
-        "Challenging soil conditions required reinforced mounting and careful trench planning for underground cabling.",
-        "We implemented precise installation workflows and quality-controlled connections, ensuring structural stability and electrical safety under demanding site conditions."
+        "Las condiciones desafiantes del suelo requirieron un montaje reforzado y una planificación meticulosa de las zanjas para el cableado subterráneo.",
+        "Implementamos flujos de trabajo de instalación precisos y conexiones con control de calidad, asegurando la estabilidad estructural y la seguridad eléctrica bajo condiciones exigentes del sitio."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Los Canuelos"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Los Cañuelos"
     },
     "covatilla": {
       "title": "PSFV Covatilla 4",
-      "duration": "{{months}} months",
-      "description": "Challenging soil conditions required reinforced mounting and careful trench planning for underground cabling...",
+      "duration": "{{months}} meses",
+      "description": "Instalación fotovoltaica en zona de montaña expuesta al viento y al estrés ambiental...",
       "content": [
-        "Mountain-area photovoltaic installation exposed to wind and environmental stress.",
-        "Novaluxe optimized mechanical anchoring and executed high-standard electrical assembly, delivering a durable system engineered for resilience and maximum uptime."
+        "Instalación fotovoltaica en zona de montaña expuesta al viento y al estrés ambiental.",
+        "Novaluxe optimizó el anclaje mecánico y ejecutó un montaje eléctrico de alto nivel, entregando un sistema duradero diseñado para la resiliencia y el máximo tiempo de actividad."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Covatilla"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Covatilla"
     },
     "elgoibar": {
       "title": "PSFV Elgoibar",
-      "duration": "{{months}} months",
-      "description": "Challenging soil conditions required reinforced mounting and careful trench planning for underground cabling...",
+      "duration": "{{months}} meses",
+      "description": "Despliegue solar en zona industrial que requirió una coordinación cuidadosa con la infraestructura local y las normativas de seguridad...",
       "content": [
-        "Industrial-area solar deployment requiring careful coordination with local infrastructure and safety regulations.",
-        "Our B2B-focused team ensured seamless integration with grid requirements and delivered precise inverter configuration and system testing."
+        "Despliegue solar en zona industrial que requirió una coordinación cuidadosa con la infraestructura local y las normativas de seguridad.",
+        "Nuestro equipo especializado en B2B garantizó una integración perfecta con los requisitos de la red y realizó una configuración precisa de inversores y pruebas del sistema."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Elgoibar"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Elgoibar"
     },
     "lepe-huelva": {
       "title": "PSFV Lepe (Huelva)",
-      "duration": "{{months}} months",
-      "description": "Coastal-region project exposed to high humidity and corrosion risk...",
+      "duration": "{{months}} meses",
+      "description": "Proyecto en región costera expuesto a alta humedad y riesgo de corrosión...",
       "content": [
-        "Coastal-region project exposed to high humidity and corrosion risk.",
-        "We selected durable components and applied enhanced protection standards, ensuring long-term reliability and optimal system efficiency despite environmental challenges."
+        "Proyecto en región costera expuesto a alta humedad y riesgo de corrosión.",
+        "Seleccionamos componentes duraderos y aplicamos estándares de protección mejorados, asegurando la fiabilidad a largo plazo y la eficiencia óptima del sistema a pesar de los desafíos ambientales."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Lepe (Huelva)"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Lepe (Huelva)"
     },
     "mansilla-de-las-mulas": {
       "title": "PSFV Mansilla de las Mulas",
-      "duration": "{{months}} months",
-      "description": "Utility-scale installation with tight deadlines and multi-team coordination...",
+      "duration": "{{months}} meses",
+      "description": "Instalación a gran escala (utility-scale) con plazos ajustados y coordinación de múltiples equipos...",
       "content": [
-        "Utility-scale installation with tight deadlines and multi-team coordination.",
-        "Novaluxe provided structured project management, efficient cable layout, and rigorous quality checks, delivering a safe and performance-optimized photovoltaic solution."
+        "Instalación a gran escala (utility-scale) con plazos ajustados y coordinación de múltiples equipos.",
+        "Novaluxe proporcionó una gestión de proyecto estructurada, un tendido de cables eficiente y rigurosos controles de calidad, entregando una solución fotovoltaica segura y optimizada para el rendimiento."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Mansilla de las Mulas"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Mansilla de las Mulas"
     },
     "markina": {
       "title": "PSFV Markina",
-      "duration": "{{months}} months",
-      "description": "Compact but technically demanding photovoltaic plant requiring detailed electrical planning...",
+      "duration": "{{months}} meses",
+      "description": "Planta fotovoltaica compacta pero técnicamente exigente que requirió una planificación eléctrica detallada...",
       "content": [
-        "Compact but technically demanding photovoltaic plant requiring detailed electrical planning.",
-        "Our engineers optimized inverter placement and minimized transmission losses, ensuring maximum output within limited spatial conditions."
+        "Planta fotovoltaica compacta pero técnicamente exigente que requirió una planificación eléctrica detallada.",
+        "Nuestros ingenieros optimizaron la ubicación de los inversores y minimizaron las pérdidas de transmisión, asegurando la máxima producción en condiciones espaciales limitadas."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Markina"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Markina"
     },
     "martos-jaen": {
       "title": "PSFV Martos (Jaén)",
-      "duration": "{{months}} months",
-      "description": "High-temperature region installation requiring thermal-aware system design...",
+      "duration": "{{months}} meses",
+      "description": "Instalación en región de altas temperaturas que requirió un diseño de sistema con conciencia térmica...",
       "content": [
-        "High-temperature region installation requiring thermal-aware system design.",
-        "We implemented optimized ventilation spacing and high-resistance cabling, guaranteeing stable performance and long-term durability."
+        "Instalación en región de altas temperaturas que requirió un diseño de sistema con conciencia térmica.",
+        "Implementamos un espaciado de ventilación optimizado y cableado de alta resistencia, garantizando un rendimiento estable y durabilidad a largo plazo."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Martos (Jaén)"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Martos (Jaén)"
     },
     "binisegui-menorca": {
       "title": "PSFV Binisegui - Menorca",
-      "duration": "{{months}} months",
-      "description": "Island-based project with logistical and material supply constraints...",
+      "duration": "{{months}} meses",
+      "description": "Proyecto insular con limitaciones logísticas y de suministro de materiales...",
       "content": [
-        "Island-based project with logistical and material supply constraints.",
-        "Novaluxe coordinated transport, assembly, and commissioning with precision, delivering a grid-ready photovoltaic system built for efficiency and sustainability."
+        "Proyecto insular con limitaciones logísticas y de suministro de materiales.",
+        "Novaluxe coordinó el transporte, montaje y puesta en marcha con precisión, entregando un sistema fotovoltaico listo para la red eléctrica, construido para la eficiencia y sostenibilidad."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Menorca"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Menorca"
     },
     "omya": {
       "title": "PSFV Omya",
-      "duration": "{{months}} months",
-      "description": "Island-based project with logistical and material supply constraints...",
+      "duration": "{{months}} meses",
+      "description": "Sistema fotovoltaico de autoconsumo industrial diseñado para reducir los costes energéticos operativos...",
       "content": [
-        "Industrial self-consumption photovoltaic system designed to reduce operational energy costs.",
-        "Our team executed complete electrical installation and ensured seamless integration with the facility's internal power network, maximizing ROI."
+        "Sistema fotovoltaico de autoconsumo industrial diseñado para reducir los costes energéticos operativos.",
+        "Nuestro equipo ejecutó la instalación eléctrica completa y aseguró una integración perfecta con la red eléctrica interna de la instalación, maximizando el ROI."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Omya"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Omya"
     },
     "guadalcazar": {
       "title": "PSFV Guadalcázar",
-      "duration": "{{months}} months",
-      "description": "Agricultural-area solar installation requiring adaptable terrain solutions...",
+      "duration": "{{months}} meses",
+      "description": "Instalación solar en zona agrícola que requirió soluciones adaptables al terreno...",
       "content": [
-        "Agricultural-area solar installation requiring adaptable terrain solutions.",
-        "We engineered flexible mounting layouts and executed safe, high-quality electrical works to deliver a resilient and high-yield solar asset."
+        "Instalación solar en zona agrícola que requirió soluciones adaptables al terreno.",
+        "Diseñamos disposiciones de montaje flexibles y ejecutamos trabajos eléctricos seguros y de alta calidad para entregar un activo solar resiliente y de alto rendimiento."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Guadalcázar"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Guadalcázar"
     },
     "ororbia-pamplona": {
       "title": "PSFV Ororbia (Pamplona)",
-      "duration": "{{months}} months",
-      "description": "Medium-scale photovoltaic plant requiring strict grid interconnection compliance...",
+      "duration": "{{months}} meses",
+      "description": "Planta fotovoltaica de mediana escala que requirió un estricto cumplimiento de la interconexión a la red...",
       "content": [
-        "Medium-scale photovoltaic plant requiring strict grid interconnection compliance.",
-        "Novaluxe handled MV connections, protection systems, and full commissioning, ensuring regulatory alignment and stable energy production."
+        "Planta fotovoltaica de mediana escala que requirió un estricto cumplimiento de la interconexión a la red.",
+        "Novaluxe gestionó las conexiones de Media Tensión (MT), los sistemas de protección y la puesta en marcha completa, asegurando la alineación normativa y una producción de energía estable."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Ororbia (Pamplona)"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Ororbia (Pamplona)"
     },
     "petunia-ciudad-real": {
       "title": "PSFV Petunia - Ciudad Real",
-      "duration": "{{months}} months",
-      "description": "Large open-field installation demanding optimized string design and efficient manpower deployment...",
+      "duration": "{{months}} meses",
+      "description": "Instalación en campo abierto de gran tamaño que exigió un diseño de strings optimizado y un despliegue eficiente de mano de obra...",
       "content": [
-        "Large open-field installation demanding optimized string design and efficient manpower deployment.",
-        "Our team delivered structured assembly, rigorous testing, and performance validation, ensuring high system availability from day one."
+        "Instalación en campo abierto de gran tamaño que exigió un diseño de strings optimizado y un despliegue eficiente de mano de obra.",
+        "Nuestro equipo realizó un montaje estructurado, pruebas rigurosas y validación de rendimiento, asegurando una alta disponibilidad del sistema desde el primer día."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Petunia (Ciudad Real)"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Petunia (Ciudad Real)"
     },
     "ford-valencia": {
-      "title": "Ford Valencia - Industrial PV Installation",
-      "duration": "{{months}} months",
-      "description": "Medium-scale photovoltaic plant requiring strict grid interconnection compliance...",
+      "title": "Ford Valencia - Instalación FV Industrial",
+      "duration": "{{months}} meses",
+      "description": "Sistema fotovoltaico industrial en cubierta que requirió operaciones de fábrica ininterrumpidas durante la instalación...",
       "content": [
-        "Industrial rooftop photovoltaic system requiring uninterrupted factory operations during installation.",
-        "Novaluxe implemented phased electrical works and strict safety protocols, delivering a seamless transition to renewable energy without operational downtime."
+        "Sistema fotovoltaico industrial en cubierta que requirió operaciones de fábrica ininterrumpidas durante la instalación.",
+        "Novaluxe implementó trabajos eléctricos por fases y estrictos protocolos de seguridad, logrando una transición fluida a la energía renovable sin tiempo de inactividad operativa."
       ],
-      "projectType": "Photovoltaic System",
-      "location": "Spain, Ford Valencia"
+      "projectType": "Sistema fotovoltaico",
+      "location": "España, Ford Valencia"
+    },
+    "needHelp": {
+      "title": {
+        "line1": "¿Necesitas ayuda",
+        "line2": "con un proyecto?"
+      },
+      "description": "Te responderemos en un plazo de 24 horas durante los días laborables.",
+      "button": "Contáctanos Hoy"
+    },
+    "hero": {
+      "imageAlt": "Instalación de paneles solares",
+      "title": "Nuestros proyectos",
+      "ctaQuestion": "¿Buscas una solución a medida?",
+      "button": "Solicitar presupuesto"
     }
   },
   "footer": {
-    "trust": "Your trusted partner in Electrical & Construction Solutions",
-    "rights": "© 2025 Novaluxe Dynamics S.L. All rights Reserved"
+    "trust": "Tu socio de confianza en soluciones eléctricas y de construcción",
+    "rights": "© 2025 Novaluxe Dynamics S.L. Todos los derechos reservados"
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "projects": "Projects",
-    "about": "About",
-    "contact": "Contact",
-    "title": "Navigation Menu"
+    "home": "Inicio",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "about": "Sobre nosotros",
+    "contact": "Contacto",
+    "title": "Menú"
   },
   "common": {
     "contact": {
       "form": {
-        "fullName": "Full Name",
-        "businessName": "Business Name",
-        "email": "Email",
-        "phone": "Phone no.",
-        "message": "Describe your project",
-        "sendMessage": "Send Message",
+        "fullName": "Nombre completo",
+        "businessName": "Nombre de la empresa",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "message": "Describe tu proyecto o haz cualquier pregunta...",
+        "sendMessage": "Enviar mensaje",
         "errors": {
-          "fullNameMin": "Name must be at least 2 characters",
-          "businessNameRequired": "Business name is required",
-          "invalidEmail": "Invalid email address",
-          "phoneRequired": "Valid phone number required",
-          "messageMin": "Message must be at least 10 characters"
+          "fullNameMin": "El nombre debe tener al menos 2 caracteres",
+          "businessNameRequired": "El nombre de la empresa es obligatorio",
+          "invalidEmail": "Correo electrónico no válido",
+          "phoneRequired": "Se requiere un número de teléfono válido",
+          "messageMin": "El mensaje debe tener al menos 10 caracteres"
         }
       }
     },
     "sections": {
       "OurWorkSection": {
         "title": [
-          "Our Work, Their",
-          "Success"
+          "nuestro trabajo, Tú éxito"
         ],
         "testimonials": [
           {
-            "quote": "Novaluxe Dynamic Team made things easy from day one. Great communication, fast execution, and they really listened to what we needed, adapting quickly without overcomplicating the process at all. We'd absolutely recommend them.",
+            "quote": "El equipo <bold>Novaluxe Dynamics</bold> facilitó todo desde el primer día. Gran comunicación, ejecución rápida y realmente escucharon lo que necesitábamos, adaptándose rápidamente sin complicar el proceso en absoluto. Los recomendaríamos sin ninguna duda.",
             "author": "Maria Gonzalez",
             "title": "CEO",
             "company": "GreenTech Solutions",
-            "location": "Seville, Spain"
+            "location": "Sevilla, España"
           },
           {
-            "quote": "Working with the team was a seamless experience. They delivered high-quality work on time and were always responsive to our needs. Their expertise in solar installations is unmatched.",
-            "highlight": "Exceptional service from start to finish.",
-            "author": "Thomas Mueller",
-            "title": "Operations Director",
-            "company": "EcoEnergy GmbH",
-            "location": "Munich, Germany"
+            "quote": "Trabajar con <bold>Novaluxe Dynamics</bold> fue realmente sencillo y sin estrés. Explicaron todo con claridad, cumplieron con los plazos previstos y el resultado final quedó limpio y muy bien organizado. Un equipo con el que es muy fácil trabajar.",
+            "author": "Maria Gonzalez",
+            "title": "CEO",
+            "company": "GreenTech Solutions",
+            "location": "Sevilla, España"
           },
           {
-            "quote": "The professionalism and technical knowledge they brought to our project exceeded our expectations. They made the complex seem simple and kept us informed every step of the way.",
-            "highlight": "True experts in their field.",
-            "author": "Sophie Laurent",
-            "title": "Project Manager",
-            "company": "SunPower France",
-            "location": "Lyon, France"
+            "quote": "Nos encantó lo atentos y rápidos que fueron. Cualquier pregunta que teníamos la respondían enseguida, y <bold>nos mantuvieron informados durante todo el proceso.</bold> Se siente como trabajar con personas que realmente se preocupan por hacer un buen trabajo.",
+            "author": "Maria Gonzalez",
+            "title": "CEO",
+            "company": "GreenTech Solutions",
+            "location": "Sevilla, España"
           },
           {
-            "quote": "From initial consultation to final installation, everything was handled with precision. The team's dedication to quality and safety standards is impressive.",
-            "highlight": "A reliable partner we trust completely.",
-            "author": "Alessandro Rossi",
-            "title": "Technical Director",
-            "company": "Verde Energia",
-            "location": "Milan, Italy"
+            "quote": "<bold>Una gran experiencia de principio a fin.</bold> Trabajaron con rapidez, mantuvieron todo simple y nos ayudaron con las decisiones del proyecto. Se nota que realmente saben lo que hacen y que <bold>ponen orgullo en su trabajo.</bold>",
+            "author": "Maria Gonzalez",
+            "title": "CEO",
+            "company": "GreenTech Solutions",
+            "location": "Sevilla, España"
+          },
+          {
+            "quote": "Sinceramente, uno de los <bold>contratistas más fáciles con los que hemos trabajado.</bold> Amables, flexibles y muy profesionales. Todo el proceso fue fluido y sin estrés, lo que <bold>marcó una gran diferencia.</bold>",
+            "author": "Maria Gonzalez",
+            "title": "CEO",
+            "company": "GreenTech Solutions",
+            "location": "Sevilla, España"
           }
         ],
         "controls": {
-          "previous": "Previous testimonial",
-          "next": "Next testimonial",
-          "slideAria": "Go to slide {{index}}"
+          "previous": "Testimonio anterior",
+          "next": "Siguiente testimonio",
+          "slideAria": "Ir a la diapositiva {{index}}"
         }
       },
       "ProjectsSection": {
-        "title": "Our Projects",
-        "description": "We have worked on a wide range of projects, from small startups to large enterprises."
+        "title": "nuestros proyectos",
+        "description": "Proyectos reales de energía e instalaciones eléctricas, enfocados en la calidad y resultados a largo plazo."
       },
       "StepsSection": {
-        "ready": "Ready to go in 4",
-        "heading": "Our Working Steps",
+        "ready": "listos en 4 pasos",
+        "heading": "Nuestros pasos de trabajo",
         "steps": [
           {
-            "title": ["Consultation & Project", "Assessment"],
-            "description": "We have the initial consultation, visit the site, and assess feasibility to define project requirements."
+            "title": [
+              "Consulta y evaluación",
+              "del proyecto"
+            ],
+            "description": "Realizamos la consulta inicial, visitamos el lugar y evaluamos la viabilidad para definir el proyecto."
           },
           {
-            "title": ["Proposal &", "Planning"],
-            "description": "We prepare, adjust, and plan a customized budget for each project."
+            "title": [
+              "Propuesta",
+              "y planificación"
+            ],
+            "description": "Preparamos, ajustamos y planificamos un presupuesto a medida para cada proyecto."
           },
           {
-            "title": ["Technical", "Preparation"],
-            "description": "We calculate, coordinate teams, and train specialists for each installation."
+            "title": [
+              "Preparación",
+              "técnica"
+            ],
+            "description": "Realizamos los cálculos, coordinamos los equipos y formamos a los especialistas para cada instalación."
           },
           {
-            "title": ["Project", "Execution"],
-            "description": "We execute the complete installation with quality, safety, and efficiency."
+            "title": [
+              "Ejecución",
+              "del proyecto"
+            ],
+            "description": "Llevamos a cabo la instalación completa con calidad, seguridad y eficiencia."
           }
         ],
-        "button": "Get a Quote"
+        "button": "Solicitar presupuesto"
       },
       "WhatsNextSection": {
-        "heading": "What's Next ?",
-        "paragraph": "We will get back to you in 24 hours during weekdays. For urgent matters, feel free to call us directly.",
-        "formTitle": "Get a Quotation"
+        "heading": "¿Qué sigue?",
+        "paragraph": "Te responderemos en 24 horas durante los días laborables.",
+        "formTitle": "Solicitar presupuesto"
+      }
+    }
+  },
+  "contact": {
+    "title": "Ponte en contacto con nosotros",
+    "description": "Te responderemos en un plazo de 24 horas durante los días laborables."
+  },
+  "join": {
+    "apply": {
+      "title": "Aplica hoy",
+      "formHeader": "Envíanos tu CV",
+      "form": {
+        "placeholders": {
+          "fullName": "Nombre completo*",
+          "email": "Correo electrónico*",
+          "language": "Idioma hablado*",
+          "age": "Edad*",
+          "message": "Tu mensaje",
+          "upload": "Sube tu CV*"
+        },
+        "validation": {
+          "nameMin": "El nombre debe tener al menos 2 caracteres",
+          "emailInvalid": "Correo electrónico no válido",
+          "langRequired": "El idioma hablado es obligatorio",
+          "ageRequired": "La edad es obligatoria",
+          "ageMin": "Edad válida requerida (18+)",
+          "cvRequired": "El CV es obligatorio",
+          "fileSize": "El tamaño del archivo no debe superar 5MB"
+        },
+        "buttons": {
+          "submit": "Enviar solicitud",
+          "submitting": "Enviando..."
+        }
+      }
+    },
+    "jobOffer": {
+      "details": {
+        "heading": "DETALLES DEL PUESTO",
+        "location": {
+          "label": "Ubicación",
+          "value": "España (posibles proyectos en la UE)"
+        },
+        "housing": {
+          "label": "Comida y alojamiento",
+          "value": "Proporcionados / Pagados"
+        },
+        "target": {
+          "label": "Perfil del trabajador",
+          "value": "Hombres, 24-45 años"
+        },
+        "physical": {
+          "label": "Requisitos físicos",
+          "value": "Condición física adecuada, sin problemas de salud"
+        },
+        "relocation": {
+          "label": "Traslado",
+          "value": "Los trabajadores deberán trasladarse según los requisitos del proyecto"
+        }
+      },
+      "responsibilities": {
+        "heading": "RESPONSABILIDADES",
+        "items": {
+          "panels": {
+            "title": "Instalación de paneles fotovoltaicos",
+            "description": "Instalación y montaje de paneles solares para proyectos de energía renovable"
+          },
+          "excavation": {
+            "title": "Trabajos de excavación",
+            "description": "Preparación del terreno y excavaciones para proyectos de construcción"
+          },
+          "drones": {
+            "title": "Inspección de obra con drones",
+            "description": "Uso de drones para inspección y monitorización del progreso del proyecto"
+          },
+          "machinery": {
+            "title": "Operación de maquinaria de construcción",
+            "description": "Manejo de diferentes equipos y maquinaria de construcción"
+          }
+        }
+      },
+      "requirements": {
+        "heading": "REQUISITOS",
+        "list": [
+          "Permiso de conducir válido",
+          "Idioma: rumano o español",
+          "Experiencia en construcción o trabajos técnicos (preferible, pero no obligatoria)"
+        ]
+      }
+    },
+    "hero": {
+      "title": "ÚNETE A NUESTRO EQUIPO",
+      "description": "¿Listo para formar parte de un equipo activo? Ponte en contacto con nosotros.",
+      "buttons": {
+        "apply": "Aplica ahora",
+        "readMore": "Leer más"
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "imageAlt": "Services we provide",
+      "title": "Nuestros servicios",
+      "ctaQuestion": "¿Buscas una solución a medida?",
+      "button": "Solicitar presupuesto"
+    },
+    "detailed": {
+      "button": "Solicitar presupuesto",
+      "items": {
+        "photovoltaic": {
+          "title": "Montaje de sistemas fotovoltaicos",
+          "description": "Diseñamos y construimos sistemas fotovoltaicos en todo el mundo, gestionando todo el proceso desde la planificación hasta la instalación final.",
+          "imageAlt": "Photovoltaic solar panels installation",
+          "features": [
+            "Consulta inicial con el cliente y visita al sitio",
+            "Análisis de viabilidad del proyecto",
+            "Planificación del proyecto y presupuesto",
+            "Diseño técnico y formación del equipo técnico",
+            "Ejecución completa y supervisión del proyecto en obra"
+          ]
+        },
+        "renovations": {
+          "title": "Reformas de viviendas y trabajos eléctricos",
+          "description": "Realizamos reformas de viviendas y trabajos eléctricos de principio a fin. Planificamos, coordinamos y ejecutamos cada detalle.",
+          "imageAlt": "Worker performing house renovation",
+          "features": [
+            "Consulta y evaluación del sitio",
+            "Alcance y revisión técnica",
+            "Planificación del proyecto y presupuesto",
+            "Coordinación de la obra",
+            "Ejecución en obra y control de calidad"
+          ]
+        }
       }
     }
   }
