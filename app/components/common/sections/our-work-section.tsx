@@ -10,7 +10,7 @@ import {
 } from "~/components/ui/carousel";
 import { cn } from "~/lib/utils";
 import SectionTitle from "~/components/common/section-title";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 export const OurWorkSection = () => {
   const { t } = useTranslation("translation", { keyPrefix: "common.sections.OurWorkSection" });
@@ -20,7 +20,6 @@ export const OurWorkSection = () => {
     title: string;
     company: string;
     location: string;
-    highlight?: string;
   }>;
   const title = t("title", { returnObjects: true }) as string[];
   const [api, setApi] = useState<CarouselApi>();
@@ -57,10 +56,11 @@ export const OurWorkSection = () => {
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="mx-auto">
           <div className="text-center mb-4 md:mb-7 lg:mb-12">
-            <SectionTitle asChild size={"h2"} className="max-w-[95%] mx-auto">
+            <SectionTitle asChild size={"h2"} className="max-w-[95%] mx-auto flex flex-wrap justify-center gap-x-3 gap-y-1">
               <h2>
-                <span className="text-secondary-foreground mr-3">{title[0]}</span>
-                <span className="text-foreground-light">{title[1]}</span>
+                <span className="text-secondary-foreground">{title[0]}</span>
+                {title[1] && <span className="text-foreground-light">{title[1]}</span>}
+                {title[2] && <span className="text-secondary-foreground">{title[2]}</span>}
               </h2>
             </SectionTitle>
           </div>
@@ -79,10 +79,16 @@ export const OurWorkSection = () => {
                 <CarouselContent>
                   {testimonials.map((testimonial, index) => (
                     <CarouselItem key={index}>
-                      <div>
-                        <p className="text-secondary-foreground font-normal text-lg lg:text-xl leading-normal mb-6">
-                          "{testimonial.quote} {testimonial.highlight}"
-                        </p>
+                      <div className="text-center md:text-left">
+                        <div className="text-secondary-foreground/70 text-lg lg:text-xl leading-normal mb-6 font-mono">
+                          <Trans
+                            t={t}
+                            i18nKey={`testimonials.${index}.quote`}
+                            components={{
+                              bold: <strong className="font-bold text-secondary-foreground" />
+                            }}
+                          />
+                        </div>
                         <p className="text-foreground-light font-medium text-lg">
                           {testimonial.author}, {testimonial.title}, {testimonial.company} ({testimonial.location})
                         </p>

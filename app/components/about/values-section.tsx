@@ -55,8 +55,8 @@ const ValuesSection = () => {
           ))}
         </div>
 
-        <div className="bg-foreground/10 backdrop-blur-md border border-foreground/20 p-2 rounded-full gap-3 md:gap-4.5 flex flex-row">
-          <Button asChild className="hover:bg-orange-glow">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-4.5 mx-auto bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-[32px] md:rounded-full">
+          <Button asChild className="hover:bg-orange-glow w-full md:w-fit">
             <Link to={navLinks.contact}>{t("buttons.getQuote")}</Link>
           </Button>
           <Button

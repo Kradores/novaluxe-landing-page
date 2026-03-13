@@ -53,7 +53,7 @@ export const ContactForm = ({ children }: ContactFormProps) => {
         <img alt="novaluxe logo" loading="lazy" src="/images/logo-corner.webp" width={456} height={505} />
       </div>
 
-      <SectionTitle asChild size={"h6"} className="text-left mb-6 md:mb-8">
+      <SectionTitle asChild size={"h6"} className="text-left mb-6 md:mb-8 tracking-wide">
         {children}
       </SectionTitle>
 

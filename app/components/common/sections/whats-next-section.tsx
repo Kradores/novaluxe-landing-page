@@ -17,7 +17,7 @@ export const WhatsNextSection = () => {
   return (
     <section className="w-full bg-background pt-16 md:pt-24 lg:pt-32">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[4fr_5fr] gap-12 lg:gap-8">
           <div className="flex flex-col">
             <SectionTitle asChild size={"h2"} variant={"dark"} className="text-left mb-6 md:mb-7">
               <h2>{t("heading")}</h2>
