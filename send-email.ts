@@ -2,10 +2,8 @@ import express from 'express';
 import nodemailer from 'nodemailer';
 import { render } from "@react-email/render";
 import FeedbackEmailTemplate from "./emails/feedback-email-template";
-import cors from 'cors';
 
 const app = express();
-app.use(cors());
 app.use(express.json());
 
 const transporter = nodemailer.createTransport({
@@ -42,8 +40,8 @@ app.post('/api/send-email', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.API_PORT || 4001;
 
 app.listen(PORT, () => {
-  console.log(`✅ Email server running at ${process.env.VITE_API_BASE_URL}`);
+  console.log(`✅ Email API running on port ${PORT}`);
 });
