@@ -289,7 +289,10 @@
         "email": "Correo electrónico",
         "phone": "Teléfono",
         "message": "Describe tu proyecto o haz cualquier pregunta...",
-        "sendMessage": "Enviar mensaje",
+        "buttons": {
+          "submit": "Enviar mensaje",
+          "submitting": "Enviando..."
+        },
         "errors": {
           "fullNameMin": "El nombre debe tener al menos 2 caracteres",
           "businessNameRequired": "El nombre de la empresa es obligatorio",

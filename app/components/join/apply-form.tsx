@@ -13,9 +13,9 @@ import {
 } from "~/components/ui/form";
 import type { ReactNode } from "react";
 import SectionTitle from "~/components/common/section-title";
-import { Label } from "../ui/label";
+import { Label } from "~/components/ui/label";
 import { Upload } from "lucide-react";
-import { Spinner } from "../ui/spinner";
+import { Spinner } from "~/components/ui/spinner";
 import { useTranslation } from "react-i18next";
 
 const fileSizeLimit = 5 * 1024 * 1024;
@@ -39,9 +39,9 @@ const ApplyForm = ({ children }: { children?: ReactNode }) => {
       }),
   });
 
-  type FormData = z.infer<typeof formSchema>;
+  type JoinFormData = z.infer<typeof formSchema>;
 
-  const form = useForm<FormData>({
+  const form = useForm<JoinFormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       fullName: "",
@@ -54,8 +54,31 @@ const ApplyForm = ({ children }: { children?: ReactNode }) => {
     mode: "onSubmit",
   });
 
-  const onSubmit = (data: FormData) => {
-    console.log("Form submitted:", data);
+  const onSubmit = async (data: JoinFormData) => {
+
+    const formData = new FormData();
+
+    formData.append("from", data.email);
+    formData.append("subject", "Request from Join Application Form");
+    formData.append("content", JSON.stringify({
+      fullName: data.fullName,
+      email: data.email,
+      language: data.language,
+      age: data.age,
+      message: data.message
+    }));
+    formData.append("attachments", data.file);
+
+    const response = await fetch("/api/send-email", {
+      method: "POST",
+      body: formData,
+    });
+
+    if (response.ok) {
+      console.log("Email sent!");
+    } else {
+      console.error("Failed to send email");
+    }
   };
 
   return (
@@ -160,7 +183,11 @@ const ApplyForm = ({ children }: { children?: ReactNode }) => {
             }}
           />
 
-          <Button type="submit" className="w-full rounded-full bg-background text-primary hover:bg-background/90 h-12 mt-2 mb-3 md:mb-4" disabled={form.formState.isSubmitting}>
+          <Button
+            type="submit"
+            className="w-full rounded-full bg-background text-primary hover:bg-background/90 h-12 mt-2 mb-3 md:mb-4"
+            disabled={form.formState.isSubmitting}
+          >
             {form.formState.isSubmitting && <Spinner className="mr-2 size-4" />}
             {form.formState.isSubmitting ? t("buttons.submitting") : t("buttons.submit")}
           </Button>

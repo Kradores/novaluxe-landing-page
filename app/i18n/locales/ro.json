@@ -289,7 +289,10 @@
         "email": "Email",
         "phone": "Nr. Telefon",
         "message": "Descrie-ne proiectul tău sau pune o întrebare...",
-        "sendMessage": "Trimite Mesajul",
+        "buttons": {
+          "submit": "Trimite Mesajul",
+          "submitting": "Se trimite..."
+        },
         "errors": {
           "fullNameMin": "Numele trebuie să aibă cel puțin 2 caractere",
           "businessNameRequired": "Numele companiei este obligatoriu",

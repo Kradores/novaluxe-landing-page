@@ -14,6 +14,7 @@ import {
 } from "~/components/ui/form";
 import SectionTitle from "./section-title";
 import type { ReactNode } from "react";
+import { Spinner } from "../ui/spinner";
 
 interface ContactFormProps {
   children?: ReactNode;
@@ -30,8 +31,8 @@ export const ContactForm = ({ children }: ContactFormProps) => {
     message: z.string().min(10, t("errors.messageMin")).max(1000),
   });
 
-  type FormData = z.infer<typeof formSchema>;
-  const form = useForm<FormData>({
+  type ContactFormData = z.infer<typeof formSchema>;
+  const form = useForm<ContactFormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       fullName: "",
@@ -42,15 +43,22 @@ export const ContactForm = ({ children }: ContactFormProps) => {
     },
   });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async (data: ContactFormData) => {
+    const formData = new FormData();
+
+    formData.append("from", data.email);
+    formData.append("subject", "Request from Contact Form");
+    formData.append("content", JSON.stringify({
+      fullName: data.fullName,
+      email: data.email,
+      businessName: data.businessName,
+      phone: data.phone,
+      message: data.message
+    }));
+
     const response = await fetch("/api/send-email", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        subject: "Request from Contact Form",
-        content: data,
-        from: data.email
-      }),
+      body: formData,
     });
 
     if (response.ok) {
@@ -164,8 +172,10 @@ export const ContactForm = ({ children }: ContactFormProps) => {
           <Button
             type="submit"
             className="w-full rounded-full bg-background text-primary hover:bg-background/90 h-12 mt-2 mb-3 md:mb-4 text-sm md:text-base font-medium"
+            disabled={form.formState.isSubmitting}
           >
-            {t("sendMessage")}
+            {form.formState.isSubmitting && <Spinner className="mr-2 size-4" />}
+            {form.formState.isSubmitting ? t("buttons.submitting") : t("buttons.submit")}
           </Button>
         </form>
       </Form>
