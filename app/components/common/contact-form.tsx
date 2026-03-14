@@ -43,9 +43,9 @@ export const ContactForm = ({ children }: ContactFormProps) => {
   });
 
   const onSubmit = async (data: FormData) => {
-    const response = await fetch('http://localhost:4001/api/send-email', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    const response = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         subject: "Request from Contact Form",
         content: data,

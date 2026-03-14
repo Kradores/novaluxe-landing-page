@@ -1,4 +1,3 @@
-// server.ts (Express example)
 import express from 'express';
 import nodemailer from 'nodemailer';
 import { render } from "@react-email/render";
@@ -43,10 +42,8 @@ app.post('/api/send-email', async (req, res) => {
   }
 });
 
-// ... existing code (transporter, app.post, etc.)
-
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 3002;
 
 app.listen(PORT, () => {
-  console.log(`✅ Email server running at http://localhost:${PORT}`);
+  console.log(`✅ Email server running at ${process.env.VITE_API_BASE_URL}`);
 });
