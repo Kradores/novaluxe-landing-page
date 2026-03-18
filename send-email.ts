@@ -17,13 +17,17 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.post('/api/send-email', async (req, res) => {
-  const { from, subject, content } = req.body;
-  const files = req.files as Express.Multer.File[];
-
+app.post('/api/send-email', upload.any(), async (req, res) => {
   try {
+    const { from, subject, content } = req.body;
+
+    if (!req.body || Object.keys(req.body).length === 0) {
+      return res.status(400).json({ error: "Empty body. Check your form-data setup." });
+    }
+
+    const files = req.files as Express.Multer.File[];
     const emailHtml = await render(FeedbackEmailTemplate({ from, ...JSON.parse(content) }));
-    
+
     await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: process.env.SMTP_USER,
