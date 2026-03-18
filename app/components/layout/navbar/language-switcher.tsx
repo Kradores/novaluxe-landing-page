@@ -26,7 +26,7 @@ export function LanguageSwitcher() {
       <DropdownMenuTrigger asChild className={cn("group text-secondary-foreground transition-all hover:[text-shadow:0_0_1px_currentColor] rounded-full", isLightBgPage(location.pathname) && "text-foreground")}>
         <Button
           variant="ghost"
-          className="flex items-center gap-1 px-2 uppercase"
+          className="flex items-center gap-1 uppercase text-base has-[>svg]:px-2"
           aria-label="Select language"
         >
           {currentLang.code}

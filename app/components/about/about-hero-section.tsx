@@ -18,7 +18,7 @@ export const AboutHeroSection = () => {
         fileExtension="webp"
         sizesSet={[375, 600, 800, 1024, 1280, 1440, 2560]}
         alt={t("imageAlt")}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute w-full h-full object-top object-cover"
         rel="preload"
         fetchPriority="high"
       />

@@ -16,7 +16,7 @@ const DateDisplay = ({
   const day = format(date, "dd");
   const month = format(date, "MMM").toUpperCase();
   const year = format(date, "yyyy");
-  return <div className="flex-row gap-2 flex items-center justify-center">
+  return <div className="flex-row lg:gap-1 flex items-center justify-center">
     <SectionTitle asChild size={"h2"} variant={"primary"} className="leading-none">
       <span className="font-sans max-md:text-5xl">
         {day}

@@ -98,7 +98,7 @@ const services = [
 export const ServicesSection = () => {
   const { t } = useTranslation("translation", { keyPrefix: "home.services" });
   return (
-    <section className="w-full bg-background py-16 md:py-24">
+    <section className="w-full bg-background py-25 md:py-38">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300 flex flex-col gap-8 md:gap-12">
         <SectionTitle asChild size={"h2"} variant={"dark"}><h2>{t("title")}</h2></SectionTitle>
 

@@ -9,7 +9,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: "villares-del-orbigo",
-    date: new Date(2024, 3, 1),
+    date: new Date(2024, 3, 3),
     duration: 3,
     headerImage: "/images/projects/villares-del-orbigo/0-1440.webp",
     images: [
@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     slug: "almodovar-del-campo",
-    date: new Date(2024, 4, 1),
+    date: new Date(2024, 4, 12),
     duration: 4,
     headerImage: "/images/projects/almodovar-del-campo/0-1440.webp",
     images: [
@@ -32,7 +32,7 @@ export const projects: Project[] = [
   },
   {
     slug: "los-canuelos",
-    date: new Date(2024, 5, 1),
+    date: new Date(2024, 5, 7),
     duration: 3,
     headerImage: "/images/projects/los-canuelos/0-1440.webp",
     images: [
@@ -45,7 +45,7 @@ export const projects: Project[] = [
   },
   {
     slug: "covatilla",
-    date: new Date(2024, 6, 1),
+    date: new Date(2024, 6, 29),
     duration: 3,
     headerImage: "/images/projects/covatilla/0-1440.webp",
     images: [
@@ -56,7 +56,7 @@ export const projects: Project[] = [
   },
   {
     slug: "elgoibar",
-    date: new Date(2024, 7, 1),
+    date: new Date(2024, 7, 15),
     duration: 2,
     headerImage: "/images/projects/elgoibar/0-1440.webp",
     images: [
@@ -74,7 +74,7 @@ export const projects: Project[] = [
   },
   {
     slug: "lepe-huelva",
-    date: new Date(2024, 8, 1),
+    date: new Date(2024, 8, 6),
     duration: 3,
     headerImage: "/images/projects/lepe-huelva/0-1440.webp",
     images: [
@@ -86,7 +86,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mansilla-de-las-mulas",
-    date: new Date(2024, 9, 1),
+    date: new Date(2024, 9, 21),
     duration: 3,
     headerImage: "/images/projects/mansilla-de-las-mulas/0-1440.webp",
     images: [
@@ -99,7 +99,7 @@ export const projects: Project[] = [
   },
   {
     slug: "markina",
-    date: new Date(2024, 10, 1),
+    date: new Date(2024, 10, 4),
     duration: 2,
     headerImage: "/images/projects/markina/0-1440.webp",
     images: [
@@ -120,7 +120,7 @@ export const projects: Project[] = [
   },
   {
     slug: "binisegui-menorca",
-    date: new Date(2024, 12, 1),
+    date: new Date(2024, 12, 6),
     duration: 4,
     headerImage: "/images/projects/binisegui-menorca/0-1440.webp",
     images: [
@@ -132,7 +132,7 @@ export const projects: Project[] = [
   },
   {
     slug: "omya",
-    date: new Date(2025, 1, 1),
+    date: new Date(2025, 1, 5),
     duration: 2,
     headerImage: "/images/projects/omya/0-1440.webp",
     images: [
@@ -143,7 +143,7 @@ export const projects: Project[] = [
   },
   {
     slug: "guadalcazar",
-    date: new Date(2025, 2, 1),
+    date: new Date(2025, 2, 22),
     duration: 3,
     headerImage: "/images/projects/guadalcazar/0-1440.webp",
     images: [
@@ -151,7 +151,7 @@ export const projects: Project[] = [
   },
   {
     slug: "ororbia-pamplona",
-    date: new Date(2025, 3, 1),
+    date: new Date(2025, 3, 25),
     duration: 2,
     headerImage: "/images/projects/ororbia-pamplona/0-1440.webp",
     images: [
@@ -159,7 +159,7 @@ export const projects: Project[] = [
   },
   {
     slug: "petunia-ciudad-real",
-    date: new Date(2025, 4, 1),
+    date: new Date(2025, 4, 10),
     duration: 3,
     headerImage: "/images/projects/petunia-ciudad-real/0-1440.webp",
     images: [

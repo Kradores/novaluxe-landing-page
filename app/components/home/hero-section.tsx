@@ -25,7 +25,7 @@ const HeroSection = () => {
         <SectionTitle size={"h1"}>{t("title")}</SectionTitle>
         <div className="grid justify-stretch gap-4 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex pt-10 h-fit">
-            <p className="leading-normal text-secondary-foreground font-normal text-center md:text-left text-sm md:text-base">
+            <p className="leading-normal text-secondary-foreground font-normal text-center md:text-left text-sm md:text-base max-sm:px-1">
               {t("description")}
             </p>
           </div>
