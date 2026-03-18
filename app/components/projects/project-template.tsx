@@ -27,7 +27,7 @@ const InfoCard = ({ icon, label, value }: InfoCardProps) => {
 };
 
 const ProjectTemplate = ({ project }: { project: Project }) => {
-  const { t } = useTranslation("translation", { keyPrefix: `projects`});
+  const { t } = useTranslation("translation", { keyPrefix: `projects` });
   const [images, setImages] = useState<string[]>(project.images.slice(0, 6));
   const title = t(`${project.slug}.title`, "Project Title");
   const content = t(`${project.slug}.content`, { returnObjects: true }) as string[];
@@ -99,9 +99,11 @@ const ProjectTemplate = ({ project }: { project: Project }) => {
       </div>
 
       <div className="flex justify-center">
-        <Button variant="outline" onClick={loadMoreImages} disabled={images.length >= project.images.length}>
-          {t("generic.loadMore")} <ArrowDown className="size-4" />
-        </Button>
+        {images.length > 6 && (
+          <Button variant="outline" onClick={loadMoreImages} disabled={images.length >= project.images.length}>
+            {t("generic.loadMore")} <ArrowDown className="size-4" />
+          </Button>
+        )}
       </div>
     </section>
   );

@@ -34,17 +34,17 @@ export const AboutHeroSection = () => {
           {t("ctaQuestion")}
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-4.5 mx-auto bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-[32px] md:rounded-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-fit gap-3 md:gap-4.5 mx-auto bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-[32px] md:rounded-full">
           <Button
             asChild
-            className="hover:bg-orange-glow w-full md:w-fit"
+            className="hover:bg-orange-glow w-full"
           >
             <Link to={navLinks.contact}>{t("buttons.getQuote")}</Link>
           </Button>
           <Button
             asChild
             variant={"outline"}
-            className="border-primary-foreground text-primary-foreground w-fit"
+            className="border-primary-foreground text-primary-foreground w-full"
           >
             <Link to={navLinks.join} className="flex items-center gap-2.5">
               {t("buttons.joinTeam")}

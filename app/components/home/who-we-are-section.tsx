@@ -22,11 +22,11 @@ export const WhoWeAreSection = () => {
               {t("description")}
             </p>
 
-            <div className="flex flex-col md:flex-row gap-4">
-              <Button asChild variant="default" className="px-11 md:px-13">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full md:w-fit">
+              <Button asChild variant="default" className="w-full">
                 <Link to={navLinks.contact}>{t("submit")}</Link>
               </Button>
-              <Button asChild variant="outline">
+              <Button asChild variant="outline" className="w-full">
                 <Link to={navLinks.about} className="flex items-center gap-2">
                   {t("readMore")}
                   <ArrowRight className="size-4" />

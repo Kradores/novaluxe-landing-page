@@ -4,7 +4,7 @@
       "title": "Nosotros hacemos el trabajo duro",
       "subtitle": "¿Buscas una solución a medida?",
       "description": "Soluciones eléctricas fiables y energía inteligente para particulares y empresas. Diseñamos e instalamos proyectos garantizando resultados desde el primer día.",
-      "submit": "Solicita presupuesto",
+      "submit": "Solicita Presupuesto",
       "reliableWorkers": "expertos",
       "projectsDone": "proyectos",
       "successRate": "tasa de éxito"
@@ -13,7 +13,7 @@
       "description": "Confiado por líderes del sector"
     },
     "services": {
-      "submit": "Solicitar presupuesto",
+      "submit": "Solicitar Presupuesto",
       "title": "Nuestros servicios de confianza",
       "photovoltaicService": {
         "title": "Montaje de sistemas fotovoltaicos",
@@ -27,8 +27,8 @@
     "whoWeAre": {
       "title": "¿Quiénes somos?",
       "description": "Somos un socio técnico B2B especializado en instalaciones eléctricas y sistemas fotovoltaicos. Fundados en 2024, apoyamos a empresas de toda Europa con soluciones solares seguras, eficientes y de alta calidad. Respaldados por un equipo con más de 15 años de experiencia en el sector, entregamos proyectos fiables y orientados a resultados que impulsan la transición hacia una energía limpia y sostenible mediante tecnología avanzada y ejecución profesional.",
-      "readMore": "Leer más",
-      "submit": "Solicitar presupuesto"
+      "readMore": "Leer Más",
+      "submit": "Solicitar Presupuesto"
     }
   },
   "about": {
@@ -38,7 +38,7 @@
       "description": "El equipo que puedes confiar desde la planificación hasta la instalación.",
       "ctaQuestion": "¿Buscas una solución a medida?",
       "buttons": {
-        "getQuote": "Solicitar presupuesto",
+        "getQuote": "Solicitar Presupuesto",
         "joinTeam": "Únete a Nuestro Equipo"
       }
     },
@@ -53,7 +53,7 @@
     "story": {
       "blocks": {
         "aboutUs": {
-          "title": "Sobre nosotros",
+          "title": "Sobre Nosotros",
           "description": "Novaluxe fue fundada a principios de 2024 por Nicolai Cojocari con el propósito de ofrecer soluciones eléctricas y técnicas de alta calidad en proyectos fotovoltaicos. La empresa surge como respuesta a la necesidad de reducir las emisiones de CO₂ y acelerar la transición hacia un modelo energético basado en fuentes limpias y sostenibles."
         },
         "mission": {
@@ -86,7 +86,7 @@
       "projectType": "tipo de proyecto",
       "location": "ubicación",
       "duration": "duración",
-      "readMore": "Leer más",
+      "readMore": "Leer Más",
       "loadMore": "Más"
     },
     "villares-del-orbigo": {
@@ -266,31 +266,31 @@
       "imageAlt": "Instalación de paneles solares",
       "title": "Nuestros proyectos",
       "ctaQuestion": "¿Buscas una solución a medida?",
-      "button": "Solicitar presupuesto"
+      "button": "Solicitar Presupuesto"
     }
   },
   "footer": {
     "trust": "Tu socio de confianza en soluciones eléctricas y de construcción",
-    "rights": "© 2025 Novaluxe Dynamics S.L. Todos los derechos reservados"
+    "rights": "© 2025 Novaluxe Dynamics S.L. Todos los derechos reservados"
   },
   "nav": {
     "home": "Inicio",
     "services": "Servicios",
     "projects": "Proyectos",
-    "about": "Sobre nosotros",
+    "about": "Sobre Nosotros",
     "contact": "Contacto",
     "title": "Menú"
   },
   "common": {
     "contact": {
       "form": {
-        "fullName": "Nombre completo",
-        "businessName": "Nombre de la empresa",
-        "email": "Correo electrónico",
+        "fullName": "Nombre Completo",
+        "businessName": "Nombre de la Empresa",
+        "email": "Correo Electrónico",
         "phone": "Teléfono",
         "message": "Describe tu proyecto o haz cualquier pregunta...",
         "buttons": {
-          "submit": "Enviar mensaje",
+          "submit": "Enviar Mensaje",
           "submitting": "Enviando..."
         },
         "errors": {
@@ -387,12 +387,12 @@
             "description": "Llevamos a cabo la instalación completa con calidad, seguridad y eficiencia."
           }
         ],
-        "button": "Solicitar presupuesto"
+        "button": "Solicitar Presupuesto"
       },
       "WhatsNextSection": {
-        "heading": "¿Qué sigue?",
+        "heading": "habla con nosotros",
         "paragraph": "Te responderemos en 24 horas durante los días laborables.",
-        "formTitle": "Solicitar presupuesto"
+        "formTitle": "Solicitar Presupuesto"
       }
     }
   },
@@ -487,7 +487,7 @@
       "description": "¿Listo para formar parte de un equipo activo? Ponte en contacto con nosotros.",
       "buttons": {
         "apply": "Aplica ahora",
-        "readMore": "Leer más"
+        "readMore": "Leer Más"
       }
     }
   },
@@ -496,10 +496,10 @@
       "imageAlt": "Services we provide",
       "title": "Nuestros servicios",
       "ctaQuestion": "¿Buscas una solución a medida?",
-      "button": "Solicitar presupuesto"
+      "button": "Solicitar Presupuesto"
     },
     "detailed": {
-      "button": "Solicitar presupuesto",
+      "button": "Solicitar Presupuesto",
       "items": {
         "photovoltaic": {
           "title": "Montaje de sistemas fotovoltaicos",

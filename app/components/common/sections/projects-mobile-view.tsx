@@ -10,10 +10,10 @@ const MobileView = () => {
     <section className="w-full flex flex-col gap-8 px-3 mx-auto py-25">
       <div className="space-y-4">
         <SectionTitle asChild size={"h2"} variant={"dark"} className="text-left">
-          <h2>{t("title")}</h2>
+          <h2>{t("common.sections.ProjectsSection.title")}</h2>
         </SectionTitle>
         <p className="text-sm text-foreground font-normal">
-          {t("description")}
+          {t("common.sections.ProjectsSection.description")}
         </p>
       </div>
       <div className="w-full mx-auto">

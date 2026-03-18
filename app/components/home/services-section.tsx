@@ -1,5 +1,5 @@
 import { Button } from "~/components/ui/button";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { cn } from "~/lib/utils";
 import { useAnimate } from "motion/react";
 import { useEffect, useState } from "react";
@@ -16,13 +16,13 @@ interface ServiceCardProps {
 const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
   const { t } = useTranslation("translation", { keyPrefix: "home.services" });
   const [isHovered, setIsHovered] = useState(false);
-  const [scope, animate] = useAnimate()
+  const [scope, animate] = useAnimate();
 
   useEffect(() => {
     if (isHovered) {
       const enterAnimation = () => {
         animate(scope.current, { backgroundColor: "var(--background-dark)" }, { duration: 0.5 });
-        animate("div#btn-overlay", { opacity: 1 }, { duration: 0.5 });
+        animate("#btn-overlay", { opacity: 1 }, { duration: 0.5 });
         animate("h3", { color: "var(--primary)" }, { duration: 0.5 });
         animate("p", { color: "var(--secondary-foreground)" }, { duration: 0.5 });
       }
@@ -31,7 +31,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
     } else {
       const exitAnimation = () => {
         animate(scope.current, { backgroundColor: "var(--card)" }, { duration: 0.5 });
-        animate("div#btn-overlay", { opacity: 0 }, { duration: 0.5 });
+        animate("#btn-overlay", { opacity: 0 }, { duration: 0.5 });
         animate("h3", { color: "var(--foreground-dark)" }, { duration: 0.5 });
         animate("p", { color: "var(--foreground)" }, { duration: 0.5 });
       }
@@ -53,7 +53,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
           alt={title}
           className="w-full h-62.5 sm:h-75 md:h-87.5 object-cover transition-all duration-500"
         />
-        <div id="btn-overlay" className={"absolute inset-0 bg-secondary/50 flex flex-col justify-center items-center p-4 md:p-6 opacity-0"}>
+        <NavLink id="btn-overlay" className={"absolute inset-0 bg-secondary/50 flex flex-col justify-center items-center p-4 md:p-6 opacity-0"} to={navLinks.contact}>
           <img src="/images/ellipse-btn.webp" loading="lazy" className="absolute max-w-122 w-full h-auto left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover" />
           <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full">
             <Button
@@ -63,7 +63,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
               <Link to={navLinks.contact}>{t("submit")}</Link>
             </Button>
           </div>
-        </div>
+        </NavLink>
       </div>
 
       <SectionTitle asChild size={"h5"} variant={"dark"} className="text-left">
