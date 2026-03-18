@@ -2,7 +2,7 @@ import { Button } from "~/components/ui/button";
 import { Link, NavLink } from "react-router";
 import { cn } from "~/lib/utils";
 import { useAnimate } from "motion/react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 import { useTranslation } from "react-i18next";
@@ -17,6 +17,13 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
   const { t } = useTranslation("translation", { keyPrefix: "home.services" });
   const [isHovered, setIsHovered] = useState(false);
   const [scope, animate] = useAnimate();
+  const linkRef = useRef<HTMLAnchorElement>(null);
+
+  const handleOverlayClick = () => {
+    if (linkRef.current) {
+      linkRef.current.click();
+    }
+  }
 
   useEffect(() => {
     if (isHovered) {
@@ -53,17 +60,17 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
           alt={title}
           className="w-full h-62.5 sm:h-75 md:h-87.5 object-cover transition-all duration-500"
         />
-        <NavLink id="btn-overlay" className={"absolute inset-0 bg-secondary/50 flex flex-col justify-center items-center p-4 md:p-6 opacity-0"} to={navLinks.contact}>
+        <button id="btn-overlay" className={"absolute inset-0 bg-secondary/50 flex flex-col justify-center items-center p-4 md:p-6 opacity-0 cursor-pointer"} onClick={handleOverlayClick}>
           <img src="/images/ellipse-btn.webp" loading="lazy" className="absolute max-w-122 w-full h-auto left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover" />
           <div className="group bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-full">
             <Button
               asChild
               className="group-hover:bg-orange-glow"
             >
-              <Link to={navLinks.contact}>{t("submit")}</Link>
+              <Link to={navLinks.contact} ref={linkRef}>{t("submit")}</Link>
             </Button>
           </div>
-        </NavLink>
+        </button>
       </div>
 
       <SectionTitle asChild size={"h5"} variant={"dark"} className="text-left">
