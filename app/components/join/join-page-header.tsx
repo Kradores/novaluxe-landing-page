@@ -20,7 +20,7 @@ const JoinPageHeader = () => {
 
         <div className="flex flex-row items-center gap-4">
             <Button asChild>
-              <Link to={navLinks.contact}>{t("buttons.apply")}</Link>
+              <Link to={"#apply"}>{t("buttons.apply")}</Link>
             </Button>
             <Button asChild variant="outline">
               <Link to={navLinks.about} className="flex items-center gap-2">

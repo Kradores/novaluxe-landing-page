@@ -14,7 +14,7 @@ const ApplySection = () => {
   const { t } = useTranslation("translation", { keyPrefix: "join.apply" });
   
   return (
-    <section className="w-full bg-background pt-35 md:pt-32 lg:pt-41">
+    <section id="apply" className="w-full bg-background pt-35 md:pt-32 lg:pt-41">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
         <div className="grid grid-cols-1 lg:grid-cols-2 max-lg:gap-12">
           <div className="flex flex-col gap-8 md:gap-10 lg:gap-12">
