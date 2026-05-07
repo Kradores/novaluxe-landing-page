@@ -8,6 +8,18 @@
     "about": {
       "title": "Novaluxe Dynamics | ¿Quienes somos?",
       "description": "El equipo que puedes confiar desde la planificación hasta la instalación."
+    },
+    "join": {
+      "title": "Novaluxe Dynamics | Únete a Nuestro Equipo",
+      "description": "Sé parte de un equipo dinámico dedicado a proporcionar soluciones de energía confiables y sistemas fotovoltaicos."
+    },
+    "services": {
+      "title": "Novaluxe Dynamics | Nuestros Servicios",
+      "description": "Ofrecemos soluciones integrales eléctricas y fotovoltaicas para hogares y empresas."
+    },
+    "projects": {
+      "title": "Novaluxe Dynamics | Nuestros Proyectos",
+      "description": "Explora nuestro portafolio de instalaciones eléctricas y fotovoltaicas exitosas."
     }
   },
   "home": {

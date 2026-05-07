@@ -13,7 +13,7 @@ export default function Page() {
     <title>{t("title")}</title>
     <meta name="description" content={t("description")} />
     <meta name="keywords" content={t("keywords")} />
-    <link rel="canonical" href={canonicalUrls.home} />
+    <link rel="canonical" href={canonicalUrls.about} />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content={t("title")}></meta>
     <meta name="apple-mobile-web-app-status-bar-style" content="default"></meta>

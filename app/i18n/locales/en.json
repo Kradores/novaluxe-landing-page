@@ -8,6 +8,18 @@
     "about": {
       "title": "Novaluxe Dynamics | Who we are?",
       "description": "A team you can rely on from planning to installation."
+    },
+    "join": {
+      "title": "Novaluxe Dynamics | Join Our Team",
+      "description": "Be part of a dynamic team dedicated to providing reliable energy solutions and photovoltaic systems."
+    },
+    "services": {
+      "title": "Novaluxe Dynamics | Our Services",
+      "description": "We provide comprehensive electrical and photovoltaic solutions for homes and businesses."
+    },
+    "projects": {
+      "title": "Novaluxe Dynamics | Our Projects",
+      "description": "Explore our portfolio of successful electrical and photovoltaic installations."
     }
   },
   "home": {

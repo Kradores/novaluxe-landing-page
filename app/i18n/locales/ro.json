@@ -8,6 +8,18 @@
     "about": {
       "title": "Novaluxe Dynamics | Cine suntem noi?",
       "description": "O echipă pe care vă puteți baza de la planificare până la instalare."
+    },
+    "join": {
+      "title": "Novaluxe Dynamics | Alătură-te Echipei",
+      "description": "Fii parte dintr-o echipă dinamică dedicată furnizării de soluții de energie fiabile și sisteme fotovoltaice."
+    },
+    "services": {
+      "title": "Novaluxe Dynamics | Serviciile Noastre",
+      "description": "Oferim soluții integrale electrice și fotovoltaice pentru locuințe și afaceri."
+    },
+    "projects": {
+      "title": "Novaluxe Dynamics | Proiectele Noastre",
+      "description": "Explorați portofoliul nostru de instalări electrice și fotovoltaice de succes."
     }
   },
   "home": {
