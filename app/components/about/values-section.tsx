@@ -1,10 +1,10 @@
 import { Professionalism, Safety, Responsibility, Commitment } from "~/components/icons";
 import { Button } from "~/components/ui/button";
-import { Link } from "react-router";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import LinkLang from "~/components/common/link-lang";
 
 interface StepCardProps {
   icon: React.ElementType;
@@ -57,17 +57,17 @@ const ValuesSection = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-4.5 mx-auto bg-background/20 backdrop-blur-md border border-background/20 p-2 rounded-[32px] md:rounded-full">
           <Button asChild className="hover:bg-orange-glow w-full md:w-fit">
-            <Link to={navLinks.contact}>{t("buttons.getQuote")}</Link>
+            <LinkLang to={navLinks.contact}>{t("buttons.getQuote")}</LinkLang>
           </Button>
           <Button
             asChild
             variant={"outline"}
             className="border-primary-foreground text-primary-foreground"
           >
-            <Link to={navLinks.join} className="flex items-center gap-2.5">
+            <LinkLang to={navLinks.join} className="flex items-center gap-2.5">
               {t("buttons.joinTeam")}
               <ArrowRight className="size-3.75" />
-            </Link>
+            </LinkLang>
           </Button>
         </div>
       </div>

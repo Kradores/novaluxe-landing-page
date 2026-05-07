@@ -7,6 +7,7 @@ import { cn, isLightBgPage } from "~/lib/utils";
 export function DesktopNav() {
   const { t } = useTranslation("translation", { keyPrefix: "nav" });
   const location = useLocation();
+
   return (
     <nav className={cn("hidden lg:flex items-center justify-center py-3.5 px-5 bg-background/20 rounded-full", isLightBgPage(location.pathname) && "bg-foreground-light/10")}>
       <ul className="flex items-center gap-8">

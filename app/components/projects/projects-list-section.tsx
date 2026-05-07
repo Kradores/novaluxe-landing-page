@@ -1,10 +1,10 @@
 import { ArrowRight } from "lucide-react";
 import { format } from "date-fns";
 import { Button } from "~/components/ui/button";
-import { Link } from "react-router";
 import { projects } from "./projects.data";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 import { useTranslation } from "react-i18next";
+import LinkLang from "~/components/common/link-lang";
 
 interface DateDisplayProps {
   date: Date;
@@ -62,9 +62,9 @@ const ProjectCard = ({
         {t(`${slug}.description`)}
       </p>
       <Button variant="outline" asChild className="mt-4">
-        <Link to={`/projects/${slug}`}>
+        <LinkLang to={`/projects/${slug}`}>
           {t(`generic.readMore`)} <ArrowRight className="size-4" />
-        </Link>
+        </LinkLang>
       </Button>
     </div>
   </article>;

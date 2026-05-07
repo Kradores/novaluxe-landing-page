@@ -1,10 +1,10 @@
 import { Button } from "~/components/ui/button";
-import { Link } from "react-router";
 import ImageFrame from "~/components/common/image-frame";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 import { ResponsiveImage } from "~/components/common/responsive-img";
 import { useTranslation } from "react-i18next";
+import LinkLang from "~/components/common/link-lang";
 
 const HeroSection = () => {
   const { t } = useTranslation("translation", { keyPrefix: "home.hero" });
@@ -37,7 +37,7 @@ const HeroSection = () => {
                 asChild
                 className="group-hover:bg-orange-glow"
               >
-                <Link to={navLinks.contact}>{t("submit")}</Link>
+                <LinkLang to={navLinks.contact}>{t("submit")}</LinkLang>
               </Button>
             </div>
           </div>

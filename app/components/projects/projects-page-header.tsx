@@ -1,9 +1,9 @@
 import { Button } from "~/components/ui/button";
-import { Link } from "react-router";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 import { ResponsiveImage } from "~/components/common/responsive-img";
 import { useTranslation } from "react-i18next";
+import LinkLang from "~/components/common/link-lang";
 
 const ProjectsPageHeader = () => {
   const { t } = useTranslation("translation", { keyPrefix: "projects.hero" });
@@ -34,7 +34,7 @@ const ProjectsPageHeader = () => {
               asChild
               className="group-hover:bg-orange-glow"
             >
-              <Link to={navLinks.contact}>{t("button")}</Link>
+              <LinkLang to={navLinks.contact}>{t("button")}</LinkLang>
             </Button>
           </div>
         </div>

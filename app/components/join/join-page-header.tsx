@@ -1,9 +1,9 @@
-import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 import { useTranslation } from "react-i18next";
+import LinkLang from "~/components/common/link-lang";
 
 const JoinPageHeader = () => {
   const { t } = useTranslation("translation", { keyPrefix: "join.hero" });
@@ -20,13 +20,13 @@ const JoinPageHeader = () => {
 
         <div className="flex flex-row items-center gap-4">
             <Button asChild>
-              <Link to={"#apply"}>{t("buttons.apply")}</Link>
+              <LinkLang to={"#apply"}>{t("buttons.apply")}</LinkLang>
             </Button>
             <Button asChild variant="outline">
-              <Link to={navLinks.about} className="flex items-center gap-2">
+              <LinkLang to={navLinks.about} className="flex items-center gap-2">
                 {t("buttons.readMore")}
                 <ArrowRight className="size-4" />
-              </Link>
+              </LinkLang>
             </Button>
         </div>
       </div>

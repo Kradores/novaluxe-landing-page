@@ -1,11 +1,11 @@
 import { Button } from "~/components/ui/button";
-import { Link, NavLink } from "react-router";
 import { cn } from "~/lib/utils";
 import { useAnimate } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 import { useTranslation } from "react-i18next";
+import LinkLang from "~/components/common/link-lang";
 
 interface ServiceCardProps {
   image: string;
@@ -67,7 +67,7 @@ const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
               asChild
               className="group-hover:bg-orange-glow"
             >
-              <Link to={navLinks.contact} ref={linkRef}>{t("submit")}</Link>
+              <LinkLang to={navLinks.contact} ref={linkRef}>{t("submit")}</LinkLang>
             </Button>
           </div>
         </button>

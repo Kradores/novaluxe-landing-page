@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { LazyVideo } from "~/components/common/lazy-video";
@@ -6,6 +5,7 @@ import { navLinks } from "~/lib/site";
 import SectionTitle from "~/components/common/section-title";
 import { ResponsiveImage } from "~/components/common/responsive-img";
 import { useTranslation } from "react-i18next";
+import LinkLang from "~/components/common/link-lang";
 
 export const WhoWeAreSection = () => {
   const { t } = useTranslation("translation", { keyPrefix: "home.whoWeAre" });
@@ -24,13 +24,13 @@ export const WhoWeAreSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full md:w-fit">
               <Button asChild variant="default" className="w-full">
-                <Link to={navLinks.contact}>{t("submit")}</Link>
+                <LinkLang to={navLinks.contact}>{t("submit")}</LinkLang>
               </Button>
               <Button asChild variant="outline" className="w-full">
-                <Link to={navLinks.about} className="flex items-center gap-2">
+                <LinkLang to={navLinks.about} className="flex items-center gap-2">
                   {t("readMore")}
                   <ArrowRight className="size-4" />
-                </Link>
+                </LinkLang>
               </Button>
             </div>
           </div>

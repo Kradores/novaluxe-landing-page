@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 import { useTranslation } from "react-i18next";
 
 export const JobOfferSection = () => {

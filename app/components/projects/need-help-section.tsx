@@ -1,9 +1,9 @@
 import { Button } from "~/components/ui/button";
 import { LogoProjects } from "~/components/icons";
-import { Link } from "react-router";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 import { useTranslation } from "react-i18next";
+import LinkLang from "~/components/common/link-lang";
 
 const NeedHelpSection = () => {
   const { t } = useTranslation("translation", { keyPrefix: "projects.needHelp" });
@@ -29,7 +29,7 @@ const NeedHelpSection = () => {
 
         <div className="mx-auto w-fit bg-background/20 backdrop-blur-lg border border-background/20 p-2 rounded-full">
           <Button asChild variant="secondary">
-            <Link to={navLinks.contact}>{t("button")}</Link>
+            <LinkLang to={navLinks.contact}>{t("button")}</LinkLang>
           </Button>
         </div>
       </div>

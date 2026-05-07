@@ -1,9 +1,9 @@
 import { CheckCircle2 } from "lucide-react";
-import { Link } from "react-router";
 import { Button } from "~/components/ui/button";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 import { useTranslation } from "react-i18next";
+import LinkLang from "~/components/common/link-lang";
 
 interface ServiceItemProps {
   title: string;
@@ -52,7 +52,7 @@ const ServiceCard = ({
         </ul>
 
         <Button asChild className="group-hover:bg-orange-glow">
-          <Link to={navLinks.contact}>{t("button")}</Link>
+          <LinkLang to={navLinks.contact}>{t("button")}</LinkLang>
         </Button>
       </div>
     </div>
@@ -65,12 +65,12 @@ const DetailedServicesSection = () => {
   const services = [
     {
       id: "photovoltaic",
-      image: "images/service-1.webp",
+      image: "/images/service-1.webp",
       reversed: false,
     },
     {
       id: "renovations",
-      image: "images/service-2.webp",
+      image: "/images/service-2.webp",
       reversed: true,
     },
   ];

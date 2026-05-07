@@ -1,10 +1,10 @@
-import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import SectionTitle from "~/components/common/section-title";
 import { navLinks } from "~/lib/site";
 import { ResponsiveImage } from "~/components/common/responsive-img";
 import { useTranslation } from "react-i18next";
+import LinkLang from "~/components/common/link-lang";
 
 export const AboutHeroSection = () => {
   const { t } = useTranslation("translation", { keyPrefix: "about.hero" });
@@ -39,17 +39,17 @@ export const AboutHeroSection = () => {
             asChild
             className="hover:bg-orange-glow w-full"
           >
-            <Link to={navLinks.contact}>{t("buttons.getQuote")}</Link>
+            <LinkLang to={navLinks.contact}>{t("buttons.getQuote")}</LinkLang>
           </Button>
           <Button
             asChild
             variant={"outline"}
             className="border-primary-foreground text-primary-foreground w-full"
           >
-            <Link to={navLinks.join} className="flex items-center gap-2.5">
+            <LinkLang to={navLinks.join} className="flex items-center gap-2.5">
               {t("buttons.joinTeam")}
               <ArrowRight className="size-3.75" />
-            </Link>
+            </LinkLang>
           </Button>
         </div>
       </div>

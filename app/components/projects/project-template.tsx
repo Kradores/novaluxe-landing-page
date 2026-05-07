@@ -1,7 +1,7 @@
 import { ArrowDown } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { type Project } from "./projects.data";
-import SectionTitle from "../common/section-title";
+import SectionTitle from "~/components/common/section-title";
 import { Execution, Proposal, Tech } from "../icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

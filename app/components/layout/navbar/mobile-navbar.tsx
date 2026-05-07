@@ -11,7 +11,7 @@ import {
 } from "~/components/ui/sheet";
 import { CONTACT_PHONE, navItems } from "~/lib/site";
 import { useLocation } from "react-router";
-import { cn, isLightBgPage } from "~/lib/utils";
+import { isLightBgPage } from "~/lib/utils";
 import { useTranslation } from "react-i18next";
 
 export function MobileNav() {

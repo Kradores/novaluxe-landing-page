@@ -8,9 +8,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function isLightBgPage(path: string): boolean {
-  const isProjectTemplate = matchPath({ path: "projects/:slug" }, path);
-  const isContact = matchPath({ path: navLinks.contact }, path);
-  const isJoin = matchPath({ path: navLinks.join }, path);
+  const isProjectTemplate = matchPath({ path: "/:lang/projects/:slug" }, path);
+  const isContact = matchPath({ path: "/:lang/contact" }, path);
+  const isJoin = matchPath({ path: "/:lang/join-our-team" }, path);
   return Boolean(isProjectTemplate) || Boolean(isContact) || Boolean(isJoin);
 }
 
