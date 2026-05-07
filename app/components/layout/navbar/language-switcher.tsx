@@ -6,9 +6,10 @@ import {
   DropdownMenuTrigger,
 } from "~/components/ui/dropdown-menu";
 import { Button } from "~/components/ui/button";
-import { useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { cn, isLightBgPage } from "~/lib/utils";
 import { useTranslation } from "react-i18next";
+import { useMemo } from "react";
 
 const languages = [
   { code: "es", name: "Español", flag: "🇪🇸" },
@@ -18,8 +19,15 @@ const languages = [
 
 export function LanguageSwitcher() {
   const { i18n } = useTranslation();
-  const currentLang = languages.find(l => l.code === i18n.language) || languages[0];
+  const currentLang = useMemo(() => languages.find(lang => lang.code === i18n.language) || languages[0], [i18n.language]);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLanguageChange = (newLang: string) => {
+    const pathSegments = location.pathname.split("/").filter(Boolean);
+    pathSegments[0] = newLang;
+    navigate(`/${pathSegments.join("/")}${location.search}${location.hash}`);
+  };
 
   return (
     <DropdownMenu>
@@ -37,7 +45,7 @@ export function LanguageSwitcher() {
         {languages.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
-            onClick={() => i18n.changeLanguage(lang.code)}
+            onClick={() => handleLanguageChange(lang.code)}
             className="transition-all text-sm md:text-base hover:[text-shadow:0_0_1px_currentColor] uppercase"
           >
             {lang.code}

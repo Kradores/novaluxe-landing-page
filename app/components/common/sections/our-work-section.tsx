@@ -90,7 +90,7 @@ export const OurWorkSection = () => {
                           />
                         </div>
                         <p className="text-foreground-light font-medium text-lg">
-                          {testimonial.author}, {testimonial.title}, {testimonial.company} ({testimonial.location})
+                          {testimonial.author}, {testimonial.title}
                         </p>
                       </div>
                     </CarouselItem>

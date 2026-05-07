@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { matchPath, useLocation } from "react-router";
+import { useLocation } from "react-router";
 import { NavLink } from "~/components/common/nav-link";
 import { navItems } from "~/lib/site";
 import { cn, isLightBgPage } from "~/lib/utils";

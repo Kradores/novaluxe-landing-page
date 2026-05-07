@@ -6,7 +6,7 @@ import MobileView from "./projects-mobile-view";
 const ProjectsSection = () => {
   const { breakpoint } = useBreakpoint();
 
-  if (breakpoint === "sm" || breakpoint === "xs") {
+  if (breakpoint === "md" || breakpoint === "sm" || breakpoint === "xs") {
     return (<MobileView />);
   }
 

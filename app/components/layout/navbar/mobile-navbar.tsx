@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Menu, Phone } from "lucide-react";
 import { NavLink } from "~/components/common/nav-link";
 import { Button } from "~/components/ui/button";
 import {
