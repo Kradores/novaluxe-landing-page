@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "home": {
+      "title": "Novaluxe Dynamics | Nosotros hacemos el trabajo duro",
+      "description": "Soluciones eléctricas fiables y energía inteligente para particulares y empresas. Diseñamos e instalamos proyectos garantizando resultados desde el primer día.",
+      "keywords": "soluciones eléctricas, energía inteligente, sistemas fotovoltaicos, instalación de paneles solares, socio técnico B2B, energía sostenible, soluciones de energía limpia."
+    }
+  },
   "home": {
     "hero": {
       "title": "Nosotros hacemos el trabajo duro",
@@ -311,37 +318,27 @@
           {
             "quote": "El equipo <bold>Novaluxe Dynamics</bold> facilitó todo desde el primer día. Gran comunicación, ejecución rápida y realmente escucharon lo que necesitábamos, adaptándose rápidamente sin complicar el proceso en absoluto. Los recomendaríamos sin ninguna duda.",
             "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Sevilla, España"
+            "title": "CEO"
           },
           {
             "quote": "Trabajar con <bold>Novaluxe Dynamics</bold> fue realmente sencillo y sin estrés. Explicaron todo con claridad, cumplieron con los plazos previstos y el resultado final quedó limpio y muy bien organizado. Un equipo con el que es muy fácil trabajar.",
-            "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Sevilla, España"
+            "author": "Javier González",
+            "title": "Operations Director"
           },
           {
             "quote": "Nos encantó lo atentos y rápidos que fueron. Cualquier pregunta que teníamos la respondían enseguida, y <bold>nos mantuvieron informados durante todo el proceso.</bold> Se siente como trabajar con personas que realmente se preocupan por hacer un buen trabajo.",
-            "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Sevilla, España"
+            "author": "Carlos Fernández",
+            "title": "Technical Manager"
           },
           {
             "quote": "<bold>Una gran experiencia de principio a fin.</bold> Trabajaron con rapidez, mantuvieron todo simple y nos ayudaron con las decisiones del proyecto. Se nota que realmente saben lo que hacen y que <bold>ponen orgullo en su trabajo.</bold>",
-            "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Sevilla, España"
+            "author": "David Romero",
+            "title": "Managing Director"
           },
           {
             "quote": "Sinceramente, uno de los <bold>contratistas más fáciles con los que hemos trabajado.</bold> Amables, flexibles y muy profesionales. Todo el proceso fue fluido y sin estrés, lo que <bold>marcó una gran diferencia.</bold>",
-            "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Sevilla, España"
+            "author": "Miguel Torres",
+            "title": "Site Manager"
           }
         ],
         "controls": {

@@ -29,3 +29,12 @@ export const socialLinks = [
   { icon: Linkedin, href: "https://www.linkedin.com/in/nicolai-cojocari-ab8663373/", label: "LinkedIn" },
   { icon: Whatsapp, href: "https://wa.me/+348977876667", label: "WhatsApp" },
 ];
+
+export const canonicalUrls = {
+  home: `${import.meta.env.VITE_API_BASE_URL}/es${navLinks.home}`,
+  services: `${import.meta.env.VITE_API_BASE_URL}/es${navLinks.services}`,
+  projects: `${import.meta.env.VITE_API_BASE_URL}/es${navLinks.projects}`,
+  about: `${import.meta.env.VITE_API_BASE_URL}/es${navLinks.about}`,
+  contact: `${import.meta.env.VITE_API_BASE_URL}/es${navLinks.contact}`,
+  join: `${import.meta.env.VITE_API_BASE_URL}/es${navLinks.join}`,
+}

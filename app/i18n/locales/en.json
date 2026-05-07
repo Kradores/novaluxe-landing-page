@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "home": {
+      "title": "Novaluxe Dynamics | We do the hard work",
+      "description": "Reliable electrical and smart energy solutions for homes and businesses. We plan, install, and deliver projects that work from day one.",
+      "keywords": "electrical solutions, smart energy, photovoltaic systems, solar panel installation, B2B technical partner, sustainable energy, clean energy solutions"
+    }
+  },
   "home": {
     "hero": {
       "title": "WE DO THE HARD WORK",
@@ -312,37 +319,27 @@
           {
             "quote": "<bold>Novaluxe Dynamics</bold> Team made things easy from day one. Great communication, fast execution, and they really listened to what we needed, adapting quickly without overcomplicating the process at all. <bold>We'd absolutely recommend them.</bold>",
             "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Seville, Spain"
+            "title": "CEO"
           },
           {
             "quote": "Working with <bold>Novaluxe Dynamics</bold> was honestly stress-free. They explained everything clearly, showed up as expected, and the final result looked clean and very well organized. Super easy team to deal with.",
-            "author": "Thomas Mueller",
-            "title": "Operations Director",
-            "company": "EcoEnergy GmbH",
-            "location": "Munich, Germany"
+            "author": "Javier González",
+            "title": "Operations Director"
           },
           {
             "quote": "We loved how responsive they were. Any question we had got answered fast, and they <bold>kept us updated the whole time.</bold> It felt like working with people who genuinely care about doing a good job.",
-            "author": "Sophie Laurent",
-            "title": "Project Manager",
-            "company": "SunPower France",
-            "location": "Lyon, France"
+            "author": "Carlos Fernández",
+            "title": "Technical Manager"
           },
           {
             "quote": "<bold>Great experience from start to finish.</bold> They moved quickly, kept things simple, and help us with project decisions. You can tell they really know what they're doing and <bold>take pride in the work.</bold>",
-            "author": "Alessandro Rossi",
-            "title": "Technical Director",
-            "company": "Verde Energia",
-            "location": "Milan, Italy"
+            "author": "David Romero",
+            "title": "Managing Director"
           },
           {
             "quote": "Honestly one of the <bold>easiest contractors we've worked with.</bold> Friendly, flexible and very professional. The whole process felt smooth and stress-free, which made <bold>a big difference.</bold>",
-            "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Seville, Spain"
+            "author": "Miguel Torres",
+            "title": "Site Manager"
           }
         ],
         "controls": {

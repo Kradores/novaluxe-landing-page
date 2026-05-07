@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "home": {
+      "title": "Novaluxe Dynamics | Noi facem munca grea",
+      "description": "Soluții electrice fiabile și inteligente de energie pentru locuințe și afaceri. Planificăm, instalăm și livrăm proiecte care funcționează din prima zi.",
+      "keywords": "soluții electrice, energie inteligentă, sisteme fotovoltaice, instalare panouri solare, partener tehnic B2B, energie sustenabilă, soluții de energie curată"
+    }
+  },
   "home": {
     "hero": {
       "title": "Noi facem munca grea",
@@ -313,37 +320,27 @@
           {
             "quote": "Echipa <bold>Novaluxe Dynamics</bold> a făcut lucrurile simple încă din prima zi. Comunicare excelentă, execuție rapidă și au ascultat cu adevărat ce aveam nevoie, adaptându-se rapid fără să complice deloc procesul. <bold>Îi recomandăm cu toată încrederea.</bold>",
             "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Seville, Spain"
+            "title": "CEO"
           },
           {
             "quote": "Colaborarea cu <bold>Novaluxe Dynamics</bold> a fost, sincer, lipsită de stres. Au explicat totul clar, au respectat ce au promis și rezultatul final arată curat și foarte bine organizat. O echipă cu care este foarte ușor să lucrezi.",
-            "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Seville, Spain"
+            "author": "Javier González",
+            "title": "Operations Director"
           },
           {
             "quote": "Ne-a plăcut mult cât de prompt au răspuns de fiecare dată. Orice întrebare am avut a primit răspuns rapid, iar pe tot parcursul proiectului <bold>ne-au ținut la curent cu progresul</bold>. S-a simțit că lucrezi cu oameni cărora chiar le pasă să facă o treabă bună.",
-            "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Seville, Spain"
+            "author": "Carlos Fernández",
+            "title": "Technical Manager"
           },
           {
             "quote": "<bold>O experiență foarte bună de la început până la final</bold>. Au lucrat rapid, au păstrat totul simplu și ne-au ajutat să luăm deciziile potrivite pe parcursul proiectului. Se vede clar că știu foarte bine ce fac și că sunt <bold>profesioniști.</bold>",
-            "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Seville, Spain"
+            "author": "David Romero",
+            "title": "Managing Director"
           },
           {
             "quote": "Sincer, unul dintre <bold>cei mai buni contractori cu care am lucrat</bold>. Prietenoși, flexibili și foarte profesioniști. Întregul proces a decurs lin și fără stres, iar asta a făcut o <bold>mare diferență.</bold>",
-            "author": "Maria Gonzalez",
-            "title": "CEO",
-            "company": "GreenTech Solutions",
-            "location": "Seville, Spain"
+            "author": "Miguel Torres",
+            "title": "Site Manager"
           }
         ],
         "controls": {
