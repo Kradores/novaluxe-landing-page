@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org"
+        xmlns:xhtml="http://w3.org">
+
+  <!-- Home Page (ES) -->
+  <url>
+    <loc>https://novaluxedynamics.com</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://novaluxedynamics.com" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaluxedynamics.com" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://novaluxedynamics.com" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaluxedynamics.com" />
+    <lastmod>2026-05-08</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Projects (ES) -->
+  <url>
+    <loc>https://novaluxedynamics.com/projects</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://novaluxedynamics.com/projects" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaluxedynamics.com/projects" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://novaluxedynamics.com/projects" />
+    <lastmod>2026-05-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services (ES) -->
+  <url>
+    <loc>https://novaluxedynamics.com/services</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://novaluxedynamics.com/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaluxedynamics.com/services" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://novaluxedynamics.com/services" />
+    <lastmod>2026-05-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About (ES) -->
+  <url>
+    <loc>https://novaluxedynamics.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://novaluxedynamics.com/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaluxedynamics.com/about" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://novaluxedynamics.com/about" />
+    <lastmod>2026-05-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact (ES) -->
+  <url>
+    <loc>https://novaluxedynamics.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://novaluxedynamics.com/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaluxedynamics.com/contact" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://novaluxedynamics.com/contact" />
+    <lastmod>2026-05-08</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Join Our Team (ES) -->
+  <url>
+    <loc>https://novaluxedynamics.com/join-our-team</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://novaluxedynamics.com/join-our-team" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaluxedynamics.com/join-our-team" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://novaluxedynamics.com/join-our-team" />
+    <lastmod>2026-05-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
