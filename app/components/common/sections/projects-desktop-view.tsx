@@ -1,4 +1,4 @@
-import { useBreakpoint } from "hooks/use-breakpoint";
+import { useBreakpoint } from "../../../../hooks/use-breakpoint";
 import { getDesktopProjects, projectVariants } from "./projects-section.data";
 import ProjectsRow from "./projects-row";
 import Project from "./project";

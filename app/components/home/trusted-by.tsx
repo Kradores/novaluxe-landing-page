@@ -1,4 +1,4 @@
-import { Marquee, MarqueeContent, MarqueeItem } from "components/ui/marquee";
+import { Marquee, MarqueeContent, MarqueeItem } from "~/components/ui/marquee";
 import { useTranslation } from "react-i18next";
 
 const brands: { name: string; src: string }[] = [

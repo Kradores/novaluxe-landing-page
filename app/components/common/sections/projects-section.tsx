@@ -1,4 +1,4 @@
-import { useBreakpoint } from "hooks/use-breakpoint";
+import { useBreakpoint } from "../../../../hooks/use-breakpoint";
 import DesktopView from "./projects-desktop-view";
 import MobileView from "./projects-mobile-view";
 
