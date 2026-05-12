@@ -15,7 +15,7 @@ import { isLightBgPage } from "~/lib/utils";
 import { useTranslation } from "react-i18next";
 
 export function MobileNav() {
-  const { t } = useTranslation("translation", { keyPrefix: "nav" });
+  const { t, i18n } = useTranslation("translation", { keyPrefix: "nav" });
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
@@ -77,10 +77,10 @@ export function MobileNav() {
             ))}
           </ul>
           <a
-            href={`tel:${CONTACT_PHONE.replace(/\s/g, "")}`}
+            href={`tel:${CONTACT_PHONE[i18n.language].replace(/\s/g, "")}`}
             className="flex items-center gap-2 text-lg font-medium text-white transition-colors py-2"
           >
-            {CONTACT_PHONE}
+            {CONTACT_PHONE[i18n.language]}
           </a>
         </nav>
       </SheetContent>

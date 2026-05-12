@@ -6,9 +6,11 @@ import { NavLink } from "~/components/common/nav-link";
 import { CONTACT_PHONE, navLinks } from "~/lib/site";
 import { cn, isLightBgPage } from "~/lib/utils";
 import { useLocation } from "react-router";
+import { useTranslation } from "react-i18next";
 
 export function Navbar({ className }: { className?: string }) {
   const location = useLocation();
+  const { i18n } = useTranslation();
   return (
     <header className={cn("w-full h-fit absolute top-0 z-50", className)}>
       <div className="mx-auto max-w-300 px-4 sm:px-6">
@@ -22,7 +24,7 @@ export function Navbar({ className }: { className?: string }) {
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
             <span className={cn("hidden lg:block text-base font-medium text-secondary-foreground transition-all hover:[text-shadow:0_0_1px_currentColor]", isLightBgPage(location.pathname) && "text-foreground")}>
-              {CONTACT_PHONE}
+              {CONTACT_PHONE[i18n.language]}
             </span>
             <MobileNav />
           </div>

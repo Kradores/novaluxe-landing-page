@@ -5,14 +5,16 @@ import { CONTACT_ADDRESS, CONTACT_EMAIL, CONTACT_PHONE } from "~/lib/site";
 import { MapPin } from "~/components/icons";
 import { useTranslation } from "react-i18next";
 
-const contactInfo = [
-  { icon: Phone, text: CONTACT_PHONE },
-  { icon: Mail, text: CONTACT_EMAIL },
-  { icon: MapPin, text: CONTACT_ADDRESS },
-];
+
 
 export const WhatsNextSection = () => {
-  const { t } = useTranslation("translation", { keyPrefix: "common.sections.WhatsNextSection" });
+  const { t, i18n } = useTranslation("translation", { keyPrefix: "common.sections.WhatsNextSection" });
+
+  const contactInfo = [
+    { icon: Phone, text: CONTACT_PHONE[i18n.language] },
+    { icon: Mail, text: CONTACT_EMAIL },
+    { icon: MapPin, text: CONTACT_ADDRESS },
+  ];
 
   return (
     <section className="w-full bg-background pt-16 md:pt-24 lg:pt-32">

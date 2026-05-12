@@ -4,15 +4,17 @@ import { CONTACT_ADDRESS, CONTACT_EMAIL, CONTACT_PHONE } from "~/lib/site";
 import ApplyForm from "./apply-form";
 import { useTranslation } from "react-i18next";
 
-const contactInfo = [
-  { icon: Phone, text: CONTACT_PHONE },
-  { icon: Mail, text: CONTACT_EMAIL },
-  { icon: MapPin, text: CONTACT_ADDRESS },
-];
+
 
 const ApplySection = () => {
-  const { t } = useTranslation("translation", { keyPrefix: "join.apply" });
-  
+  const { t, i18n } = useTranslation("translation", { keyPrefix: "join.apply" });
+
+  const contactInfo = [
+    { icon: Phone, text: CONTACT_PHONE[i18n.language] },
+    { icon: Mail, text: CONTACT_EMAIL },
+    { icon: MapPin, text: CONTACT_ADDRESS },
+  ];
+
   return (
     <section id="apply" className="w-full bg-background pt-35 md:pt-32 lg:pt-41">
       <div className="mx-auto px-3 sm:px-6 xl:px-0 max-w-300">
@@ -36,7 +38,7 @@ const ApplySection = () => {
 
           <div className="relative -mb-10 md:-mb-12 lg:-mb-30">
             <ApplyForm>
-                {t("formHeader")}
+              {t("formHeader")}
             </ApplyForm>
           </div>
         </div>

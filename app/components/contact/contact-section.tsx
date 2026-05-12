@@ -4,14 +4,14 @@ import { ContactForm } from "~/components/common/contact-form";
 import { CONTACT_ADDRESS, CONTACT_EMAIL, CONTACT_PHONE } from "~/lib/site";
 import { useTranslation } from "react-i18next";
 
-const contactInfo = [
-  { icon: Phone, text: CONTACT_PHONE },
-  { icon: Mail, text: CONTACT_EMAIL },
-  { icon: MapPin, text: CONTACT_ADDRESS },
-];
-
 const ContactSection = () => {
-  const { t } = useTranslation("translation", { keyPrefix: "contact" });
+  const { t, i18n } = useTranslation("translation", { keyPrefix: "contact" });
+
+  const contactInfo = [
+    { icon: Phone, text: CONTACT_PHONE[i18n.language] },
+    { icon: Mail, text: CONTACT_EMAIL },
+    { icon: MapPin, text: CONTACT_ADDRESS },
+  ];
 
   return (
     <section className="w-full bg-background pt-35 md:pt-32 lg:pt-41">

@@ -19,7 +19,11 @@ export const navItems = [
   { to: navLinks.contact, label: "contact" },
 ];
 
-export const CONTACT_PHONE = "+34 642 19 09 41";
+export const CONTACT_PHONE: Record<string, string> = {
+  es: "+34 642 19 09 41",
+  ro: "+34 642 19 09 41",
+  en: "+44 7845 989 015",
+}
 export const CONTACT_EMAIL = "novaluxedynamic@hotmail.com";
 export const CONTACT_ADDRESS = "Palma del Río, Spain, 14700";
 
